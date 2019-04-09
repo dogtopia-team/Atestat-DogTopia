@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.buttonAdaugaPoza = new System.Windows.Forms.Button();
-            this.buttonAfiseazaPoza = new System.Windows.Forms.Button();
             this.buttonClasifica = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.labelRasa = new System.Windows.Forms.Label();
@@ -47,16 +46,6 @@
             this.buttonAdaugaPoza.Text = "Adauga";
             this.buttonAdaugaPoza.UseVisualStyleBackColor = true;
             this.buttonAdaugaPoza.Click += new System.EventHandler(this.buttonAdaugaPoza_Click);
-            // 
-            // buttonAfiseazaPoza
-            // 
-            this.buttonAfiseazaPoza.Location = new System.Drawing.Point(855, 121);
-            this.buttonAfiseazaPoza.Name = "buttonAfiseazaPoza";
-            this.buttonAfiseazaPoza.Size = new System.Drawing.Size(106, 52);
-            this.buttonAfiseazaPoza.TabIndex = 1;
-            this.buttonAfiseazaPoza.Text = "Afiseaza poza";
-            this.buttonAfiseazaPoza.UseVisualStyleBackColor = true;
-            this.buttonAfiseazaPoza.Click += new System.EventHandler(this.buttonAfiseazaPoza_Click);
             // 
             // buttonClasifica
             // 
@@ -120,7 +109,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxPoza);
             this.Controls.Add(this.buttonClasifica);
-            this.Controls.Add(this.buttonAfiseazaPoza);
             this.Controls.Add(this.buttonAdaugaPoza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
@@ -134,7 +122,6 @@
         #endregion
 
         private System.Windows.Forms.Button buttonAdaugaPoza;
-        private System.Windows.Forms.Button buttonAfiseazaPoza;
         private System.Windows.Forms.Button buttonClasifica;
         private System.Windows.Forms.PictureBox pictureBoxPoza;
         private System.Windows.Forms.Label label1;
