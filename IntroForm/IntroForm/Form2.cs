@@ -45,6 +45,7 @@ namespace IntroForm
 
         private void buttonClasifica_Click(object sender, EventArgs e)
         {
+            /*
             // Daca utilizator nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
 
@@ -88,6 +89,7 @@ namespace IntroForm
             // write the output we got from python app 
             //Console.WriteLine("Value received from script: " + myString);
             labelRasa.Text = myString;
+            */
         }
     }
 }
