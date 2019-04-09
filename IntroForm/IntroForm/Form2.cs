@@ -41,7 +41,7 @@ namespace IntroForm
 
         private void buttonClasifica_Click(object sender, EventArgs e)
         {
-            // Daca utilizator nu a introdus nicio poza, nu se va putea clasifica.
+            // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
 
             labelRasa.Text = "";
