@@ -30,12 +30,8 @@ namespace IntroForm
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 pathPoza = ofd.FileName;
+                pictureBoxPoza.Image = Image.FromFile(pathPoza);
             }
-        }
-
-        private void buttonAfiseazaPoza_Click(object sender, EventArgs e)
-        {
-            if (pathPoza != "") pictureBoxPoza.Image = Image.FromFile(pathPoza);
         }
 
         private void label4_Click(object sender, EventArgs e)
