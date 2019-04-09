@@ -28,5 +28,12 @@ namespace IntroForm
         {
             Application.Exit();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
     }
 }
