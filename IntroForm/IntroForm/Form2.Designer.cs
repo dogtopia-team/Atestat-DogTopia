@@ -60,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(587, 470);
             this.label1.Name = "label1";
@@ -71,8 +71,9 @@
             // labelRasa
             // 
             this.labelRasa.AutoSize = true;
+            this.labelRasa.BackColor = System.Drawing.Color.Transparent;
             this.labelRasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRasa.Location = new System.Drawing.Point(862, 470);
+            this.labelRasa.Location = new System.Drawing.Point(823, 470);
             this.labelRasa.Name = "labelRasa";
             this.labelRasa.Size = new System.Drawing.Size(60, 24);
             this.labelRasa.TabIndex = 5;
@@ -80,6 +81,7 @@
             // 
             // pictureBoxPoza
             // 
+            this.pictureBoxPoza.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxPoza.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxPoza.Name = "pictureBoxPoza";
             this.pictureBoxPoza.Size = new System.Drawing.Size(569, 499);
@@ -92,7 +94,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(939, 9);
+            this.label4.Location = new System.Drawing.Point(955, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 31);
             this.label4.TabIndex = 8;
@@ -103,7 +105,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.labelRasa);
             this.Controls.Add(this.label1);
@@ -112,7 +116,8 @@
             this.Controls.Add(this.buttonAdaugaPoza);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Gaseset rasa";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoza)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
