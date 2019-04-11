@@ -20,9 +20,18 @@ namespace IntroForm
         {
             InitializeComponent();
             labelRasa.Text = "";
+
+            // panel1 contine urmatoarele: labelRasa, cu textul aferent si butonul de login
+            // initial sunt ascunse
+            panel1.Hide();
         }
 
-        private void buttonAdaugaPoza_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             labelRasa.Text = "";
             OpenFileDialog ofd = new OpenFileDialog();
@@ -34,12 +43,7 @@ namespace IntroForm
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void buttonClasifica_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             /*
             // Daca utilizator nu a introdus nicio poza, nu se va putea clasifica.
@@ -86,6 +90,16 @@ namespace IntroForm
             //Console.WriteLine("Value received from script: " + myString);
             labelRasa.Text = myString;
             */
+
+            // daca utilizatorul apasa butonul Clasifica, panel1 apare, semn ca acesta si-a ales un caine.
+            panel1.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            LoginForm loginform = new LoginForm();
+            loginform.Show();
+            this.Hide();
         }
     }
 }

@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace IntroForm
+{
+    public partial class SignUpForm : Form
+    {
+        public SignUpForm()
+        {
+            InitializeComponent();
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox6.Clear();
+
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textBox1.Text.Trim()) || String.IsNullOrEmpty(textBox2.Text.Trim()) || String.IsNullOrEmpty(textBox3.Text.Trim()) || String.IsNullOrEmpty(textBox4.Text.Trim()) 
+                || String.IsNullOrEmpty(textBox5.Text.Trim()) || String.IsNullOrEmpty(textBox6.Text.Trim()))
+            {
+                MessageBox.Show("Te rugăm să completezi toate câmpurile!", "Câmpuri necompletate", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (checkBox1.Checked == false || checkBox2.Checked == false)
+            {
+                MessageBox.Show("Pentru a continua trebuie sa fii de acord cu politica DogTopia si cu prelucrarea datelor!", "Politica DogTopia/Prelucrare date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if(textBox5.Text != textBox6.Text)
+            {
+                MessageBox.Show("Te rugăm să reintroduci parolele", "Parolelele nu corespund", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox5.Clear();
+                textBox6.Clear();
+                return;
+            }
+
+            if(!textBox4.Text.Contains("@") || !textBox4.Text.Contains(".com"))
+            {
+                MessageBox.Show("Te rugăm să introduci un email valid", "Adresă de email invalidă", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBox4.Clear();
+                return;
+            }
+
+            // daca nu este nicio problema se va intra in aplicatie
+        }
+    }
+}

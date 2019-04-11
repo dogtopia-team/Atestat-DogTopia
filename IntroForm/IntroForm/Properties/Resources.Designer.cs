@@ -73,6 +73,26 @@ namespace IntroForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnAdauga {
+            get {
+                object obj = ResourceManager.GetObject("btnAdauga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnClasifica {
+            get {
+                object obj = ResourceManager.GetObject("btnClasifica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnincepep {
             get {
                 object obj = ResourceManager.GetObject("btnincepep", resourceCulture);
