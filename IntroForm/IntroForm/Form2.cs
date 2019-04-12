@@ -15,6 +15,8 @@ namespace IntroForm
     public partial class Form2 : Form
     {
 
+        // aici o sa vina o functie de resize pt poza(mai jos, dar aici...)
+
         string pathPoza = "";
         public Form2()
         {
