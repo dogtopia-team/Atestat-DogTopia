@@ -15,6 +15,7 @@ namespace IntroForm
         private bool areCaractereSpeciale(TextBox x)
         {
             string sir = x.Text.Trim();
+
             for (int i = 0; i < sir.Length; i++)
                 if (sir[i] != ' ' && sir[i] != '-' && !Char.IsLetterOrDigit(sir[i])) return true;
             return false;
@@ -23,6 +24,7 @@ namespace IntroForm
         private bool contineSpatiiSauCratime(TextBox x)
         {
             string sir = x.Text;
+
             for (int i = 0; i < sir.Length; i++)
                 if (sir[i] == ' ' ||sir[i] == '-') return true;
             return false;
@@ -52,27 +54,31 @@ namespace IntroForm
             if (areCaractereSpeciale(textBox1) == true)
             {
                 textBox1.Clear();
-                MessageBox.Show("Te rugăm să introduci un nume care sa nu conțină caractere speciale!");
+                MessageBox.Show("Te rugăm să introduci un nume care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             if (areCaractereSpeciale(textBox2) == true)
             {
                 textBox2.Clear();
-                MessageBox.Show("Te rugăm să introduci un prenume care sa nu conțină caractere speciale!");
+                MessageBox.Show("Te rugăm să introduci un prenume care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             if (areCaractereSpeciale(textBox3) == true)
             {
                 textBox3.Clear();
-                MessageBox.Show("Te rugăm să introduci un username care sa nu conțină caractere speciale!");
+                MessageBox.Show("Te rugăm să introduci un username care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             if (areCaractereSpeciale(textBox5) == true || contineSpatiiSauCratime(textBox5) == true)
             {
                 textBox5.Clear();
-                MessageBox.Show("Te rugăm să introduci o parolă care sa nu conțină caractere speciale!");
+                MessageBox.Show("Te rugăm să introduci o parolă care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             if (String.IsNullOrEmpty(textBox1.Text.Trim()) || String.IsNullOrEmpty(textBox2.Text.Trim()) || String.IsNullOrEmpty(textBox3.Text.Trim()) || String.IsNullOrEmpty(textBox4.Text.Trim())
                 || String.IsNullOrEmpty(textBox5.Text.Trim()) || String.IsNullOrEmpty(textBox6.Text.Trim()))
             {
@@ -100,7 +106,8 @@ namespace IntroForm
                 textBox4.Clear();
                 return;
             }
-            // daca nu este nicio problema se va intra in aplicatie
+
+            // daca nu este nicio problema, se va intra in aplicatie
         }
     }
 }
