@@ -33,6 +33,16 @@ namespace IntroForm
             Application.Exit();
         }
 
+        private static Image ResizeImage(Image image, Size newSize)
+        {
+            Image newImage = new Bitmap(newSize.Width, newSize.Height);
+            using (Graphics GFX = Graphics.FromImage((Bitmap)newImage))
+            {
+                GFX.DrawImage(image, new Rectangle(Point.Empty, newSize));
+            }
+            return newImage;
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             labelRasa.Text = "";
@@ -41,7 +51,11 @@ namespace IntroForm
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 pathPoza = ofd.FileName;
-                pictureBoxPoza.Image = Image.FromFile(pathPoza);
+                Image imagineCaine = Image.FromFile(pathPoza);
+                Size dimensiune = new Size();
+                dimensiune.Height = 600;
+                dimensiune.Width = 569;
+                pictureBoxPoza.Image = ResizeImage(imagineCaine, dimensiune);
             }
         }
 
