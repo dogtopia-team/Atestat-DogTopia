@@ -79,7 +79,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btn_login;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(688, 688);
+            this.pictureBox2.Location = new System.Drawing.Point(688, 672);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.TabIndex = 13;
@@ -138,7 +138,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 800);
+            this.pictureBox1.Size = new System.Drawing.Size(355, 772);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -163,7 +163,7 @@
             this.textBox3.Location = new System.Drawing.Point(367, 389);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(250, 31);
-            this.textBox3.TabIndex = 18;
+            this.textBox3.TabIndex = 22;
             // 
             // label5
             // 
@@ -220,7 +220,7 @@
             this.textBox4.Location = new System.Drawing.Point(367, 262);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(250, 31);
-            this.textBox4.TabIndex = 22;
+            this.textBox4.TabIndex = 18;
             // 
             // label9
             // 
@@ -253,7 +253,7 @@
             this.checkBox1.Location = new System.Drawing.Point(361, 577);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(336, 55);
-            this.checkBox1.TabIndex = 24;
+            this.checkBox1.TabIndex = 25;
             this.checkBox1.Text = "Sunt de acord cu \r\nTermenii şi Condiţiile DogTopia";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -265,7 +265,7 @@
             this.label10.Location = new System.Drawing.Point(256, 522);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(0, 31);
-            this.label10.TabIndex = 25;
+            this.label10.TabIndex = 26;
             // 
             // checkBox2
             // 
@@ -289,7 +289,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.PasswordChar = '*';
             this.textBox6.Size = new System.Drawing.Size(250, 31);
-            this.textBox6.TabIndex = 28;
+            this.textBox6.TabIndex = 24;
             // 
             // label11
             // 
@@ -404,7 +404,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 800);
+            this.ClientSize = new System.Drawing.Size(800, 772);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
