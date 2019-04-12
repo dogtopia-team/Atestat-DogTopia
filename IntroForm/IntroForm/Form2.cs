@@ -14,18 +14,11 @@ namespace IntroForm
 {
     public partial class Form2 : Form
     {
-
-        // aici o sa vina o functie de resize pt poza(mai jos, dar aici...)
-
+        string rasaCaine = "";
         string pathPoza = "";
         public Form2()
         {
             InitializeComponent();
-            labelRasa.Text = "";
-
-            // panel1 contine urmatoarele: labelRasa, cu textul aferent si butonul de login
-            // initial sunt ascunse
-            panel1.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -45,7 +38,6 @@ namespace IntroForm
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            labelRasa.Text = "";
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "JPG|*.jpg";
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -56,59 +48,53 @@ namespace IntroForm
                 dimensiune.Height = 600;
                 dimensiune.Width = 569;
                 pictureBoxPoza.Image = ResizeImage(imagineCaine, dimensiune);
+                labelRasa.Text = "Apăsați pe Clasifică și așteptați să se proceseze!";
             }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            /*
-            // Daca utilizator nu a introdus nicio poza, nu se va putea clasifica.
+            // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
-
-            labelRasa.Text = "";
             // full path of python interpreter 
             string python = @"C:\Users\Admin\Anaconda3\python.exe";
             string myPythonApp = @"C:\Atestat\classificator.py";
 
-            // dummy parameters to send Python script  
-            string s = pathPoza;
-            // Create new process start info 
+            // Creeaza un nou proces care realizeaza comunicarea 
+            // intre algoritmul de recunoastere a rasei si aplicatia C#
             ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(python);
 
-            // make sure we can read the output from stdout
+            // Ne asiguram ca putem citi outputul din stdout
             myProcessStartInfo.UseShellExecute = false;
             myProcessStartInfo.RedirectStandardOutput = true;
             myProcessStartInfo.WorkingDirectory = @"C:\Users\Admin\Anaconda3\";
             myProcessStartInfo.CreateNoWindow = true;
 
-            // start python app with 3 arguments  
-            // 1st argument is pointer to itself, 2nd and 3rd are actual arguments we want to send 
-            myProcessStartInfo.Arguments = myPythonApp + " " + s;
+            // Incepe aplicatia Python cu 2 parametri:
+            // Primul este un pointer catre ea insasi, al doilea este calea fotografiei.
+            myProcessStartInfo.Arguments = myPythonApp + " " + pathPoza;
 
             Process myProcess = new Process();
-            // assign start information to the process 
+            // Seteaza informatia de start a procesului
             myProcess.StartInfo = myProcessStartInfo;
 
-            // start process 
+            // Se da startul procesului
             myProcess.Start();
 
-            // Read the standard output of the app we called.  
+            // Citeste output-ul standard al aplicatiei pe care am apelat-o
             StreamReader myStreamReader = myProcess.StandardOutput;
             string myString = myStreamReader.ReadLine();
 
-            // wait exit signal from the app we called 
+            // Asteptam pentru a primi semnalul de inchidere al aplicatiei pe care am apelat-o
             myProcess.WaitForExit();
 
-            // close the process 
+            // Inchide procesul
             myProcess.Close();
 
-            // write the output we got from python app 
-            //Console.WriteLine("Value received from script: " + myString);
-            labelRasa.Text = myString;
-            */
-
-            // daca utilizatorul apasa butonul Clasifica, panel1 apare, semn ca acesta si-a ales un caine.
-            panel1.Show();
+            // Afiseaza output-ul (rasa cainelui) pe care l-am primit
+            rasaCaine = myString;
+            labelRasa.Text = rasaCaine.Replace('_', ' ');
+            pictureBox3.Show();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -116,6 +102,18 @@ namespace IntroForm
             LoginForm loginform = new LoginForm();
             loginform.Show();
             this.Hide();
+        }
+
+        private void buttonLearnMore_Click(object sender, EventArgs e)
+        {
+            if (rasaCaine == "") // Cazul in care nu s-a clasificat inca poza
+            {
+                MessageBox.Show("Mai întâi aflați rasa câinelui!");
+                return;
+            }
+            string pathWikipediaRasa = @"https://en.wikipedia.org/wiki/";
+            pathWikipediaRasa += rasaCaine;
+            Process.Start("chrome.exe", pathWikipediaRasa);
         }
     }
 }

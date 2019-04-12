@@ -33,29 +33,26 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonLearnMore = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // labelRasa
             // 
-            this.labelRasa.AutoSize = true;
             this.labelRasa.BackColor = System.Drawing.Color.Transparent;
             this.labelRasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRasa.ForeColor = System.Drawing.Color.Maroon;
-            this.labelRasa.Location = new System.Drawing.Point(56, 78);
+            this.labelRasa.Location = new System.Drawing.Point(647, 354);
             this.labelRasa.Name = "labelRasa";
-            this.labelRasa.Size = new System.Drawing.Size(101, 24);
+            this.labelRasa.Size = new System.Drawing.Size(264, 83);
             this.labelRasa.TabIndex = 5;
-            this.labelRasa.Text = "rasa_caine";
-            this.labelRasa.Visible = false;
+            this.labelRasa.Text = "Apăsați pe Adaugă! ";
             // 
             // pictureBoxPoza
             // 
@@ -106,27 +103,17 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.labelRasa);
-            this.panel1.Location = new System.Drawing.Point(621, 259);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 297);
-            this.panel1.TabIndex = 11;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btn_login;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(108, 197);
+            this.pictureBox3.Location = new System.Drawing.Point(714, 473);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(100, 100);
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label3
@@ -135,7 +122,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label3.Location = new System.Drawing.Point(18, 28);
+            this.label3.Location = new System.Drawing.Point(625, 319);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(272, 25);
             this.label3.TabIndex = 13;
@@ -153,6 +140,16 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Află rasa câinelui dorit:";
             // 
+            // buttonLearnMore
+            // 
+            this.buttonLearnMore.Location = new System.Drawing.Point(621, 218);
+            this.buttonLearnMore.Name = "buttonLearnMore";
+            this.buttonLearnMore.Size = new System.Drawing.Size(132, 23);
+            this.buttonLearnMore.TabIndex = 13;
+            this.buttonLearnMore.Text = "Afla mai multe ";
+            this.buttonLearnMore.UseVisualStyleBackColor = true;
+            this.buttonLearnMore.Click += new System.EventHandler(this.buttonLearnMore_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,8 +157,11 @@
             this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.labelRasa);
+            this.Controls.Add(this.buttonLearnMore);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -173,8 +173,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,9 +185,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button buttonLearnMore;
     }
 }
