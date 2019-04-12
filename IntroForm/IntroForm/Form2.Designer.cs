@@ -34,9 +34,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoza)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,6 +60,8 @@
             // pictureBoxPoza
             // 
             this.pictureBoxPoza.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPoza.BackgroundImage = global::IntroForm.Properties.Resources.Logo1;
+            this.pictureBoxPoza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxPoza.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBoxPoza.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxPoza.Name = "pictureBoxPoza";
@@ -115,17 +117,17 @@
             this.panel1.Size = new System.Drawing.Size(305, 297);
             this.panel1.TabIndex = 11;
             // 
-            // label2
+            // pictureBox3
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label2.Location = new System.Drawing.Point(655, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 25);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Află rasa câinelui dorit:";
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btn_login;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox3.Location = new System.Drawing.Point(108, 197);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.TabIndex = 13;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label3
             // 
@@ -139,17 +141,17 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Rasa acestui câine este:";
             // 
-            // pictureBox3
+            // label2
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btn_login;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(108, 197);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 13;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label2.Location = new System.Drawing.Point(655, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(256, 25);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Află rasa câinelui dorit:";
             // 
             // Form2
             // 
