@@ -1,6 +1,6 @@
 ﻿namespace IntroForm
 {
-    partial class Form1
+    partial class IntroForm
     {
         /// <summary>
         /// Required designer variable.
@@ -99,7 +99,7 @@
             this.label2.Text = "X";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // Form1
+            // IntroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,7 +112,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "IntroForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DogTopia";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

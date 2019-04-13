@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IntroForm
 {
-    public partial class Form1 : Form
+    public partial class IntroForm : Form
     {
-        public Form1()
+        public IntroForm()
         {
             InitializeComponent();
         }
@@ -31,7 +31,7 @@ namespace IntroForm
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            MainForm form2 = new MainForm();
             form2.Show();
             this.Hide();
         }

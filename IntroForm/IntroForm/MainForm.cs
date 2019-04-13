@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace IntroForm
 {
-    public partial class Form2 : Form
+    public partial class MainForm : Form
     {
         string rasaCaine = "";
         string pathPoza = "";
-        public Form2()
+        public MainForm()
         {
             InitializeComponent();
         }
