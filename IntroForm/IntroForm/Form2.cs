@@ -56,6 +56,7 @@ namespace IntroForm
         {
             // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
+
             // full path of python interpreter 
             string python = @"C:\Users\Admin\Anaconda3\python.exe";
             string myPythonApp = @"C:\Atestat\classificator.py";
