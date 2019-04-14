@@ -77,6 +77,9 @@
     <Compile Include="SignUpForm.Designer.cs">
       <DependentUpon>SignUpForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountFormcs.resx">
+      <DependentUpon>AccountFormcs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IntroForm.resx">
       <DependentUpon>IntroForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +135,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAdauga1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnClasifica1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAfla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAfla1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAfla2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAfla %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnexit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btncontact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnmancare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnaccesorii.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnaccesorii1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnRevino.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

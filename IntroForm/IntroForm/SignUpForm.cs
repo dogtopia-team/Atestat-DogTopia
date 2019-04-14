@@ -108,6 +108,9 @@ namespace IntroForm
             }
 
             // daca nu este nicio problema, se va intra in aplicatie
+            AccountFormcs acc = new AccountFormcs();
+            acc.Show();
+            this.Hide();
         }
     }
 }

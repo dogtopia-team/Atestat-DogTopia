@@ -28,5 +28,12 @@ namespace IntroForm
             signform.Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            AccountFormcs acc = new AccountFormcs();
+            acc.Show();
+            this.Hide();
+        }
     }
 }

@@ -54,6 +54,7 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            /**
             // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
 
@@ -95,7 +96,7 @@ namespace IntroForm
             // Afiseaza output-ul (rasa cainelui) pe care l-am primit
             rasaCaine = myString;
             labelRasa.Text = rasaCaine.Replace('_', ' ');
-            pictureBox3.Show();
+            pictureBox3.Show();*/
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -105,7 +106,7 @@ namespace IntroForm
             this.Hide();
         }
 
-        private void buttonLearnMore_Click(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
             if (rasaCaine == "") // Cazul in care nu s-a clasificat inca poza
             {
