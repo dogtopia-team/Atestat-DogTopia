@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountFormcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountFormcs.Designer.cs">
+      <DependentUpon>AccountFormcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="IntroForm.cs">
       <SubType>Form</SubType>
     </Compile>
