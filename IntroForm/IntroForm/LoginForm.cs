@@ -31,7 +31,7 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            AccountFormcs acc = new AccountFormcs();
+            AccountForm acc = new AccountForm();
             acc.Show();
             this.Hide();
         }

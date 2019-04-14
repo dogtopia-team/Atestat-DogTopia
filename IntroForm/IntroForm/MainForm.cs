@@ -14,8 +14,8 @@ namespace IntroForm
 {
     public partial class MainForm : Form
     {
-        string rasaCaine = "";
-        string pathPoza = "";
+        public static string rasaCaine = "";
+        public static string pathPoza = "";
         public MainForm()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace IntroForm
             Application.Exit();
         }
 
-        private static Image ResizeImage(Image image, Size newSize)
+        public static Image ResizeImage(Image image, Size newSize)
         {
             Image newImage = new Bitmap(newSize.Width, newSize.Height);
             using (Graphics GFX = Graphics.FromImage((Bitmap)newImage))
@@ -54,7 +54,7 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            /**
+            
             // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
 
@@ -96,7 +96,8 @@ namespace IntroForm
             // Afiseaza output-ul (rasa cainelui) pe care l-am primit
             rasaCaine = myString;
             labelRasa.Text = rasaCaine.Replace('_', ' ');
-            pictureBox3.Show();*/
+            pictureBox3.Show();
+            pictureBox4.Visible = true; 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

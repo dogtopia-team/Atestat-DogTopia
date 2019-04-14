@@ -36,7 +36,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.buttonLearnMore = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoza)).BeginInit();
@@ -52,7 +51,7 @@
             this.labelRasa.BackColor = System.Drawing.Color.Transparent;
             this.labelRasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRasa.ForeColor = System.Drawing.Color.Maroon;
-            this.labelRasa.Location = new System.Drawing.Point(647, 354);
+            this.labelRasa.Location = new System.Drawing.Point(662, 357);
             this.labelRasa.Name = "labelRasa";
             this.labelRasa.Size = new System.Drawing.Size(264, 83);
             this.labelRasa.TabIndex = 5;
@@ -126,7 +125,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label3.Location = new System.Drawing.Point(625, 319);
+            this.label3.Location = new System.Drawing.Point(639, 319);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(272, 25);
             this.label3.TabIndex = 13;
@@ -143,15 +142,6 @@
             this.label2.Size = new System.Drawing.Size(256, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "Află rasa câinelui dorit:";
-            // 
-            // buttonLearnMore
-            // 
-            this.buttonLearnMore.Location = new System.Drawing.Point(699, 393);
-            this.buttonLearnMore.Name = "buttonLearnMore";
-            this.buttonLearnMore.Size = new System.Drawing.Size(132, 23);
-            this.buttonLearnMore.TabIndex = 13;
-            this.buttonLearnMore.Text = "Afla mai multe ";
-            this.buttonLearnMore.UseVisualStyleBackColor = true;
             // 
             // pictureBox4
             // 
@@ -190,7 +180,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.labelRasa);
-            this.Controls.Add(this.buttonLearnMore);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -220,7 +209,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button buttonLearnMore;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
     }

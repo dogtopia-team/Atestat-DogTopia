@@ -1,6 +1,6 @@
 ﻿namespace IntroForm
 {
-    partial class AccountFormcs
+    partial class AccountForm
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.panelContact = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,9 +47,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -57,6 +59,7 @@
             this.panel1.SuspendLayout();
             this.panelContact.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -141,6 +144,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.pictureBox8);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -148,6 +153,30 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(648, 600);
             this.panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(21, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 42);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Bun venit, ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(612, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 31);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // panelContact
             // 
@@ -164,6 +193,19 @@
             this.panelContact.Name = "panelContact";
             this.panelContact.Size = new System.Drawing.Size(654, 600);
             this.panelContact.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.label6.Location = new System.Drawing.Point(328, 233);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(324, 145);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Dacă doreşti să ne adresezi\r\nvreo întrebare, te rugăm să\r\nne scrii în formularul " +
+    "alăturat, \r\niar noi îţi vom răspunde în \r\ncel mai scurt timp.";
             // 
             // pictureBox7
             // 
@@ -241,43 +283,24 @@
             this.label2.Size = new System.Drawing.Size(33, 31);
             this.label2.TabIndex = 8;
             this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(178, 178);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 42);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Bun venit, ";
+            this.button1.Location = new System.Drawing.Point(539, 539);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 40);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Adaugă în coș";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // pictureBox8
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(612, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 31);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.label6.Location = new System.Drawing.Point(328, 233);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(324, 145);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Dacă doreşti să ne adresezi\r\nvreo întrebare, te rugăm să\r\nne scrii în formularul " +
-    "alăturat, \r\niar noi îţi vom răspunde în \r\ncel mai scurt timp.";
+            this.pictureBox8.Location = new System.Drawing.Point(17, 84);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(619, 449);
+            this.pictureBox8.TabIndex = 11;
+            this.pictureBox8.TabStop = false;
             // 
             // AccountFormcs
             // 
@@ -286,9 +309,9 @@
             this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.panelContact);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelContact);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AccountFormcs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -305,6 +328,7 @@
             this.panelContact.ResumeLayout(false);
             this.panelContact.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,5 +354,7 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button1;
     }
 }
