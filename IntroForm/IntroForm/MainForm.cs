@@ -117,5 +117,12 @@ namespace IntroForm
             pathWikipediaRasa += rasaCaine;
             Process.Start("chrome.exe", pathWikipediaRasa);
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            IntroForm intr = new IntroForm();
+            intr.Show();
+            this.Hide();
+        }
     }
 }

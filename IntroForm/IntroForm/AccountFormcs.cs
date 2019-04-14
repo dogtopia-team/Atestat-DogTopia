@@ -15,6 +15,8 @@ namespace IntroForm
         public AccountFormcs()
         {
             InitializeComponent();
+            panelContact.Hide();
+            panel1.Show();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -34,6 +36,12 @@ namespace IntroForm
             MainForm main = new MainForm();
             main.Show();
             this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            panel1.Hide();
+            panelContact.Show();
         }
     }
 }

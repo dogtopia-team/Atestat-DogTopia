@@ -175,5 +175,11 @@
   <ItemGroup>
     <None Include="Resources\btnRevino.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnTrimite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBack.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

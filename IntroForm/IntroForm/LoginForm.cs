@@ -35,5 +35,12 @@ namespace IntroForm
             acc.Show();
             this.Hide();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            IntroForm intr = new IntroForm();
+            intr.Show();
+            this.Hide();
+        }
     }
 }
