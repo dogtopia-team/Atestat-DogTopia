@@ -12,6 +12,14 @@ namespace IntroForm
 {
     public partial class AccountForm : Form
     {
+        public static int pretMancare1 = 0;
+        public static int pretMancare2 = 0;
+        public static int pretMancare3 = 0;
+
+        public static int pretAccesorii1 = 0;
+        public static int pretAccesorii2 = 0;
+        public static int pretAccesorii3 = 0;
+
         public static Image ResizeImage(Image image, Size newSize)
         {
             Image newImage = new Bitmap(newSize.Width, newSize.Height);
@@ -51,9 +59,17 @@ namespace IntroForm
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            MainForm main = new MainForm();
-            main.Show();
-            this.Hide();
+            if (panel1.Visible == true)
+            {
+                MainForm main = new MainForm();
+                main.Show();
+                this.Hide();
+            }
+            else
+            {
+                panel1.Show();
+                panelContact.Hide();
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -65,6 +81,30 @@ namespace IntroForm
         private void label2_Click(object sender, EventArgs e)
         {
             Application.Exit(); 
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Random r = new Random();
+            int pret = (r.Next(10, 50) / 10) * 10;
+            if (pretMancare1 == 0) pretMancare1 = pret;
+            else if (pretMancare2 == 0) pretMancare2 = pret;
+            else if (pretMancare3 == 0) pretMancare3 = pret;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Random r = new Random();
+            int pret = (r.Next(100, 250) / 10) * 10;
+            if (pretAccesorii1 == 0) pretAccesorii1 = pret;
+            else if (pretAccesorii2 == 0) pretAccesorii2 = pret;
+            else if (pretAccesorii3 == 0) pretAccesorii3 = pret;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            panel1.Show();
+            panelContact.Hide();
         }
     }
 }
