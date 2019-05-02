@@ -19,6 +19,10 @@ namespace IntroForm
         public static string rasaCaine3 = "";
         public static string rasaCaineCurent = ""; // Rasa celui mai curent caine clasificat
         public static string pathPoza = "";
+        public static string pathPozaCaine1 = "";
+        public static string pathPozaCaine2 = "";
+        public static string pathPozaCaine3 = "";
+
         public MainForm()
         {
             InitializeComponent();
@@ -27,16 +31,6 @@ namespace IntroForm
         private void label4_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        public static Image ResizeImage(Image image, Size newSize)
-        {
-            Image newImage = new Bitmap(newSize.Width, newSize.Height);
-            using (Graphics GFX = Graphics.FromImage((Bitmap)newImage))
-            {
-                GFX.DrawImage(image, new Rectangle(Point.Empty, newSize));
-            }
-            return newImage;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -50,7 +44,7 @@ namespace IntroForm
                 Size dimensiune = new Size();
                 dimensiune.Height = 600;
                 dimensiune.Width = 569;
-                pictureBoxPoza.Image = ResizeImage(imagineCaine, dimensiune);
+                pictureBoxPoza.Image = AccountForm.ResizeImage(imagineCaine, dimensiune);
                 labelRasa.Text = "Apăsați pe Clasifică și așteptați să se proceseze!";
             }
         }
@@ -99,24 +93,33 @@ namespace IntroForm
             Random r = new Random();
             int pret = (r.Next(100, 1500) / 10) * 10;
 
-            // Afiseaza output-ul (rasa cainelui) pe care l-am primit
-            if (rasaCaine1.Trim() == "")
+            if (ShoppingCartForm.altCaine1 == 1) ShoppingCartForm.altCaine1 = 2;
+            if (ShoppingCartForm.altCaine2 == 1) ShoppingCartForm.altCaine2 = 2;
+            if (ShoppingCartForm.altCaine3 == 1) ShoppingCartForm.altCaine3 = 2;
+
+            if (rasaCaine1.Trim() == "" || ShoppingCartForm.altCaine1 == 2)
             {
                 rasaCaine1 = myString;
                 rasaCaineCurent = rasaCaine1;
+                pathPozaCaine1 = pathPoza;
                 AccountForm.pretCaine1 = pret;
+                AccountForm.pretMancare1 = AccountForm.pretAccesorii1 = ShoppingCartForm.altCaine1 = 0;
             }
-            else if (rasaCaine2.Trim() == "" && ShoppingCartForm.maiAdaugaCaine2 == true)
+            else if ((rasaCaine2.Trim() == "" && ShoppingCartForm.maiAdaugaCaine2 == true) || ShoppingCartForm.altCaine2 == 2)
             {
                 rasaCaine2 = myString;
                 rasaCaineCurent = rasaCaine2;
+                pathPozaCaine2 = pathPoza;
                 AccountForm.pretCaine2 = pret;
+                AccountForm.pretMancare2 = AccountForm.pretAccesorii2 = ShoppingCartForm.altCaine2 = 0;
             }
-            else if (rasaCaine3.Trim() == "" && ShoppingCartForm.maiAdaugaCaine3 == true)
+            else if ((rasaCaine3.Trim() == "" && ShoppingCartForm.maiAdaugaCaine3 == true) || ShoppingCartForm.altCaine3 == 2)
             {
                 rasaCaine3 = myString;
                 rasaCaineCurent = rasaCaine3;
+                pathPozaCaine3 = pathPoza;
                 AccountForm.pretCaine3 = pret;
+                AccountForm.pretMancare3 = AccountForm.pretAccesorii3 = ShoppingCartForm.altCaine3 = 0;
             }
             labelRasa.Text = rasaCaineCurent.Replace('_', ' ');
             pictureBox3.Show();

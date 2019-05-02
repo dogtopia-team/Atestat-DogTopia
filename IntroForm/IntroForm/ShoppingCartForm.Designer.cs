@@ -52,15 +52,21 @@
             this.label21 = new System.Windows.Forms.Label();
             this.labelM2 = new System.Windows.Forms.Label();
             this.labelA2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.labelAltCaine1 = new System.Windows.Forms.Label();
+            this.labelAltCaine2 = new System.Windows.Forms.Label();
+            this.checkBoxM1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxM2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxM3 = new System.Windows.Forms.CheckBox();
+            this.labelAltCaine3 = new System.Windows.Forms.Label();
+            this.checkBoxA1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxA2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxA3 = new System.Windows.Forms.CheckBox();
+            this.pictureBoxCaine1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCaine2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCaine3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -104,6 +110,7 @@
             this.labelCaine1.Size = new System.Drawing.Size(154, 24);
             this.labelCaine1.TabIndex = 3;
             this.labelCaine1.Text = "Adaugă un câine";
+            this.labelCaine1.Click += new System.EventHandler(this.labelCaine1_Click);
             // 
             // labelCaine2
             // 
@@ -282,9 +289,9 @@
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label21.Location = new System.Drawing.Point(566, 514);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 24);
+            this.label21.Size = new System.Drawing.Size(56, 24);
             this.label21.TabIndex = 20;
-            this.label21.Text = "Total";
+            this.label21.Text = "Total:";
             // 
             // labelM2
             // 
@@ -306,101 +313,161 @@
             this.labelA2.TabIndex = 23;
             this.labelA2.Text = "0,00";
             // 
-            // label4
+            // labelAltCaine1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(850, 101);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "label4";
+            this.labelAltCaine1.AutoSize = true;
+            this.labelAltCaine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltCaine1.Location = new System.Drawing.Point(806, 93);
+            this.labelAltCaine1.Name = "labelAltCaine1";
+            this.labelAltCaine1.Size = new System.Drawing.Size(134, 24);
+            this.labelAltCaine1.TabIndex = 24;
+            this.labelAltCaine1.Text = "Alege alt câine";
+            this.labelAltCaine1.Visible = false;
+            this.labelAltCaine1.Click += new System.EventHandler(this.labelAltCaine1_Click);
             // 
-            // label5
+            // labelAltCaine2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(850, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "label5";
+            this.labelAltCaine2.AutoSize = true;
+            this.labelAltCaine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltCaine2.Location = new System.Drawing.Point(807, 249);
+            this.labelAltCaine2.Name = "labelAltCaine2";
+            this.labelAltCaine2.Size = new System.Drawing.Size(134, 24);
+            this.labelAltCaine2.TabIndex = 27;
+            this.labelAltCaine2.Text = "Alege alt câine";
+            this.labelAltCaine2.Visible = false;
+            this.labelAltCaine2.Click += new System.EventHandler(this.labelAltCaine2_Click);
             // 
-            // label6
+            // checkBoxM1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(850, 166);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "label6";
+            this.checkBoxM1.AutoSize = true;
+            this.checkBoxM1.Enabled = false;
+            this.checkBoxM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxM1.Location = new System.Drawing.Point(810, 121);
+            this.checkBoxM1.Name = "checkBoxM1";
+            this.checkBoxM1.Size = new System.Drawing.Size(103, 28);
+            this.checkBoxM1.TabIndex = 33;
+            this.checkBoxM1.Text = "Mâncare";
+            this.checkBoxM1.UseVisualStyleBackColor = true;
+            this.checkBoxM1.CheckedChanged += new System.EventHandler(this.checkBoxM1_CheckedChanged);
             // 
-            // label10
+            // checkBoxM2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(851, 322);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "label10";
+            this.checkBoxM2.AutoSize = true;
+            this.checkBoxM2.Enabled = false;
+            this.checkBoxM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxM2.Location = new System.Drawing.Point(810, 286);
+            this.checkBoxM2.Name = "checkBoxM2";
+            this.checkBoxM2.Size = new System.Drawing.Size(103, 28);
+            this.checkBoxM2.TabIndex = 34;
+            this.checkBoxM2.Text = "Mâncare";
+            this.checkBoxM2.UseVisualStyleBackColor = true;
+            this.checkBoxM2.CheckedChanged += new System.EventHandler(this.checkBoxM2_CheckedChanged);
             // 
-            // label11
+            // checkBoxM3
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(851, 289);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "label11";
+            this.checkBoxM3.AutoSize = true;
+            this.checkBoxM3.Enabled = false;
+            this.checkBoxM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxM3.Location = new System.Drawing.Point(810, 432);
+            this.checkBoxM3.Name = "checkBoxM3";
+            this.checkBoxM3.Size = new System.Drawing.Size(103, 28);
+            this.checkBoxM3.TabIndex = 35;
+            this.checkBoxM3.Text = "Mâncare";
+            this.checkBoxM3.UseVisualStyleBackColor = true;
+            this.checkBoxM3.CheckedChanged += new System.EventHandler(this.checkBoxM3_CheckedChanged);
             // 
-            // label18
+            // labelAltCaine3
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(851, 257);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 13);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "label18";
+            this.labelAltCaine3.AutoSize = true;
+            this.labelAltCaine3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltCaine3.Location = new System.Drawing.Point(807, 390);
+            this.labelAltCaine3.Name = "labelAltCaine3";
+            this.labelAltCaine3.Size = new System.Drawing.Size(134, 24);
+            this.labelAltCaine3.TabIndex = 30;
+            this.labelAltCaine3.Text = "Alege alt câine";
+            this.labelAltCaine3.Visible = false;
+            this.labelAltCaine3.Click += new System.EventHandler(this.labelAltCaine3_Click);
             // 
-            // label19
+            // checkBoxA1
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(851, 463);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 13);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "label19";
+            this.checkBoxA1.AutoSize = true;
+            this.checkBoxA1.Enabled = false;
+            this.checkBoxA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxA1.Location = new System.Drawing.Point(810, 154);
+            this.checkBoxA1.Name = "checkBoxA1";
+            this.checkBoxA1.Size = new System.Drawing.Size(107, 28);
+            this.checkBoxA1.TabIndex = 36;
+            this.checkBoxA1.Text = "Accesorii";
+            this.checkBoxA1.UseVisualStyleBackColor = true;
+            this.checkBoxA1.CheckedChanged += new System.EventHandler(this.checkBoxA1_CheckedChanged);
             // 
-            // label20
+            // checkBoxA2
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(851, 430);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 13);
-            this.label20.TabIndex = 31;
-            this.label20.Text = "label20";
+            this.checkBoxA2.AutoSize = true;
+            this.checkBoxA2.Enabled = false;
+            this.checkBoxA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxA2.Location = new System.Drawing.Point(810, 323);
+            this.checkBoxA2.Name = "checkBoxA2";
+            this.checkBoxA2.Size = new System.Drawing.Size(107, 28);
+            this.checkBoxA2.TabIndex = 37;
+            this.checkBoxA2.Text = "Accesorii";
+            this.checkBoxA2.UseVisualStyleBackColor = true;
+            this.checkBoxA2.CheckedChanged += new System.EventHandler(this.checkBoxA2_CheckedChanged);
             // 
-            // label22
+            // checkBoxA3
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(851, 398);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
-            this.label22.TabIndex = 30;
-            this.label22.Text = "label22";
+            this.checkBoxA3.AutoSize = true;
+            this.checkBoxA3.Enabled = false;
+            this.checkBoxA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxA3.Location = new System.Drawing.Point(811, 465);
+            this.checkBoxA3.Name = "checkBoxA3";
+            this.checkBoxA3.Size = new System.Drawing.Size(107, 28);
+            this.checkBoxA3.TabIndex = 38;
+            this.checkBoxA3.Text = "Accesorii";
+            this.checkBoxA3.UseVisualStyleBackColor = true;
+            this.checkBoxA3.CheckedChanged += new System.EventHandler(this.checkBoxA3_CheckedChanged);
+            // 
+            // pictureBoxCaine1
+            // 
+            this.pictureBoxCaine1.Location = new System.Drawing.Point(298, 93);
+            this.pictureBoxCaine1.Name = "pictureBoxCaine1";
+            this.pictureBoxCaine1.Size = new System.Drawing.Size(155, 90);
+            this.pictureBoxCaine1.TabIndex = 39;
+            this.pictureBoxCaine1.TabStop = false;
+            // 
+            // pictureBoxCaine2
+            // 
+            this.pictureBoxCaine2.Location = new System.Drawing.Point(298, 257);
+            this.pictureBoxCaine2.Name = "pictureBoxCaine2";
+            this.pictureBoxCaine2.Size = new System.Drawing.Size(155, 90);
+            this.pictureBoxCaine2.TabIndex = 40;
+            this.pictureBoxCaine2.TabStop = false;
+            // 
+            // pictureBoxCaine3
+            // 
+            this.pictureBoxCaine3.Location = new System.Drawing.Point(298, 403);
+            this.pictureBoxCaine3.Name = "pictureBoxCaine3";
+            this.pictureBoxCaine3.Size = new System.Drawing.Size(155, 90);
+            this.pictureBoxCaine3.TabIndex = 41;
+            this.pictureBoxCaine3.TabStop = false;
             // 
             // ShoppingCartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBoxCaine3);
+            this.Controls.Add(this.pictureBoxCaine2);
+            this.Controls.Add(this.pictureBoxCaine1);
+            this.Controls.Add(this.checkBoxA3);
+            this.Controls.Add(this.checkBoxA2);
+            this.Controls.Add(this.checkBoxA1);
+            this.Controls.Add(this.checkBoxM3);
+            this.Controls.Add(this.checkBoxM2);
+            this.Controls.Add(this.checkBoxM1);
+            this.Controls.Add(this.labelAltCaine3);
+            this.Controls.Add(this.labelAltCaine2);
+            this.Controls.Add(this.labelAltCaine1);
             this.Controls.Add(this.labelA2);
             this.Controls.Add(this.labelM2);
             this.Controls.Add(this.labelTotal);
@@ -429,6 +496,9 @@
             this.Name = "ShoppingCartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "                                  ";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -460,14 +530,17 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label labelM2;
         private System.Windows.Forms.Label labelA2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelAltCaine1;
+        private System.Windows.Forms.Label labelAltCaine2;
+        private System.Windows.Forms.CheckBox checkBoxM1;
+        private System.Windows.Forms.CheckBox checkBoxM2;
+        private System.Windows.Forms.CheckBox checkBoxM3;
+        private System.Windows.Forms.Label labelAltCaine3;
+        private System.Windows.Forms.CheckBox checkBoxA1;
+        private System.Windows.Forms.CheckBox checkBoxA2;
+        private System.Windows.Forms.CheckBox checkBoxA3;
+        private System.Windows.Forms.PictureBox pictureBoxCaine1;
+        private System.Windows.Forms.PictureBox pictureBoxCaine2;
+        private System.Windows.Forms.PictureBox pictureBoxCaine3;
     }
 }

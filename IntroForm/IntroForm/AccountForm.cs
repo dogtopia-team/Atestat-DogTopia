@@ -89,6 +89,7 @@ namespace IntroForm
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            if (MainForm.rasaCaine1.Trim() == "") return;
             Random r = new Random();
             int pret = (r.Next(10, 50) / 10) * 10;
             if (pretMancare1 == 0) pretMancare1 = pret;
@@ -98,6 +99,7 @@ namespace IntroForm
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            if (MainForm.rasaCaine1.Trim() == "") return;
             Random r = new Random();
             int pret = (r.Next(100, 250) / 10) * 10;
             if (pretAccesorii1 == 0) pretAccesorii1 = pret;
