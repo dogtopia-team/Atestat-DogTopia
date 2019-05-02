@@ -20,6 +20,10 @@ namespace IntroForm
         public static int pretAccesorii2 = 0;
         public static int pretAccesorii3 = 0;
 
+        public static int pretCaine1 = 0;
+        public static int pretCaine2 = 0;
+        public static int pretCaine3 = 0;
+
         public static Image ResizeImage(Image image, Size newSize)
         {
             Image newImage = new Bitmap(newSize.Width, newSize.Height);
@@ -33,7 +37,7 @@ namespace IntroForm
         public AccountForm()
         {
             InitializeComponent();
-            if (MainForm.rasaCaine != "") // Afisam fotografia doar daca utilizatorul si-a clasificat cainele
+            if (MainForm.rasaCaine1 != "") // Afisam fotografia doar daca utilizatorul si-a clasificat cainele
             {
                 Image imagineCaine = Image.FromFile(MainForm.pathPoza);
                 Size dimensiune = new Size();
@@ -105,6 +109,13 @@ namespace IntroForm
         {
             panel1.Show();
             panelContact.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShoppingCartForm shopping = new ShoppingCartForm();
+            shopping.Show();
+            this.Hide();
         }
     }
 }

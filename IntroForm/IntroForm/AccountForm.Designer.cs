@@ -36,10 +36,10 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panelContact = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -156,14 +156,6 @@
             this.panel1.Size = new System.Drawing.Size(648, 600);
             this.panel1.TabIndex = 1;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(17, 84);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(619, 449);
-            this.pictureBox8.TabIndex = 11;
-            this.pictureBox8.TabStop = false;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(539, 539);
@@ -172,6 +164,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Adaugă în coș";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -196,6 +189,14 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "X";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(17, 84);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(619, 449);
+            this.pictureBox8.TabIndex = 11;
+            this.pictureBox8.TabStop = false;
             // 
             // panelContact
             // 

@@ -14,7 +14,10 @@ namespace IntroForm
 {
     public partial class MainForm : Form
     {
-        public static string rasaCaine = "";
+        public static string rasaCaine1 = "";
+        public static string rasaCaine2 = "";
+        public static string rasaCaine3 = "";
+        public static string rasaCaineCurent = ""; // Rasa celui mai curent caine clasificat
         public static string pathPoza = "";
         public MainForm()
         {
@@ -93,11 +96,31 @@ namespace IntroForm
             // Inchide procesul
             myProcess.Close();
 
+            Random r = new Random();
+            int pret = (r.Next(100, 1500) / 10) * 10;
+
             // Afiseaza output-ul (rasa cainelui) pe care l-am primit
-            rasaCaine = myString;
-            labelRasa.Text = rasaCaine.Replace('_', ' ');
+            if (rasaCaine1.Trim() == "")
+            {
+                rasaCaine1 = myString;
+                rasaCaineCurent = rasaCaine1;
+                AccountForm.pretCaine1 = pret;
+            }
+            else if (rasaCaine2.Trim() == "" && ShoppingCartForm.maiAdaugaCaine2 == true)
+            {
+                rasaCaine2 = myString;
+                rasaCaineCurent = rasaCaine2;
+                AccountForm.pretCaine2 = pret;
+            }
+            else if (rasaCaine3.Trim() == "" && ShoppingCartForm.maiAdaugaCaine3 == true)
+            {
+                rasaCaine3 = myString;
+                rasaCaineCurent = rasaCaine3;
+                AccountForm.pretCaine3 = pret;
+            }
+            labelRasa.Text = rasaCaineCurent.Replace('_', ' ');
             pictureBox3.Show();
-            pictureBox4.Visible = true; 
+            pictureBox4.Visible = true;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -109,13 +132,13 @@ namespace IntroForm
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            if (rasaCaine == "") // Cazul in care nu s-a clasificat inca poza
+            if (rasaCaineCurent == "") // Cazul in care nu s-a clasificat inca poza
             {
                 MessageBox.Show("Mai întâi aflați rasa câinelui!");
                 return;
             }
             string pathWikipediaRasa = @"https://en.wikipedia.org/wiki/";
-            pathWikipediaRasa += rasaCaine;
+            pathWikipediaRasa += rasaCaineCurent;
             Process.Start("chrome.exe", pathWikipediaRasa);
         }
 
