@@ -260,7 +260,9 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            PayForm pf = new PayForm();
+            pf.Show();
+            this.Hide();
         }
     }
 }
