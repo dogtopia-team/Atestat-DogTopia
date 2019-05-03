@@ -51,7 +51,7 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+            /*
             // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
 
@@ -124,6 +124,7 @@ namespace IntroForm
             labelRasa.Text = rasaCaineCurent.Replace('_', ' ');
             pictureBox3.Show();
             pictureBox4.Visible = true;
+            */
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

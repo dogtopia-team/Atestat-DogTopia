@@ -250,5 +250,17 @@ namespace IntroForm
             mainForm.Show();
             this.Hide();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AccountForm acc = new AccountForm();
+            acc.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

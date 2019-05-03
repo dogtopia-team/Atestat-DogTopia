@@ -79,7 +79,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackgroundImage = global::IntroForm.Properties.Resources.btnRevino;
+            this.pictureBox6.BackgroundImage = global::IntroForm.Properties.Resources.btnRevino1;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox6.Location = new System.Drawing.Point(0, 121);
             this.pictureBox6.Name = "pictureBox6";
@@ -90,7 +90,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackgroundImage = global::IntroForm.Properties.Resources.btnmancare;
+            this.pictureBox5.BackgroundImage = global::IntroForm.Properties.Resources.btnmancare1;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.Location = new System.Drawing.Point(0, 219);
             this.pictureBox5.Name = "pictureBox5";
@@ -101,7 +101,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::IntroForm.Properties.Resources.btnaccesorii1;
+            this.pictureBox4.BackgroundImage = global::IntroForm.Properties.Resources.btnaccesorii2;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Location = new System.Drawing.Point(0, 310);
             this.pictureBox4.Name = "pictureBox4";
@@ -112,7 +112,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btncontact;
+            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btncontact1;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(0, 405);
             this.pictureBox3.Name = "pictureBox3";
@@ -123,7 +123,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btnexit;
+            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btnexit1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(0, 501);
             this.pictureBox2.Name = "pictureBox2";

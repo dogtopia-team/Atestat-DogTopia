@@ -34,7 +34,6 @@
             this.labelCaine1 = new System.Windows.Forms.Label();
             this.labelCaine2 = new System.Windows.Forms.Label();
             this.labelCaine3 = new System.Windows.Forms.Label();
-            this.buttonPlateste = new System.Windows.Forms.Button();
             this.labelC1 = new System.Windows.Forms.Label();
             this.labelC2 = new System.Windows.Forms.Label();
             this.labelC3 = new System.Windows.Forms.Label();
@@ -64,15 +63,21 @@
             this.pictureBoxCaine1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCaine2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCaine3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(32, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 55);
@@ -82,7 +87,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DarkRed;
             this.label2.Location = new System.Drawing.Point(640, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 55);
@@ -92,6 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(928, 22);
@@ -104,7 +112,9 @@
             // labelCaine1
             // 
             this.labelCaine1.AutoSize = true;
+            this.labelCaine1.BackColor = System.Drawing.Color.Transparent;
             this.labelCaine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCaine1.ForeColor = System.Drawing.Color.DarkRed;
             this.labelCaine1.Location = new System.Drawing.Point(39, 93);
             this.labelCaine1.Name = "labelCaine1";
             this.labelCaine1.Size = new System.Drawing.Size(154, 24);
@@ -115,7 +125,9 @@
             // labelCaine2
             // 
             this.labelCaine2.AutoSize = true;
+            this.labelCaine2.BackColor = System.Drawing.Color.Transparent;
             this.labelCaine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCaine2.ForeColor = System.Drawing.Color.DarkRed;
             this.labelCaine2.Location = new System.Drawing.Point(39, 257);
             this.labelCaine2.Name = "labelCaine2";
             this.labelCaine2.Size = new System.Drawing.Size(186, 24);
@@ -126,7 +138,9 @@
             // labelCaine3
             // 
             this.labelCaine3.AutoSize = true;
+            this.labelCaine3.BackColor = System.Drawing.Color.Transparent;
             this.labelCaine3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCaine3.ForeColor = System.Drawing.Color.DarkRed;
             this.labelCaine3.Location = new System.Drawing.Point(38, 398);
             this.labelCaine3.Name = "labelCaine3";
             this.labelCaine3.Size = new System.Drawing.Size(186, 24);
@@ -134,18 +148,10 @@
             this.labelCaine3.Text = "Mai adaugă un câine";
             this.labelCaine3.Click += new System.EventHandler(this.labelCaine3_Click);
             // 
-            // buttonPlateste
-            // 
-            this.buttonPlateste.Location = new System.Drawing.Point(840, 506);
-            this.buttonPlateste.Name = "buttonPlateste";
-            this.buttonPlateste.Size = new System.Drawing.Size(120, 44);
-            this.buttonPlateste.TabIndex = 6;
-            this.buttonPlateste.Text = "Plătește";
-            this.buttonPlateste.UseVisualStyleBackColor = true;
-            // 
             // labelC1
             // 
             this.labelC1.AutoSize = true;
+            this.labelC1.BackColor = System.Drawing.Color.Transparent;
             this.labelC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelC1.Location = new System.Drawing.Point(646, 93);
             this.labelC1.Name = "labelC1";
@@ -156,6 +162,7 @@
             // labelC2
             // 
             this.labelC2.AutoSize = true;
+            this.labelC2.BackColor = System.Drawing.Color.Transparent;
             this.labelC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelC2.Location = new System.Drawing.Point(647, 257);
             this.labelC2.Name = "labelC2";
@@ -166,6 +173,7 @@
             // labelC3
             // 
             this.labelC3.AutoSize = true;
+            this.labelC3.BackColor = System.Drawing.Color.Transparent;
             this.labelC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelC3.Location = new System.Drawing.Point(646, 398);
             this.labelC3.Name = "labelC3";
@@ -176,6 +184,7 @@
             // labelM1
             // 
             this.labelM1.AutoSize = true;
+            this.labelM1.BackColor = System.Drawing.Color.Transparent;
             this.labelM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelM1.Location = new System.Drawing.Point(646, 125);
             this.labelM1.Name = "labelM1";
@@ -186,6 +195,7 @@
             // labelA1
             // 
             this.labelA1.AutoSize = true;
+            this.labelA1.BackColor = System.Drawing.Color.Transparent;
             this.labelA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelA1.Location = new System.Drawing.Point(646, 158);
             this.labelA1.Name = "labelA1";
@@ -196,6 +206,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(39, 125);
             this.label12.Name = "label12";
@@ -206,6 +217,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(39, 158);
             this.label13.Name = "label13";
@@ -216,6 +228,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(39, 323);
             this.label14.Name = "label14";
@@ -226,6 +239,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(39, 290);
             this.label15.Name = "label15";
@@ -236,6 +250,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(38, 469);
             this.label16.Name = "label16";
@@ -246,6 +261,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(38, 436);
             this.label17.Name = "label17";
@@ -256,6 +272,7 @@
             // labelM3
             // 
             this.labelM3.AutoSize = true;
+            this.labelM3.BackColor = System.Drawing.Color.Transparent;
             this.labelM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.labelM3.Location = new System.Drawing.Point(646, 436);
             this.labelM3.Name = "labelM3";
@@ -266,6 +283,7 @@
             // labelA3
             // 
             this.labelA3.AutoSize = true;
+            this.labelA3.BackColor = System.Drawing.Color.Transparent;
             this.labelA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.labelA3.Location = new System.Drawing.Point(646, 469);
             this.labelA3.Name = "labelA3";
@@ -276,7 +294,9 @@
             // labelTotal
             // 
             this.labelTotal.AutoSize = true;
+            this.labelTotal.BackColor = System.Drawing.Color.Transparent;
             this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.labelTotal.ForeColor = System.Drawing.Color.DarkRed;
             this.labelTotal.Location = new System.Drawing.Point(647, 514);
             this.labelTotal.Name = "labelTotal";
             this.labelTotal.Size = new System.Drawing.Size(45, 24);
@@ -286,7 +306,9 @@
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label21.ForeColor = System.Drawing.Color.DarkRed;
             this.label21.Location = new System.Drawing.Point(566, 514);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(56, 24);
@@ -296,6 +318,7 @@
             // labelM2
             // 
             this.labelM2.AutoSize = true;
+            this.labelM2.BackColor = System.Drawing.Color.Transparent;
             this.labelM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelM2.Location = new System.Drawing.Point(647, 290);
             this.labelM2.Name = "labelM2";
@@ -306,6 +329,7 @@
             // labelA2
             // 
             this.labelA2.AutoSize = true;
+            this.labelA2.BackColor = System.Drawing.Color.Transparent;
             this.labelA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelA2.Location = new System.Drawing.Point(647, 323);
             this.labelA2.Name = "labelA2";
@@ -316,7 +340,9 @@
             // labelAltCaine1
             // 
             this.labelAltCaine1.AutoSize = true;
+            this.labelAltCaine1.BackColor = System.Drawing.Color.Transparent;
             this.labelAltCaine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltCaine1.ForeColor = System.Drawing.Color.DarkRed;
             this.labelAltCaine1.Location = new System.Drawing.Point(806, 93);
             this.labelAltCaine1.Name = "labelAltCaine1";
             this.labelAltCaine1.Size = new System.Drawing.Size(134, 24);
@@ -328,7 +354,9 @@
             // labelAltCaine2
             // 
             this.labelAltCaine2.AutoSize = true;
+            this.labelAltCaine2.BackColor = System.Drawing.Color.Transparent;
             this.labelAltCaine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltCaine2.ForeColor = System.Drawing.Color.DarkRed;
             this.labelAltCaine2.Location = new System.Drawing.Point(807, 249);
             this.labelAltCaine2.Name = "labelAltCaine2";
             this.labelAltCaine2.Size = new System.Drawing.Size(134, 24);
@@ -340,6 +368,7 @@
             // checkBoxM1
             // 
             this.checkBoxM1.AutoSize = true;
+            this.checkBoxM1.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxM1.Enabled = false;
             this.checkBoxM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxM1.Location = new System.Drawing.Point(810, 121);
@@ -347,12 +376,13 @@
             this.checkBoxM1.Size = new System.Drawing.Size(103, 28);
             this.checkBoxM1.TabIndex = 33;
             this.checkBoxM1.Text = "Mâncare";
-            this.checkBoxM1.UseVisualStyleBackColor = true;
+            this.checkBoxM1.UseVisualStyleBackColor = false;
             this.checkBoxM1.CheckedChanged += new System.EventHandler(this.checkBoxM1_CheckedChanged);
             // 
             // checkBoxM2
             // 
             this.checkBoxM2.AutoSize = true;
+            this.checkBoxM2.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxM2.Enabled = false;
             this.checkBoxM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxM2.Location = new System.Drawing.Point(810, 286);
@@ -360,12 +390,13 @@
             this.checkBoxM2.Size = new System.Drawing.Size(103, 28);
             this.checkBoxM2.TabIndex = 34;
             this.checkBoxM2.Text = "Mâncare";
-            this.checkBoxM2.UseVisualStyleBackColor = true;
+            this.checkBoxM2.UseVisualStyleBackColor = false;
             this.checkBoxM2.CheckedChanged += new System.EventHandler(this.checkBoxM2_CheckedChanged);
             // 
             // checkBoxM3
             // 
             this.checkBoxM3.AutoSize = true;
+            this.checkBoxM3.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxM3.Enabled = false;
             this.checkBoxM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxM3.Location = new System.Drawing.Point(810, 432);
@@ -373,13 +404,15 @@
             this.checkBoxM3.Size = new System.Drawing.Size(103, 28);
             this.checkBoxM3.TabIndex = 35;
             this.checkBoxM3.Text = "Mâncare";
-            this.checkBoxM3.UseVisualStyleBackColor = true;
+            this.checkBoxM3.UseVisualStyleBackColor = false;
             this.checkBoxM3.CheckedChanged += new System.EventHandler(this.checkBoxM3_CheckedChanged);
             // 
             // labelAltCaine3
             // 
             this.labelAltCaine3.AutoSize = true;
+            this.labelAltCaine3.BackColor = System.Drawing.Color.Transparent;
             this.labelAltCaine3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltCaine3.ForeColor = System.Drawing.Color.DarkRed;
             this.labelAltCaine3.Location = new System.Drawing.Point(807, 390);
             this.labelAltCaine3.Name = "labelAltCaine3";
             this.labelAltCaine3.Size = new System.Drawing.Size(134, 24);
@@ -391,6 +424,7 @@
             // checkBoxA1
             // 
             this.checkBoxA1.AutoSize = true;
+            this.checkBoxA1.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxA1.Enabled = false;
             this.checkBoxA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxA1.Location = new System.Drawing.Point(810, 154);
@@ -398,12 +432,13 @@
             this.checkBoxA1.Size = new System.Drawing.Size(107, 28);
             this.checkBoxA1.TabIndex = 36;
             this.checkBoxA1.Text = "Accesorii";
-            this.checkBoxA1.UseVisualStyleBackColor = true;
+            this.checkBoxA1.UseVisualStyleBackColor = false;
             this.checkBoxA1.CheckedChanged += new System.EventHandler(this.checkBoxA1_CheckedChanged);
             // 
             // checkBoxA2
             // 
             this.checkBoxA2.AutoSize = true;
+            this.checkBoxA2.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxA2.Enabled = false;
             this.checkBoxA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxA2.Location = new System.Drawing.Point(810, 323);
@@ -411,12 +446,13 @@
             this.checkBoxA2.Size = new System.Drawing.Size(107, 28);
             this.checkBoxA2.TabIndex = 37;
             this.checkBoxA2.Text = "Accesorii";
-            this.checkBoxA2.UseVisualStyleBackColor = true;
+            this.checkBoxA2.UseVisualStyleBackColor = false;
             this.checkBoxA2.CheckedChanged += new System.EventHandler(this.checkBoxA2_CheckedChanged);
             // 
             // checkBoxA3
             // 
             this.checkBoxA3.AutoSize = true;
+            this.checkBoxA3.BackColor = System.Drawing.Color.Transparent;
             this.checkBoxA3.Enabled = false;
             this.checkBoxA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxA3.Location = new System.Drawing.Point(811, 465);
@@ -424,11 +460,12 @@
             this.checkBoxA3.Size = new System.Drawing.Size(107, 28);
             this.checkBoxA3.TabIndex = 38;
             this.checkBoxA3.Text = "Accesorii";
-            this.checkBoxA3.UseVisualStyleBackColor = true;
+            this.checkBoxA3.UseVisualStyleBackColor = false;
             this.checkBoxA3.CheckedChanged += new System.EventHandler(this.checkBoxA3_CheckedChanged);
             // 
             // pictureBoxCaine1
             // 
+            this.pictureBoxCaine1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCaine1.Location = new System.Drawing.Point(298, 93);
             this.pictureBoxCaine1.Name = "pictureBoxCaine1";
             this.pictureBoxCaine1.Size = new System.Drawing.Size(155, 90);
@@ -437,6 +474,7 @@
             // 
             // pictureBoxCaine2
             // 
+            this.pictureBoxCaine2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCaine2.Location = new System.Drawing.Point(298, 257);
             this.pictureBoxCaine2.Name = "pictureBoxCaine2";
             this.pictureBoxCaine2.Size = new System.Drawing.Size(155, 90);
@@ -445,17 +483,45 @@
             // 
             // pictureBoxCaine3
             // 
+            this.pictureBoxCaine3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCaine3.Location = new System.Drawing.Point(298, 403);
             this.pictureBoxCaine3.Name = "pictureBoxCaine3";
             this.pictureBoxCaine3.Size = new System.Drawing.Size(155, 90);
             this.pictureBoxCaine3.TabIndex = 41;
             this.pictureBoxCaine3.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::IntroForm.Properties.Resources.btnRevino1;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 499);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 61);
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btn_plateste;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(811, 499);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(170, 61);
+            this.pictureBox2.TabIndex = 43;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // ShoppingCartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBoxCaine3);
             this.Controls.Add(this.pictureBoxCaine2);
             this.Controls.Add(this.pictureBoxCaine1);
@@ -485,7 +551,6 @@
             this.Controls.Add(this.labelC3);
             this.Controls.Add(this.labelC2);
             this.Controls.Add(this.labelC1);
-            this.Controls.Add(this.buttonPlateste);
             this.Controls.Add(this.labelCaine3);
             this.Controls.Add(this.labelCaine2);
             this.Controls.Add(this.labelCaine1);
@@ -499,6 +564,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -512,7 +579,6 @@
         private System.Windows.Forms.Label labelCaine1;
         private System.Windows.Forms.Label labelCaine2;
         private System.Windows.Forms.Label labelCaine3;
-        private System.Windows.Forms.Button buttonPlateste;
         private System.Windows.Forms.Label labelC1;
         private System.Windows.Forms.Label labelC2;
         private System.Windows.Forms.Label labelC3;
@@ -542,5 +608,7 @@
         private System.Windows.Forms.PictureBox pictureBoxCaine1;
         private System.Windows.Forms.PictureBox pictureBoxCaine2;
         private System.Windows.Forms.PictureBox pictureBoxCaine3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

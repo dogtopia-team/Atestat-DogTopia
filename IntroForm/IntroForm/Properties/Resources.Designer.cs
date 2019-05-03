@@ -73,6 +73,16 @@ namespace IntroForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btn_plateste {
+            get {
+                object obj = ResourceManager.GetObject("btn_plateste", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnaccesorii {
             get {
                 object obj = ResourceManager.GetObject("btnaccesorii", resourceCulture);
@@ -86,6 +96,16 @@ namespace IntroForm.Properties {
         internal static System.Drawing.Bitmap btnaccesorii1 {
             get {
                 object obj = ResourceManager.GetObject("btnaccesorii1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnaccesorii2 {
+            get {
+                object obj = ResourceManager.GetObject("btnaccesorii2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +213,29 @@ namespace IntroForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btncontact1 {
+            get {
+                object obj = ResourceManager.GetObject("btncontact1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnexit {
             get {
                 object obj = ResourceManager.GetObject("btnexit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnexit1 {
+            get {
+                object obj = ResourceManager.GetObject("btnexit1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +263,29 @@ namespace IntroForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnmancare1 {
+            get {
+                object obj = ResourceManager.GetObject("btnmancare1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnRevino {
             get {
                 object obj = ResourceManager.GetObject("btnRevino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnRevino1 {
+            get {
+                object obj = ResourceManager.GetObject("btnRevino1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
