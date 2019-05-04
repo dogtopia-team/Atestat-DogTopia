@@ -56,6 +56,7 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            LoginForm.isLoggedIn = false;
             LoginForm login = new LoginForm();
             login.Show();
             this.Hide();

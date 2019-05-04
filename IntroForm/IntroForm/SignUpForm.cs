@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace IntroForm
 {
     public partial class SignUpForm : Form
     {
-        private bool areCaractereSpeciale(TextBox x)
+        public static bool areCaractereSpeciale(TextBox x)
         {
             string sir = x.Text.Trim();
 
@@ -21,7 +22,7 @@ namespace IntroForm
             return false;
         }
 
-        private bool contineSpatiiSauCratime(TextBox x)
+        public static bool contineSpatiiSauCratime(TextBox x)
         {
             string sir = x.Text;
 
@@ -106,11 +107,26 @@ namespace IntroForm
                 textBox4.Clear();
                 return;
             }
+            // Daca nu este nicio problema, adaugam datele intr-un database.
+            string nume = textBox1.Text.Trim();
+            string prenume = textBox2.Text.Trim();
+            string email = textBox4.Text.Trim();
+            string username = textBox3.Text.Trim();
+            string parola = textBox5.Text.Trim();
 
-            // daca nu este nicio problema, se va intra in aplicatie
-            AccountForm acc = new AccountForm();
-            acc.Show();
-            this.Hide();
+            using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\dogtopia-team\Atestat-DogTopia\IntroForm\IntroForm\Conturi.mdf;Integrated Security=True"))
+            {
+                conn.Open();
+                String command = String.Format(@"insert into Conturi(Nume, Prenume, Email, Username, Parola) 
+                    values('{0}', '{1}', '{2}', '{3}', '{4}')", nume, prenume, email, username, parola);
+                SqlCommand cmd = new SqlCommand(command, conn);
+                cmd.ExecuteNonQuery();
+            }
+
+            // Daca nu este nicio problema, se va intra in LoginForm
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide(); 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

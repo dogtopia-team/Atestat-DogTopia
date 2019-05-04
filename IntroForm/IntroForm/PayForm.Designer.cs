@@ -43,6 +43,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.labelTotal1 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -203,6 +205,30 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
+            // labelTotal1
+            // 
+            this.labelTotal1.AutoSize = true;
+            this.labelTotal1.BackColor = System.Drawing.Color.Transparent;
+            this.labelTotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.labelTotal1.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelTotal1.Location = new System.Drawing.Point(82, 520);
+            this.labelTotal1.Name = "labelTotal1";
+            this.labelTotal1.Size = new System.Drawing.Size(45, 24);
+            this.labelTotal1.TabIndex = 40;
+            this.labelTotal1.Text = "0,00";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.Transparent;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.label21.ForeColor = System.Drawing.Color.DarkRed;
+            this.label21.Location = new System.Drawing.Point(29, 520);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(56, 24);
+            this.label21.TabIndex = 41;
+            this.label21.Text = "Total:";
+            // 
             // PayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,6 +236,8 @@
             this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(600, 600);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.labelTotal1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button1);
@@ -254,5 +282,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label labelTotal1;
+        private System.Windows.Forms.Label label21;
     }
 }

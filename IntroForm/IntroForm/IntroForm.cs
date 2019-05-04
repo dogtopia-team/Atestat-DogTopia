@@ -19,9 +19,18 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            LoginForm login = new LoginForm();
-            login.Show();
-            this.Hide();
+            if (LoginForm.isLoggedIn == true)
+            {
+                AccountForm accountForm = new AccountForm();
+                accountForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                LoginForm login = new LoginForm();
+                login.Show();
+                this.Hide();
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)

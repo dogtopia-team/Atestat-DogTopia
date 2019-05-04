@@ -15,6 +15,7 @@ namespace IntroForm
         public PayForm()
         {
             InitializeComponent();
+            labelTotal1.Text = ShoppingCartForm.total.ToString() + ",00";
         }
 
         private void label7_Click(object sender, EventArgs e)

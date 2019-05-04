@@ -51,7 +51,7 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            /*
+            
             // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
 
@@ -124,14 +124,22 @@ namespace IntroForm
             labelRasa.Text = rasaCaineCurent.Replace('_', ' ');
             pictureBox3.Show();
             pictureBox4.Visible = true;
-            */
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            LoginForm loginform = new LoginForm();
-            loginform.Show();
-            this.Hide();
+            if (LoginForm.isLoggedIn == true)
+            {
+                AccountForm accountForm = new AccountForm();
+                accountForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                LoginForm loginform = new LoginForm();
+                loginform.Show();
+                this.Hide();
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -141,8 +149,8 @@ namespace IntroForm
                 MessageBox.Show("Mai întâi aflați rasa câinelui!");
                 return;
             }
-            string pathWikipediaRasa = @"https://en.wikipedia.org/wiki/";
-            pathWikipediaRasa += rasaCaineCurent;
+            string pathWikipediaRasa = @"https://google.com/search?q=";
+            pathWikipediaRasa += rasaCaineCurent.Replace('_', '+');
             Process.Start("chrome.exe", pathWikipediaRasa);
         }
 
