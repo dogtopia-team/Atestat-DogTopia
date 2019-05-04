@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Despre noi</title>
+	<link rel="stylesheet" href="despre.css">
+</head>
+
+<body>
+
+	<section>
+		
+		<header class="header">
+		
+			<nav class="h">
+				<a href="index.html"><img src="Logo.png" width=200 height=200 style="float:left;"></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="despre.html">Despre noi</a></li>
+					<li><a href="servicii.html">Servicii</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<div class="text-box">
+				
+				<h1 class="primary-heading">
+					<span class="heading-main">DogTopia</span>
+					<span class="heading-sub">Despre noi</span>
+				</h1>
+				<br><br>
+				<a href="#info" class="btn"> Află mai multe </a>
+			</div>
+			
+		</header>
+		
+	</section>
+	
+	<section id="info">
+		<br>
+		&nbsp &nbsp &nbsp &nbsp Povestea DogTopia a pornit dintr-o înflăcărată pasiune pentru câini, urmând să se dezvolte într-un proiect de care nu credeam că ne vom atașa atât de tare. Primul magazin DogTopia a apărut în România, la Iași, în anul 2014. DogTopia s-a dovedit un real succes și a căpătat popularitate în randul iubitorilor de animale. Având o experiență de 5 ani, DogTopia a învățat de-a lungul timpului că fiecare animăluț este unic în felul său și are nevoi diferite.
+		<br><br>
+
+		&nbsp &nbsp &nbsp &nbsp Decorul viu colorat, amenajarea inedită, personalul bine pregătit și atmosfera placută din magazinele noastre sunt doar câteva motive în plus pentru care clienții noștri revin întotdeauna cu mare drag la cumpărături. Pentru a veni și noi în ajutorul dumneavoastră, DogTopia vă oferă zilnic sute de reduceri și promoții pentru o gamă variată de produse!<br><br>
+
+		&nbsp &nbsp &nbsp &nbsp Astfel, ne putem mândri cu miile de câini pe care i-am făcut fericiți, sutele de zâmbete pe care le-am adus și multele povești ale clienților care ne-au devenit acum prieteni, povești fericite ce surprind legătura indestructibilă om-câine.<br><br>
+
+		<center><p id="color"> DogTopia, pentru și despre animale!</p></center>
+		<br><br>
+		
+		<!-- Slideshow -->
+		
+		<div class="slideshow-container">
+
+		  <!-- Imagini, contor, caption -->
+		  <div class="mySlides fade">
+			<div class="numbertext">1 / 8</div>
+			<img src="dog1.jpg" style="width:100%">
+			<div class="text">Câini din oferta noastră</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">2 / 8</div>
+			<img src="dog2.jpg" style="width:100%">
+			<div class="text">Câini din oferta noastră</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 8</div>
+			<img src="dog3.jpg" style="width:100%">
+			<div class="text">Câini din oferta noastră</div>
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<div class="numbertext">4 / 8</div>
+			<img src="dog4.jpg" style="width:100%">
+			<div class="text">Câini din oferta noastră</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">5 / 8</div>
+			<img src="dog5.jpg" style="width:100%">
+			<div class="text">Accesorii din oferta noastră</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">6 / 8</div>
+			<img src="dog6.jpg" style="width:100%">
+			<div class="text">Accesorii din oferta noastră</div>
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<div class="numbertext">7 / 8</div>
+			<img src="dog7.jpg" style="width:100%">
+			<div class="text">Mâncare din oferta noastră</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">8 / 8</div>
+			<img src="dog8.png" style="width:100%">
+			<div class="text">Mâncare din oferta noastră</div>
+		  </div>
+
+		  <!-- Next si previous -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- dots -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		  <span class="dot" onclick="currentSlide(6)"></span>		  
+		  <span class="dot" onclick="currentSlide(7)"></span>		  
+		  <span class="dot" onclick="currentSlide(8)"></span>		  
+		</div>
+		
+		<!-- Functii js -->
+		<script>
+		
+			//varianta manuala
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			
+		</script>
+
+	</section>
+	
+	<section>
+		
+		<footer class="footer">
+		
+			<nav class="f">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="despre.html">Despre noi</a></li>
+					<li><a href="servicii.html">Servicii</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<p id="finfo">© DogTopia 2019</p>
+		</footer>
+		
+	</section>
+
+</body>
+
+</html>

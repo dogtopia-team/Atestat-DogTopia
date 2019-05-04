@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -119,6 +120,12 @@ namespace IntroForm
             ShoppingCartForm shopping = new ShoppingCartForm();
             shopping.Show();
             this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            string pathWebSite = @"C: \Users\Admin\Source\Repos\Atestat - DogTopia\IntroForm\IntroForm\Resources\DogTopia - Website\index.html";
+            Process.Start("chrome.exe",pathWebSite);
         }
     }
 }
