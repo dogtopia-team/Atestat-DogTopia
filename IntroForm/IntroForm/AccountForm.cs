@@ -124,7 +124,7 @@ namespace IntroForm
 
         private void label8_Click(object sender, EventArgs e)
         {
-            string pathWebSite = @"C: \Users\Admin\Source\Repos\Atestat - DogTopia\IntroForm\IntroForm\Resources\DogTopia - Website\index.html";
+            string pathWebSite = @"C:/Users/Admin/source/repos/dogtopia-team/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
             Process.Start("chrome.exe",pathWebSite);
         }
     }
