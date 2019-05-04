@@ -28,13 +28,19 @@ namespace IntroForm
             textBox1.CharacterCasing = CharacterCasing.Upper;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
+            ShoppingCartForm shop = new ShoppingCartForm();
+            shop.Show();
+            this.Hide();
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
             //verificare Nume si prenume(obligatoriu minim 2 cuvinte)
             int nr_cuv = textBox1.Text.Split(' ').Length;
-            
-            if(nr_cuv < 2)
+
+            if (nr_cuv < 2)
             {
                 MessageBox.Show("Introduceti NUME si PRENUME", "Camp incomplet", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox1.Clear();
@@ -52,17 +58,15 @@ namespace IntroForm
 
             string PIN = textBox2.Text.Trim();
 
-            for (int i = 0; i < PIN.Length ; i++)
+            for (int i = 0; i < PIN.Length; i++)
             {
-                if(!char.IsNumber(PIN[i]))
+                if (!char.IsNumber(PIN[i]))
                 {
                     MessageBox.Show("Codul PIN trebuie sa aiba DOAR cifre!", "Cod PIN invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     textBox2.Clear();
                     return;
                 }
             }
-
-
 
             //verificare daca data expirarii cardului este mai mare sau egala decat data curenta
             DateTime dataCard;
@@ -122,13 +126,6 @@ namespace IntroForm
             //se face legatura cu AccountForm, daca totul este in regula
             AccountForm acc = new AccountForm();
             acc.Show();
-            this.Hide();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            ShoppingCartForm shop = new ShoppingCartForm();
-            shop.Show();
             this.Hide();
         }
     }

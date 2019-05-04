@@ -40,13 +40,14 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.labelTotal1 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -170,16 +171,6 @@
             this.textBox5.Size = new System.Drawing.Size(158, 26);
             this.textBox5.TabIndex = 11;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(175, 504);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 60);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Comanda!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -211,7 +202,7 @@
             this.labelTotal1.BackColor = System.Drawing.Color.Transparent;
             this.labelTotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.labelTotal1.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelTotal1.Location = new System.Drawing.Point(82, 520);
+            this.labelTotal1.Location = new System.Drawing.Point(100, 471);
             this.labelTotal1.Name = "labelTotal1";
             this.labelTotal1.Size = new System.Drawing.Size(45, 24);
             this.labelTotal1.TabIndex = 40;
@@ -223,11 +214,23 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label21.ForeColor = System.Drawing.Color.DarkRed;
-            this.label21.Location = new System.Drawing.Point(29, 520);
+            this.label21.Location = new System.Drawing.Point(47, 471);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(56, 24);
             this.label21.TabIndex = 41;
             this.label21.Text = "Total:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btn_comanda;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(175, 495);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(250, 93);
+            this.pictureBox2.TabIndex = 42;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // PayForm
             // 
@@ -236,11 +239,11 @@
             this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(600, 600);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.labelTotal1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -260,6 +263,7 @@
             this.Text = "PayForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,10 +283,10 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label labelTotal1;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

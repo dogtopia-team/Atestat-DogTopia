@@ -114,7 +114,7 @@ namespace IntroForm
             panelContact.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox9_Click(object sender, EventArgs e)
         {
             ShoppingCartForm shopping = new ShoppingCartForm();
             shopping.Show();

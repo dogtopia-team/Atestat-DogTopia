@@ -240,6 +240,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Conturi.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\btn_comanda.png" />
+    <None Include="Resources\btn_adauga.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">

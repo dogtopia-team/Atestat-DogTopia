@@ -181,6 +181,9 @@
   <data name="btnaccesorii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnaccesorii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="btn_plateste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_plateste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="btnRevino1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnRevino1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,7 +202,10 @@
   <data name="btnTrimite" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnTrimite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btn_plateste" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn_plateste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btn_adauga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_adauga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn_comanda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn_comanda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
