@@ -53,8 +53,8 @@ namespace IntroForm
             string usernameUser = textBox1.Text.Trim();
             string parolaUser = textBox2.Text.Trim();
 
-            using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\dogtopia-team\Atestat-DogTopia\IntroForm\IntroForm\Conturi.mdf;Integrated Security=True"))
-            //using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Source\Repos\Atestat-DogTopia\IntroForm\IntroForm\Conturi.mdf;Integrated Security=True"))
+            //using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\dogtopia-team\Atestat-DogTopia\IntroForm\IntroForm\Conturi.mdf;Integrated Security=True"))
+            using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Source\Repos\Atestat-DogTopia\IntroForm\IntroForm\Conturi.mdf;Integrated Security=True"))
             {
                 conn.Open();
                 String command = String.Format(@"select * from Conturi where Username = '{0}' and Parola = '{1}'", usernameUser, parolaUser);
