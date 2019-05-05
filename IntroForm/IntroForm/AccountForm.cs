@@ -95,18 +95,22 @@ namespace IntroForm
             Random r = new Random();
             int pret = (r.Next(10, 50) / 10) * 10;
             if (pretMancare1 == 0) pretMancare1 = pret;
-            else if (pretMancare2 == 0) pretMancare2 = pret;
-            else if (pretMancare3 == 0) pretMancare3 = pret;
+            else if (pretMancare2 == 0 && MainForm.rasaCaine2.Trim() != "") pretMancare2 = pret;
+            else if (pretMancare3 == 0 && MainForm.rasaCaine3.Trim() != "") pretMancare3 = pret;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             if (MainForm.rasaCaine1.Trim() == "") return;
+
             Random r = new Random();
             int pret = (r.Next(100, 250) / 10) * 10;
             if (pretAccesorii1 == 0) pretAccesorii1 = pret;
-            else if (pretAccesorii2 == 0) pretAccesorii2 = pret;
-            else if (pretAccesorii3 == 0) pretAccesorii3 = pret;
+            else if (pretAccesorii2 == 0 && MainForm.rasaCaine2.Trim() != "") pretAccesorii2 = pret;
+            else if (pretAccesorii3 == 0 && MainForm.rasaCaine3.Trim() != "") pretAccesorii3 = pret;
+            AccessoriesForm accessoriesForm = new AccessoriesForm();
+            accessoriesForm.Show();
+            this.Hide();
         }
 
         private void pictureBox7_Click(object sender, EventArgs e)

@@ -35,6 +35,10 @@ namespace IntroForm
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            // Reintializam alegerile din "Accessorii"
+            AccessoriesForm.cumparaAc1 = AccessoriesForm.cumparaAc2 = AccessoriesForm.cumparaAc3 = AccessoriesForm.cumparaAc4 =
+                AccessoriesForm.cumparaAc5 = AccessoriesForm.cumparaAc6 = false;
+
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "JPG|*.jpg";
             if (ofd.ShowDialog() == DialogResult.OK)

@@ -15,7 +15,7 @@ namespace IntroForm
         // 0 - Nu se doreste alt caine
         // 1 - Se doreste alt caine, dar utilizatorul se poate razgandi si sa-l pastreze pana la urma
         // 2 - Se doreste alt caine, se alege alt caine.
-        public static int altCaine1 = 0; 
+        public static int altCaine1 = 0;
         public static int altCaine2 = 0;
         public static int altCaine3 = 0;
         public static bool maiAdaugaCaine2 = false;
