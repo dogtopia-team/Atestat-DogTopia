@@ -86,7 +86,7 @@ namespace IntroForm
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -125,7 +125,7 @@ namespace IntroForm
         private void label8_Click(object sender, EventArgs e)
         {
             string pathWebSite = @"C:/Users/Admin/source/repos/dogtopia-team/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
-            Process.Start("chrome.exe",pathWebSite);
+            Process.Start("chrome.exe", pathWebSite);
         }
     }
 }

@@ -260,6 +260,11 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            if (total == 0)
+            {
+                MessageBox.Show("Coșul de cumpărături este gol!");
+                return;
+            }
             PayForm pf = new PayForm();
             pf.Show();
             this.Hide();
