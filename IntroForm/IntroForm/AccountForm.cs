@@ -91,23 +91,23 @@ namespace IntroForm
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            if (MainForm.rasaCaine1.Trim() == "") return;
-            Random r = new Random();
-            int pret = (r.Next(10, 50) / 10) * 10;
-            if (pretMancare1 == 0) pretMancare1 = pret;
-            else if (pretMancare2 == 0 && MainForm.rasaCaine2.Trim() != "") pretMancare2 = pret;
-            else if (pretMancare3 == 0 && MainForm.rasaCaine3.Trim() != "") pretMancare3 = pret;
+            if (MainForm.rasaCaine1.Trim() == "")
+            {
+                MessageBox.Show("Introduceți mai întâi un câine!", "Lipsă câine.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            FoodForm foodForm = new FoodForm();
+            foodForm.Show();
+            this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            if (MainForm.rasaCaine1.Trim() == "") return;
-
-            Random r = new Random();
-            int pret = (r.Next(100, 250) / 10) * 10;
-            if (pretAccesorii1 == 0) pretAccesorii1 = pret;
-            else if (pretAccesorii2 == 0 && MainForm.rasaCaine2.Trim() != "") pretAccesorii2 = pret;
-            else if (pretAccesorii3 == 0 && MainForm.rasaCaine3.Trim() != "") pretAccesorii3 = pret;
+            if (MainForm.rasaCaine1.Trim() == "")
+            {
+                MessageBox.Show("Introduceți mai întâi un câine!", "Lipsă câine.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             AccessoriesForm accessoriesForm = new AccessoriesForm();
             accessoriesForm.Show();
             this.Hide();
@@ -115,6 +115,8 @@ namespace IntroForm
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
+            richTextBox1.Clear();
+            textBox1.Clear();
             panel1.Show();
             panelContact.Hide();
         }
@@ -128,8 +130,8 @@ namespace IntroForm
 
         private void label8_Click(object sender, EventArgs e)
         {
-            //string pathWebSite = @"C:/Users/Admin/source/repos/dogtopia-team/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
-            string pathWebSite = @"C:/Users/Admin/source/repos/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
+            string pathWebSite = @"C:/Users/Admin/source/repos/dogtopia-team/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
+            //string pathWebSite = @"C:/Users/Admin/source/repos/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
             Process.Start("chrome.exe", pathWebSite);
         }
     }

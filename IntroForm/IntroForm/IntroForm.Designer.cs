@@ -67,13 +67,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(442, 71);
+            this.label1.Location = new System.Drawing.Point(436, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 37);
+            this.label1.Size = new System.Drawing.Size(338, 73);
             this.label1.TabIndex = 3;
-            this.label1.Text = "DogTopia";
+            this.label1.Text = "DogTopia,";
             // 
             // pictureBox2
             // 
@@ -104,13 +104,13 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label3.Location = new System.Drawing.Point(442, 124);
+            this.label3.Location = new System.Drawing.Point(443, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(556, 37);
+            this.label3.Size = new System.Drawing.Size(371, 33);
             this.label3.TabIndex = 6;
-            this.label3.Text = "...casa a peste 100 de rase de câini";
+            this.label3.Text = "Pentru și despre animale!";
             // 
             // IntroForm
             // 

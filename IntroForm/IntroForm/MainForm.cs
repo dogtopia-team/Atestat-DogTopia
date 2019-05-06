@@ -35,15 +35,16 @@ namespace IntroForm
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            // Reintializam alegerile din "Accessorii"
-            AccessoriesForm.cumparaAc1 = AccessoriesForm.cumparaAc2 = AccessoriesForm.cumparaAc3 = AccessoriesForm.cumparaAc4 =
-                AccessoriesForm.cumparaAc5 = AccessoriesForm.cumparaAc6 = false;
-
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "JPG|*.jpg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 pathPoza = ofd.FileName;
+                if (pathPoza == pathPozaCaine1 || pathPoza == pathPozaCaine2 || pathPoza == pathPozaCaine3)
+                {
+                    MessageBox.Show("Ați introdus deja acest câine! Alegeți alt câine!", "Duplicare conținut", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 Image imagineCaine = Image.FromFile(pathPoza);
                 Size dimensiune = new Size();
                 dimensiune.Height = 600;
@@ -144,13 +145,20 @@ namespace IntroForm
                 loginform.Show();
                 this.Hide();
             }
+
+            // Reintializam alegerile din "Accessorii"
+            AccessoriesForm.cumparaAc1 = AccessoriesForm.cumparaAc2 = AccessoriesForm.cumparaAc3 = AccessoriesForm.cumparaAc4 =
+                AccessoriesForm.cumparaAc5 = AccessoriesForm.cumparaAc6 = false;
+            // Reintializam alegerile din "Food"
+            FoodForm.cumparaFood1 = FoodForm.cumparaFood2 = FoodForm.cumparaFood3 = FoodForm.cumparaFood4 =
+                FoodForm.cumparaFood5 = FoodForm.cumparaFood6 = false;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             if (rasaCaineCurent == "") // Cazul in care nu s-a clasificat inca poza
             {
-                MessageBox.Show("Mai întâi aflați rasa câinelui!");
+                MessageBox.Show("Mai întâi aflați rasa câinelui!", "Lipsă rasă de câine", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             string pathWikipediaRasa = @"https://google.com/search?q=";

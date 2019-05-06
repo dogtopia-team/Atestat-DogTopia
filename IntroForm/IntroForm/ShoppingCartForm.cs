@@ -105,8 +105,10 @@ namespace IntroForm
             {
                 if (AccountForm.pretMancare1 == 0)
                 {
-                    Random r = new Random();
-                    AccountForm.pretMancare1 = (r.Next(10, 50) / 10) * 10;
+                    MessageBox.Show("Nu ați adăugat niciun produs din secțiunea mâncare! S-a adăugat în coșul de cumpărături un pachet Hrană Clasic.",
+                        "Lipsă produse", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AccountForm.pretMancare1 = 10;
+                    
                 }
                 labelM1.Text = AccountForm.pretMancare1.ToString() + ",00";
                 total += AccountForm.pretMancare1;
@@ -125,8 +127,9 @@ namespace IntroForm
             {
                 if (AccountForm.pretMancare2 == 0)
                 {
-                    Random r = new Random();
-                    AccountForm.pretMancare2 = (r.Next(10, 50) / 10) * 10;
+                    MessageBox.Show("Nu ați adăugat niciun produs din secțiunea mâncare! S-a adăugat în coșul de cumpărături un pachet Hrană Clasic.",
+                        "Lipsă produse", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AccountForm.pretMancare2 = 10;
                 }
                 labelM2.Text = AccountForm.pretMancare2.ToString() + ",00";
                 total += AccountForm.pretMancare2;
@@ -145,8 +148,9 @@ namespace IntroForm
             {
                 if (AccountForm.pretMancare3 == 0)
                 {
-                    Random r = new Random();
-                    AccountForm.pretMancare3 = (r.Next(10, 50) / 10) * 10;
+                    MessageBox.Show("Nu ați adăugat niciun produs din secțiunea mâncare! S-a adăugat în coșul de cumpărături un pachet Hrană Clasic.",
+                        "Lipsă produse", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AccountForm.pretMancare3 = 10;
                 }
                 labelM3.Text = AccountForm.pretMancare3.ToString() + ",00";
                 total += AccountForm.pretMancare3;
@@ -165,8 +169,9 @@ namespace IntroForm
             {
                 if (AccountForm.pretAccesorii1 == 0)
                 {
-                    Random r = new Random();
-                    AccountForm.pretAccesorii1 = (r.Next(100, 250) / 10) * 10;
+                    MessageBox.Show("Nu ați adăugat niciun produs din secțiunea mâncare! S-a adăugat în coșul de cumpărături un pachet Accesorii Clasic.",
+                        "Lipsă produse", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AccountForm.pretAccesorii1 = 17;
                 }
                 labelA1.Text = AccountForm.pretAccesorii1.ToString() + ",00";
                 total += AccountForm.pretAccesorii1;
@@ -185,8 +190,9 @@ namespace IntroForm
             {
                 if (AccountForm.pretAccesorii2 == 0)
                 {
-                    Random r = new Random();
-                    AccountForm.pretAccesorii2 = (r.Next(100, 250) / 10) * 10;
+                    MessageBox.Show("Nu ați adăugat niciun produs din secțiunea mâncare! S-a adăugat în coșul de cumpărături un pachet Accesorii Clasic.",
+                        "Lipsă produse", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AccountForm.pretAccesorii2 = 17;
                 }
                 labelA2.Text = AccountForm.pretAccesorii2.ToString() + ",00";
                 total += AccountForm.pretAccesorii2;
@@ -205,8 +211,9 @@ namespace IntroForm
             {
                 if (AccountForm.pretAccesorii3 == 0)
                 {
-                    Random r = new Random();
-                    AccountForm.pretAccesorii3 = (r.Next(100, 250) / 10) * 10;
+                    MessageBox.Show("Nu ați adăugat niciun produs din secțiunea mâncare! S-a adăugat în coșul de cumpărături un pachet Accesorii Clasic.",
+                        "Lipsă produse", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    AccountForm.pretAccesorii3 = 17;
                 }
                 labelA3.Text = AccountForm.pretAccesorii3.ToString() + ",00";
                 total += AccountForm.pretAccesorii3;
@@ -262,7 +269,7 @@ namespace IntroForm
         {
             if (total == 0)
             {
-                MessageBox.Show("Coșul de cumpărături este gol!");
+                MessageBox.Show("Coșul de cumpărături este gol!", "Coș de cumpărături gol", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             PayForm pf = new PayForm();

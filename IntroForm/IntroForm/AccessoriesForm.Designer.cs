@@ -156,17 +156,17 @@
             this.labelAc1.BackColor = System.Drawing.Color.Transparent;
             this.labelAc1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAc1.ForeColor = System.Drawing.Color.Maroon;
-            this.labelAc1.Location = new System.Drawing.Point(59, 204);
+            this.labelAc1.Location = new System.Drawing.Point(86, 204);
             this.labelAc1.Name = "labelAc1";
-            this.labelAc1.Size = new System.Drawing.Size(135, 33);
+            this.labelAc1.Size = new System.Drawing.Size(100, 33);
             this.labelAc1.TabIndex = 17;
-            this.labelAc1.Text = "Cumpără";
+            this.labelAc1.Text = "Preț: 5";
             // 
             // checkBoxAc1
             // 
             this.checkBoxAc1.AutoSize = true;
             this.checkBoxAc1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxAc1.Location = new System.Drawing.Point(200, 213);
+            this.checkBoxAc1.Location = new System.Drawing.Point(65, 213);
             this.checkBoxAc1.Name = "checkBoxAc1";
             this.checkBoxAc1.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAc1.TabIndex = 18;
@@ -177,7 +177,7 @@
             // 
             this.checkBoxAc2.AutoSize = true;
             this.checkBoxAc2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxAc2.Location = new System.Drawing.Point(394, 213);
+            this.checkBoxAc2.Location = new System.Drawing.Point(265, 213);
             this.checkBoxAc2.Name = "checkBoxAc2";
             this.checkBoxAc2.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAc2.TabIndex = 20;
@@ -190,17 +190,17 @@
             this.labelAc2.BackColor = System.Drawing.Color.Transparent;
             this.labelAc2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAc2.ForeColor = System.Drawing.Color.Maroon;
-            this.labelAc2.Location = new System.Drawing.Point(259, 204);
+            this.labelAc2.Location = new System.Drawing.Point(286, 204);
             this.labelAc2.Name = "labelAc2";
-            this.labelAc2.Size = new System.Drawing.Size(135, 33);
+            this.labelAc2.Size = new System.Drawing.Size(100, 33);
             this.labelAc2.TabIndex = 19;
-            this.labelAc2.Text = "Cumpără";
+            this.labelAc2.Text = "Preț: 7";
             // 
             // checkBoxAc3
             // 
             this.checkBoxAc3.AutoSize = true;
             this.checkBoxAc3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxAc3.Location = new System.Drawing.Point(590, 213);
+            this.checkBoxAc3.Location = new System.Drawing.Point(458, 213);
             this.checkBoxAc3.Name = "checkBoxAc3";
             this.checkBoxAc3.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAc3.TabIndex = 22;
@@ -213,17 +213,17 @@
             this.labelAc3.BackColor = System.Drawing.Color.Transparent;
             this.labelAc3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAc3.ForeColor = System.Drawing.Color.Maroon;
-            this.labelAc3.Location = new System.Drawing.Point(452, 204);
+            this.labelAc3.Location = new System.Drawing.Point(479, 204);
             this.labelAc3.Name = "labelAc3";
-            this.labelAc3.Size = new System.Drawing.Size(135, 33);
+            this.labelAc3.Size = new System.Drawing.Size(116, 33);
             this.labelAc3.TabIndex = 21;
-            this.labelAc3.Text = "Cumpără";
+            this.labelAc3.Text = "Preț: 10";
             // 
             // checkBoxAc4
             // 
             this.checkBoxAc4.AutoSize = true;
             this.checkBoxAc4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxAc4.Location = new System.Drawing.Point(198, 461);
+            this.checkBoxAc4.Location = new System.Drawing.Point(65, 461);
             this.checkBoxAc4.Name = "checkBoxAc4";
             this.checkBoxAc4.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAc4.TabIndex = 24;
@@ -236,17 +236,17 @@
             this.labelAc4.BackColor = System.Drawing.Color.Transparent;
             this.labelAc4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAc4.ForeColor = System.Drawing.Color.Maroon;
-            this.labelAc4.Location = new System.Drawing.Point(59, 452);
+            this.labelAc4.Location = new System.Drawing.Point(86, 452);
             this.labelAc4.Name = "labelAc4";
-            this.labelAc4.Size = new System.Drawing.Size(135, 33);
+            this.labelAc4.Size = new System.Drawing.Size(100, 33);
             this.labelAc4.TabIndex = 23;
-            this.labelAc4.Text = "Cumpără";
+            this.labelAc4.Text = "Preț: 7";
             // 
             // checkBoxAc5
             // 
             this.checkBoxAc5.AutoSize = true;
             this.checkBoxAc5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxAc5.Location = new System.Drawing.Point(394, 461);
+            this.checkBoxAc5.Location = new System.Drawing.Point(265, 461);
             this.checkBoxAc5.Name = "checkBoxAc5";
             this.checkBoxAc5.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAc5.TabIndex = 26;
@@ -259,17 +259,17 @@
             this.labelAc5.BackColor = System.Drawing.Color.Transparent;
             this.labelAc5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAc5.ForeColor = System.Drawing.Color.Maroon;
-            this.labelAc5.Location = new System.Drawing.Point(253, 452);
+            this.labelAc5.Location = new System.Drawing.Point(286, 452);
             this.labelAc5.Name = "labelAc5";
-            this.labelAc5.Size = new System.Drawing.Size(135, 33);
+            this.labelAc5.Size = new System.Drawing.Size(116, 33);
             this.labelAc5.TabIndex = 25;
-            this.labelAc5.Text = "Cumpără";
+            this.labelAc5.Text = "Preț: 15";
             // 
             // checkBoxAc6
             // 
             this.checkBoxAc6.AutoSize = true;
             this.checkBoxAc6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxAc6.Location = new System.Drawing.Point(593, 461);
+            this.checkBoxAc6.Location = new System.Drawing.Point(458, 461);
             this.checkBoxAc6.Name = "checkBoxAc6";
             this.checkBoxAc6.Size = new System.Drawing.Size(15, 14);
             this.checkBoxAc6.TabIndex = 28;
@@ -282,11 +282,11 @@
             this.labelAc6.BackColor = System.Drawing.Color.Transparent;
             this.labelAc6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAc6.ForeColor = System.Drawing.Color.Maroon;
-            this.labelAc6.Location = new System.Drawing.Point(452, 452);
+            this.labelAc6.Location = new System.Drawing.Point(479, 452);
             this.labelAc6.Name = "labelAc6";
-            this.labelAc6.Size = new System.Drawing.Size(135, 33);
+            this.labelAc6.Size = new System.Drawing.Size(116, 33);
             this.labelAc6.TabIndex = 27;
-            this.labelAc6.Text = "Cumpără";
+            this.labelAc6.Text = "Preț: 50";
             // 
             // label1
             // 

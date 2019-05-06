@@ -42,6 +42,37 @@ namespace IntroForm
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            if (MainForm.pathPozaCaine1 == MainForm.pathPoza)
+            {
+                AccountForm.pretAccesorii1 = 0;
+                if (cumparaAc1) AccountForm.pretAccesorii1 += 5;
+                if (cumparaAc2) AccountForm.pretAccesorii1 += 7;
+                if (cumparaAc3) AccountForm.pretAccesorii1 += 10;
+                if (cumparaAc4) AccountForm.pretAccesorii1 += 7;
+                if (cumparaAc5) AccountForm.pretAccesorii1 += 15;
+                if (cumparaAc6) AccountForm.pretAccesorii1 += 50;
+            }
+            else if (MainForm.pathPozaCaine2 == MainForm.pathPoza)
+            {
+                AccountForm.pretAccesorii2 = 0;
+                if (cumparaAc1) AccountForm.pretAccesorii2 += 5;
+                if (cumparaAc2) AccountForm.pretAccesorii2 += 7;
+                if (cumparaAc3) AccountForm.pretAccesorii2 += 10;
+                if (cumparaAc4) AccountForm.pretAccesorii2 += 7;
+                if (cumparaAc5) AccountForm.pretAccesorii2 += 15;
+                if (cumparaAc6) AccountForm.pretAccesorii2 += 50;
+            }
+            else if (MainForm.pathPozaCaine3 == MainForm.pathPoza)
+            {
+                AccountForm.pretAccesorii3 = 0;
+                if (cumparaAc1) AccountForm.pretAccesorii3 += 5;
+                if (cumparaAc2) AccountForm.pretAccesorii3 += 7;
+                if (cumparaAc3) AccountForm.pretAccesorii3 += 10;
+                if (cumparaAc4) AccountForm.pretAccesorii3 += 7;
+                if (cumparaAc5) AccountForm.pretAccesorii3 += 15;
+                if (cumparaAc6) AccountForm.pretAccesorii3 += 50;
+            }
+
             AccountForm accountForm = new AccountForm();
             accountForm.Show();
             this.Hide();
