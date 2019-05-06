@@ -108,9 +108,9 @@
             this.label3.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
             this.label3.Location = new System.Drawing.Point(443, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(371, 33);
+            this.label3.Size = new System.Drawing.Size(327, 33);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Pentru și despre animale!";
+            this.label3.Text = "Pentru și despre câini!";
             // 
             // IntroForm
             // 

@@ -57,6 +57,13 @@ namespace IntroForm
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            // Resetare detalii cont.
+            pretMancare1 = pretMancare2 = pretMancare3 = pretAccesorii1 = pretAccesorii2 = pretAccesorii3 = pretCaine1 = pretCaine2 = pretCaine3 = 0;
+            MainForm.rasaCaine1 = MainForm.rasaCaine2 = MainForm.rasaCaine3 = MainForm.rasaCaineCurent = "";
+            MainForm.pathPozaCaine1 = MainForm.pathPozaCaine2 = MainForm.pathPozaCaine3 = MainForm.pathPoza = "";
+            ShoppingCartForm.altCaine1 = ShoppingCartForm.altCaine2 = ShoppingCartForm.altCaine3 = 0;
+            ShoppingCartForm.maiAdaugaCaine2 = ShoppingCartForm.maiAdaugaCaine3 = false;
+            ShoppingCartForm.total = 0;
             LoginForm.isLoggedIn = false;
             LoginForm login = new LoginForm();
             login.Show();

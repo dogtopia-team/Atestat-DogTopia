@@ -168,6 +168,12 @@ namespace IntroForm
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            if (pathPoza != pathPozaCaine1 && pathPoza != pathPozaCaine2 && pathPoza != pathPozaCaine3)
+            {
+                if (pathPozaCaine3.Trim() != "") pathPoza = pathPozaCaine3;
+                 else if (pathPozaCaine2.Trim() != "") pathPoza = pathPozaCaine2;
+                  else pathPoza = pathPozaCaine1;
+            }
             IntroForm intr = new IntroForm();
             intr.Show();
             this.Hide();
