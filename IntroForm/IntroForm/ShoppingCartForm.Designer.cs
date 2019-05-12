@@ -466,7 +466,7 @@
             // pictureBoxCaine1
             // 
             this.pictureBoxCaine1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCaine1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxCaine1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxCaine1.Location = new System.Drawing.Point(411, 93);
             this.pictureBoxCaine1.Name = "pictureBoxCaine1";
             this.pictureBoxCaine1.Size = new System.Drawing.Size(155, 90);
@@ -476,7 +476,7 @@
             // pictureBoxCaine2
             // 
             this.pictureBoxCaine2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCaine2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxCaine2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxCaine2.Location = new System.Drawing.Point(411, 257);
             this.pictureBoxCaine2.Name = "pictureBoxCaine2";
             this.pictureBoxCaine2.Size = new System.Drawing.Size(155, 90);
@@ -486,7 +486,7 @@
             // pictureBoxCaine3
             // 
             this.pictureBoxCaine3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCaine3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxCaine3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxCaine3.Location = new System.Drawing.Point(411, 403);
             this.pictureBoxCaine3.Name = "pictureBoxCaine3";
             this.pictureBoxCaine3.Size = new System.Drawing.Size(155, 90);

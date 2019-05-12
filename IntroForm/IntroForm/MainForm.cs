@@ -49,14 +49,14 @@ namespace IntroForm
                 Size dimensiune = new Size();
                 dimensiune.Height = 600;
                 dimensiune.Width = 569;
-                pictureBoxPoza.Image = AccountForm.ResizeImage(imagineCaine, dimensiune);
+                pictureBoxPoza.BackgroundImage = AccountForm.ResizeImage(imagineCaine, dimensiune);
                 labelRasa.Text = "Apăsați pe Clasifică și așteptați să se proceseze!";
             }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            
+
             // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
             if (pathPoza == "") return;
 
@@ -102,7 +102,7 @@ namespace IntroForm
             if (ShoppingCartForm.altCaine2 == 1) ShoppingCartForm.altCaine2 = 2;
             if (ShoppingCartForm.altCaine3 == 1) ShoppingCartForm.altCaine3 = 2;
 
-            if (rasaCaine1.Trim() == "" || ShoppingCartForm.altCaine1 == 2)
+            if (rasaCaine1.Trim() == "" || ShoppingCartForm.altCaine1 == 2 || (ShoppingCartForm.maiAdaugaCaine2 == false && ShoppingCartForm.maiAdaugaCaine3 == false))
             {
                 rasaCaine1 = myString;
                 rasaCaineCurent = rasaCaine1;
@@ -110,7 +110,7 @@ namespace IntroForm
                 AccountForm.pretCaine1 = pret;
                 AccountForm.pretMancare1 = AccountForm.pretAccesorii1 = ShoppingCartForm.altCaine1 = 0;
             }
-            else if ((rasaCaine2.Trim() == "" && ShoppingCartForm.maiAdaugaCaine2 == true) || ShoppingCartForm.altCaine2 == 2)
+            else if ((rasaCaine2.Trim() == "" && ShoppingCartForm.maiAdaugaCaine2 == true) || ShoppingCartForm.altCaine2 == 2 || ShoppingCartForm.maiAdaugaCaine3 == false)
             {
                 rasaCaine2 = myString;
                 rasaCaineCurent = rasaCaine2;
@@ -118,7 +118,8 @@ namespace IntroForm
                 AccountForm.pretCaine2 = pret;
                 AccountForm.pretMancare2 = AccountForm.pretAccesorii2 = ShoppingCartForm.altCaine2 = 0;
             }
-            else if ((rasaCaine3.Trim() == "" && ShoppingCartForm.maiAdaugaCaine3 == true) || ShoppingCartForm.altCaine3 == 2)
+            else if ((rasaCaine3.Trim() == "" && ShoppingCartForm.maiAdaugaCaine3 == true) || ShoppingCartForm.altCaine3 == 2  || 
+                (rasaCaine1.Trim() != "" && rasaCaine2.Trim() != ""))
             {
                 rasaCaine3 = myString;
                 rasaCaineCurent = rasaCaine3;

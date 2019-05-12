@@ -61,7 +61,7 @@
             // 
             this.pictureBoxPoza.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxPoza.BackgroundImage = global::IntroForm.Properties.Resources.Logo1;
-            this.pictureBoxPoza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxPoza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxPoza.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBoxPoza.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxPoza.Name = "pictureBoxPoza";
@@ -188,7 +188,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gaseset rasa";
+            this.Text = "DogTopia";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

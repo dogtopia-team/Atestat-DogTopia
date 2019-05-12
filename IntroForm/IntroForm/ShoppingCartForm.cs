@@ -33,10 +33,7 @@ namespace IntroForm
                 labelAltCaine1.Visible = true;
 
                 Image imagineCaine = Image.FromFile(MainForm.pathPozaCaine1); // Adauga imaginea cainelui in pictureBoxCaine1
-                Size dimensiune = new Size();
-                dimensiune.Height = 155;
-                dimensiune.Width = 90;
-                pictureBoxCaine1.Image = AccountForm.ResizeImage(imagineCaine, dimensiune);
+                pictureBoxCaine1.BackgroundImage = imagineCaine; 
 
             }
             if (MainForm.rasaCaine2.Trim() != "")
@@ -48,10 +45,7 @@ namespace IntroForm
                 labelAltCaine2.Visible = true;
 
                 Image imagineCaine = Image.FromFile(MainForm.pathPozaCaine2); // Adauga imaginea cainelui in pictureBoxCaine2
-                Size dimensiune = new Size();
-                dimensiune.Height = 155;
-                dimensiune.Width = 90;
-                pictureBoxCaine2.Image = AccountForm.ResizeImage(imagineCaine, dimensiune);
+                pictureBoxCaine2.BackgroundImage = imagineCaine;
             }
             if (MainForm.rasaCaine3.Trim() != "")
             {
@@ -62,10 +56,7 @@ namespace IntroForm
                 labelAltCaine3.Visible = true;
 
                 Image imagineCaine = Image.FromFile(MainForm.pathPozaCaine3); // Adauga imaginea cainelui in pictureBoxCaine3
-                Size dimensiune = new Size();
-                dimensiune.Height = 155;
-                dimensiune.Width = 90;
-                pictureBoxCaine3.Image = AccountForm.ResizeImage(imagineCaine, dimensiune);
+                pictureBoxCaine3.BackgroundImage = imagineCaine;
             }
             labelC1.Text = AccountForm.pretCaine1.ToString() + ",00";
             labelC2.Text = AccountForm.pretCaine2.ToString() + ",00";

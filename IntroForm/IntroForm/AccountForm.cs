@@ -98,11 +98,11 @@ namespace IntroForm
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            /*if (MainForm.rasaCaine1.Trim() == "")
+            if (MainForm.rasaCaine1.Trim() == "")
             {
                 MessageBox.Show("Introduceți mai întâi un câine!", "Lipsă câine.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }*/
+            }
             FoodForm foodForm = new FoodForm();
             foodForm.Show();
             this.Hide();
@@ -110,11 +110,11 @@ namespace IntroForm
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            /*if (MainForm.rasaCaine1.Trim() == "")
+            if (MainForm.rasaCaine1.Trim() == "")
             {
                 MessageBox.Show("Introduceți mai întâi un câine!", "Lipsă câine.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
-            }*/
+            }
             AccessoriesForm accessoriesForm = new AccessoriesForm();
             accessoriesForm.Show();
             this.Hide();
@@ -137,8 +137,8 @@ namespace IntroForm
 
         private void label8_Click(object sender, EventArgs e)
         {
-            //string pathWebSite = @"C:/Users/Admin/source/repos/dogtopia-team/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
-            string pathWebSite = @"C:/Users/Admin/source/repos/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
+            string pathWebSite = @"C:/Users/Admin/source/repos/dogtopia-team/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
+            //string pathWebSite = @"C:/Users/Admin/source/repos/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
             Process.Start("chrome.exe", pathWebSite);
         }
     }
