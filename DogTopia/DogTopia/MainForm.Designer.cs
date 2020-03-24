@@ -1,4 +1,4 @@
-﻿namespace IntroForm
+﻿namespace DogTopia
 {
     partial class MainForm
     {
@@ -60,7 +60,7 @@
             // pictureBoxPoza
             // 
             this.pictureBoxPoza.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxPoza.BackgroundImage = global::IntroForm.Properties.Resources.Logo1;
+            this.pictureBoxPoza.BackgroundImage = global::DogTopia.Properties.Resources.Logo1;
             this.pictureBoxPoza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxPoza.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBoxPoza.Location = new System.Drawing.Point(0, 0);
@@ -85,7 +85,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::IntroForm.Properties.Resources.btnAdauga1;
+            this.pictureBox1.BackgroundImage = global::DogTopia.Properties.Resources.btnAdauga1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(630, 101);
             this.pictureBox1.Name = "pictureBox1";
@@ -97,7 +97,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btnClasifica;
+            this.pictureBox2.BackgroundImage = global::DogTopia.Properties.Resources.btnClasifica;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(826, 101);
             this.pictureBox2.Name = "pictureBox2";
@@ -109,7 +109,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btn_login;
+            this.pictureBox3.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(630, 473);
             this.pictureBox3.Name = "pictureBox3";
@@ -146,7 +146,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::IntroForm.Properties.Resources.btnAfla__2_;
+            this.pictureBox4.BackgroundImage = global::DogTopia.Properties.Resources.btnAfla__2_;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Location = new System.Drawing.Point(826, 473);
             this.pictureBox4.Name = "pictureBox4";
@@ -159,7 +159,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::IntroForm.Properties.Resources.btnBack;
+            this.pictureBox5.BackgroundImage = global::DogTopia.Properties.Resources.btnBack;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.Location = new System.Drawing.Point(575, 9);
             this.pictureBox5.Name = "pictureBox5";
@@ -172,7 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
+            this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.pictureBox5);
@@ -189,6 +189,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DogTopia";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoza)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

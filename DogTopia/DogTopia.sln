@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2015
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroForm", "IntroForm\IntroForm.csproj", "{7F27531D-A5E1-4578-A763-9CB527C2C885}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogTopia", "IntroForm\DogTopia.csproj", "{7F27531D-A5E1-4578-A763-9CB527C2C885}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{945119C3-3A08-4A0D-BF77-24D242E3D00E}"
 	ProjectSection(SolutionItems) = preProject

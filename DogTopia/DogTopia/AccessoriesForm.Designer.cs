@@ -1,4 +1,4 @@
-﻿namespace IntroForm
+﻿namespace DogTopia
 {
     partial class AccessoriesForm
     {
@@ -75,7 +75,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::IntroForm.Properties.Resources.btnRevino1;
+            this.pictureBox6.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox6.Location = new System.Drawing.Point(-1, 540);
             this.pictureBox6.Name = "pictureBox6";
@@ -304,7 +304,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
+            this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.ClientSize = new System.Drawing.Size(648, 600);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkBoxAc6);

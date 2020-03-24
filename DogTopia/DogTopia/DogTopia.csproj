@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7F27531D-A5E1-4578-A763-9CB527C2C885}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>IntroForm</RootNamespace>
-    <AssemblyName>IntroForm</AssemblyName>
+    <RootNamespace>DogTopia</RootNamespace>
+    <AssemblyName>DogTopia</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

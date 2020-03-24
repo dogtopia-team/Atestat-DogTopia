@@ -1,4 +1,4 @@
-﻿namespace IntroForm
+﻿namespace DogTopia
 {
     partial class SignUpForm
     {
@@ -79,7 +79,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btn_login;
+            this.pictureBox2.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(688, 672);
             this.pictureBox2.Name = "pictureBox2";
@@ -135,7 +135,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::IntroForm.Properties.Resources.Logo;
+            this.pictureBox1.BackgroundImage = global::DogTopia.Properties.Resources.Logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -403,7 +403,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btnBack;
+            this.pictureBox3.BackgroundImage = global::DogTopia.Properties.Resources.btnBack;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(688, 566);
             this.pictureBox3.Name = "pictureBox3";
@@ -416,7 +416,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
+            this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 772);
             this.Controls.Add(this.pictureBox3);

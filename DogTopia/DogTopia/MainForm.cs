@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IntroForm
+namespace DogTopia
 {
     public partial class MainForm : Form
     {
@@ -61,8 +61,8 @@ namespace IntroForm
             if (pathPoza == "") return;
 
             // full path of python interpreter 
-            string python = @"C:\Users\Admin\Anaconda3\python.exe";
-            string myPythonApp = @"C:\Atestat\classificator.py";
+            string python = @"C:\Users\Cosmin\Anaconda3\python.exe";
+            string myPythonApp = @"C:\Users\Cosmin\PycharmProjects\pls\main.py";
 
             // Creeaza un nou proces care realizeaza comunicarea 
             // intre algoritmul de recunoastere a rasei si aplicatia C#
@@ -71,7 +71,7 @@ namespace IntroForm
             // Ne asiguram ca putem citi outputul din stdout
             myProcessStartInfo.UseShellExecute = false;
             myProcessStartInfo.RedirectStandardOutput = true;
-            myProcessStartInfo.WorkingDirectory = @"C:\Users\Admin\Anaconda3\";
+            myProcessStartInfo.WorkingDirectory = @"C:\Users\Cosmin\Anaconda3\";
             myProcessStartInfo.CreateNoWindow = true;
 
             // Incepe aplicatia Python cu 2 parametri:
@@ -178,6 +178,11 @@ namespace IntroForm
             IntroForm intr = new IntroForm();
             intr.Show();
             this.Hide();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

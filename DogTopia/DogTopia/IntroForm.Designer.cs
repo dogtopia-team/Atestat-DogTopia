@@ -1,4 +1,4 @@
-﻿namespace IntroForm
+﻿namespace DogTopia
 {
     partial class IntroForm
     {
@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelIntroText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -42,7 +42,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::IntroForm.Properties.Resources.Logo;
+            this.pictureBox1.BackgroundImage = global::DogTopia.Properties.Resources.Logo;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -54,7 +54,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btnincepep;
+            this.pictureBox3.BackgroundImage = global::DogTopia.Properties.Resources.btnincepep;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(533, 388);
             this.pictureBox3.Name = "pictureBox3";
@@ -78,7 +78,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btn_login;
+            this.pictureBox2.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(778, 388);
             this.pictureBox2.Name = "pictureBox2";
@@ -100,26 +100,26 @@
             this.label2.Text = "X";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // labelIntroText
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label3.Location = new System.Drawing.Point(443, 124);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(327, 33);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Pentru și despre câini!";
+            this.labelIntroText.AutoSize = true;
+            this.labelIntroText.BackColor = System.Drawing.Color.Transparent;
+            this.labelIntroText.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIntroText.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.labelIntroText.Location = new System.Drawing.Point(443, 124);
+            this.labelIntroText.Name = "labelIntroText";
+            this.labelIntroText.Size = new System.Drawing.Size(222, 33);
+            this.labelIntroText.TabIndex = 6;
+            this.labelIntroText.Text = "All about dogs!";
             // 
             // IntroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
+            this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelIntroText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
@@ -144,7 +144,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelIntroText;
     }
 }
 

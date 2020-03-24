@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IntroForm
+namespace DogTopia
 {
     public partial class AccountForm : Form
     {

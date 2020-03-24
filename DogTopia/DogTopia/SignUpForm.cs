@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IntroForm
+namespace DogTopia
 {
     public partial class SignUpForm : Form
     {
@@ -113,9 +113,8 @@ namespace IntroForm
             string email = textBox4.Text.Trim();
             string username = textBox3.Text.Trim();
             string parola = textBox5.Text.Trim();
-
-            using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\source\repos\dogtopia-team\Atestat-DogTopia\IntroForm\IntroForm\Conturi.mdf;Integrated Security=True"))
-            //using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Admin\Source\Repos\Atestat-DogTopia\IntroForm\IntroForm\Conturi.mdf;Integrated Security=True"))
+            
+            using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Atestat-DogTopia\DogTopia\DogTopia\Conturi.mdf;Integrated Security=True"))
             {
                 conn.Open();
                 String command = String.Format(@"insert into Conturi(Nume, Prenume, Email, Username, Parola) 

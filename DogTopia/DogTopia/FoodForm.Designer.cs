@@ -1,4 +1,4 @@
-﻿namespace IntroForm
+﻿namespace DogTopia
 {
     partial class FoodForm
     {
@@ -266,7 +266,7 @@
             // pictureBoxMancareRevino
             // 
             this.pictureBoxMancareRevino.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxMancareRevino.BackgroundImage = global::IntroForm.Properties.Resources.btnRevino1;
+            this.pictureBoxMancareRevino.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
             this.pictureBoxMancareRevino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxMancareRevino.Location = new System.Drawing.Point(7, 533);
             this.pictureBoxMancareRevino.Name = "pictureBoxMancareRevino";
@@ -304,7 +304,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
+            this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.ClientSize = new System.Drawing.Size(648, 600);
             this.Controls.Add(this.labelMancare);
             this.Controls.Add(this.labelMancareExit);

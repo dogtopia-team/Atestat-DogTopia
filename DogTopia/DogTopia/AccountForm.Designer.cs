@@ -1,4 +1,4 @@
-﻿namespace IntroForm
+﻿namespace DogTopia
 {
     partial class AccountForm
     {
@@ -81,7 +81,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackgroundImage = global::IntroForm.Properties.Resources.btnRevino1;
+            this.pictureBox6.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox6.Location = new System.Drawing.Point(0, 121);
             this.pictureBox6.Name = "pictureBox6";
@@ -92,7 +92,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackgroundImage = global::IntroForm.Properties.Resources.btnmancare1;
+            this.pictureBox5.BackgroundImage = global::DogTopia.Properties.Resources.btnmancare1;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.Location = new System.Drawing.Point(0, 219);
             this.pictureBox5.Name = "pictureBox5";
@@ -103,7 +103,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackgroundImage = global::IntroForm.Properties.Resources.btnaccesorii2;
+            this.pictureBox4.BackgroundImage = global::DogTopia.Properties.Resources.btnaccesorii2;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Location = new System.Drawing.Point(0, 310);
             this.pictureBox4.Name = "pictureBox4";
@@ -114,7 +114,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackgroundImage = global::IntroForm.Properties.Resources.btncontact1;
+            this.pictureBox3.BackgroundImage = global::DogTopia.Properties.Resources.btncontact1;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox3.Location = new System.Drawing.Point(0, 405);
             this.pictureBox3.Name = "pictureBox3";
@@ -125,7 +125,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::IntroForm.Properties.Resources.btnexit1;
+            this.pictureBox2.BackgroundImage = global::DogTopia.Properties.Resources.btnexit1;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(0, 501);
             this.pictureBox2.Name = "pictureBox2";
@@ -136,7 +136,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::IntroForm.Properties.Resources.Logo1;
+            this.pictureBox1.BackgroundImage = global::DogTopia.Properties.Resources.Logo1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -160,7 +160,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackgroundImage = global::IntroForm.Properties.Resources.btn_adauga;
+            this.pictureBox9.BackgroundImage = global::DogTopia.Properties.Resources.btn_adauga;
             this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox9.Location = new System.Drawing.Point(506, 536);
             this.pictureBox9.Name = "pictureBox9";
@@ -233,7 +233,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.BackgroundImage = global::IntroForm.Properties.Resources.btnTrimite;
+            this.pictureBox7.BackgroundImage = global::DogTopia.Properties.Resources.btnTrimite;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox7.Location = new System.Drawing.Point(73, 405);
             this.pictureBox7.Name = "pictureBox7";
@@ -326,7 +326,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::IntroForm.Properties.Resources.Gradient;
+            this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.panelMenu);
