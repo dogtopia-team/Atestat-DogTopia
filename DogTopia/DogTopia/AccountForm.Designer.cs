@@ -80,7 +80,7 @@
             // 
             // pictureBoxGoBack
             // 
-            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
+            this.pictureBoxGoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGoBack.BackgroundImage")));
             this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxGoBack.Location = new System.Drawing.Point(0, 121);
             this.pictureBoxGoBack.Name = "pictureBoxGoBack";
@@ -91,7 +91,7 @@
             // 
             // pictureBoxFood
             // 
-            this.pictureBoxFood.BackgroundImage = global::DogTopia.Properties.Resources.btnmancare1;
+            this.pictureBoxFood.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxFood.BackgroundImage")));
             this.pictureBoxFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxFood.Location = new System.Drawing.Point(0, 219);
             this.pictureBoxFood.Name = "pictureBoxFood";
@@ -102,7 +102,7 @@
             // 
             // pictureBoxAccessories
             // 
-            this.pictureBoxAccessories.BackgroundImage = global::DogTopia.Properties.Resources.btnaccesorii1;
+            this.pictureBoxAccessories.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAccessories.BackgroundImage")));
             this.pictureBoxAccessories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxAccessories.Location = new System.Drawing.Point(0, 310);
             this.pictureBoxAccessories.Name = "pictureBoxAccessories";
@@ -113,8 +113,8 @@
             // 
             // pictureBoxContact
             // 
-            this.pictureBoxContact.BackgroundImage = global::DogTopia.Properties.Resources.btncontact1;
-            this.pictureBoxContact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxContact.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxContact.BackgroundImage")));
+            this.pictureBoxContact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxContact.Location = new System.Drawing.Point(0, 405);
             this.pictureBoxContact.Name = "pictureBoxContact";
             this.pictureBoxContact.Size = new System.Drawing.Size(328, 99);
@@ -124,7 +124,7 @@
             // 
             // pictureBoxLogout
             // 
-            this.pictureBoxLogout.BackgroundImage = global::DogTopia.Properties.Resources.btnexit1;
+            this.pictureBoxLogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogout.BackgroundImage")));
             this.pictureBoxLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxLogout.Location = new System.Drawing.Point(0, 501);
             this.pictureBoxLogout.Name = "pictureBoxLogout";
@@ -148,8 +148,8 @@
             // 
             this.panelInitial.BackColor = System.Drawing.Color.Transparent;
             this.panelInitial.Controls.Add(this.pictureBoxAddToCart);
-            this.panelInitial.Controls.Add(this.pictureBoxPictureDog);
             this.panelInitial.Controls.Add(this.labelWelcome);
+            this.panelInitial.Controls.Add(this.pictureBoxPictureDog);
             this.panelInitial.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelInitial.Location = new System.Drawing.Point(352, 0);
             this.panelInitial.Name = "panelInitial";
@@ -158,7 +158,7 @@
             // 
             // pictureBoxAddToCart
             // 
-            this.pictureBoxAddToCart.BackgroundImage = global::DogTopia.Properties.Resources.btn_adauga;
+            this.pictureBoxAddToCart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddToCart.BackgroundImage")));
             this.pictureBoxAddToCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxAddToCart.Location = new System.Drawing.Point(468, 529);
             this.pictureBoxAddToCart.Name = "pictureBoxAddToCart";
@@ -230,6 +230,7 @@
             // 
             // pictureBoxSendMail
             // 
+            this.pictureBoxSendMail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxSendMail.BackgroundImage")));
             this.pictureBoxSendMail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxSendMail.Location = new System.Drawing.Point(73, 405);
             this.pictureBoxSendMail.Name = "pictureBoxSendMail";
@@ -300,8 +301,8 @@
             this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 600);
-            this.Controls.Add(this.panelInitial);
             this.Controls.Add(this.panelMenu);
+            this.Controls.Add(this.panelInitial);
             this.Controls.Add(this.panelContact);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

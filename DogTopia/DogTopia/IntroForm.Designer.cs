@@ -54,7 +54,7 @@
             // pictureBoxStart
             // 
             this.pictureBoxStart.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxStart.BackgroundImage = global::DogTopia.Properties.Resources.btnincepep;
+            this.pictureBoxStart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxStart.BackgroundImage")));
             this.pictureBoxStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxStart.Location = new System.Drawing.Point(533, 388);
             this.pictureBoxStart.Name = "pictureBoxStart";
@@ -78,7 +78,7 @@
             // pictureBoxLogin
             // 
             this.pictureBoxLogin.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogin.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
+            this.pictureBoxLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogin.BackgroundImage")));
             this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxLogin.Location = new System.Drawing.Point(778, 388);
             this.pictureBoxLogin.Name = "pictureBoxLogin";

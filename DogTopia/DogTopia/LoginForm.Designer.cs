@@ -114,11 +114,11 @@
             // pictureBoxLogin
             // 
             this.pictureBoxLogin.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogin.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
+            this.pictureBoxLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogin.BackgroundImage")));
             this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLogin.Location = new System.Drawing.Point(253, 450);
+            this.pictureBoxLogin.Location = new System.Drawing.Point(241, 447);
             this.pictureBoxLogin.Name = "pictureBoxLogin";
-            this.pictureBoxLogin.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxLogin.Size = new System.Drawing.Size(129, 126);
             this.pictureBoxLogin.TabIndex = 6;
             this.pictureBoxLogin.TabStop = false;
             this.pictureBoxLogin.Click += new System.EventHandler(this.pictureBoxLogin_Click);
@@ -126,11 +126,11 @@
             // pictureBoxGoBack
             // 
             this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnBack;
+            this.pictureBoxGoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGoBack.BackgroundImage")));
             this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxGoBack.Location = new System.Drawing.Point(488, 488);
+            this.pictureBoxGoBack.Location = new System.Drawing.Point(481, 478);
             this.pictureBoxGoBack.Name = "pictureBoxGoBack";
-            this.pictureBoxGoBack.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxGoBack.Size = new System.Drawing.Size(107, 110);
             this.pictureBoxGoBack.TabIndex = 8;
             this.pictureBoxGoBack.TabStop = false;
             this.pictureBoxGoBack.Click += new System.EventHandler(this.pictureBoxGoBack_Click);

@@ -483,8 +483,8 @@
             // pictureBoxGoBack
             // 
             this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
-            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxGoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGoBack.BackgroundImage")));
+            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxGoBack.Location = new System.Drawing.Point(12, 499);
             this.pictureBoxGoBack.Name = "pictureBoxGoBack";
             this.pictureBoxGoBack.Size = new System.Drawing.Size(162, 61);
@@ -495,11 +495,11 @@
             // pictureBoxPay
             // 
             this.pictureBoxPay.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxPay.BackgroundImage = global::DogTopia.Properties.Resources.btn_plateste;
-            this.pictureBoxPay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxPay.Location = new System.Drawing.Point(811, 499);
+            this.pictureBoxPay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPay.BackgroundImage")));
+            this.pictureBoxPay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxPay.Location = new System.Drawing.Point(810, 489);
             this.pictureBoxPay.Name = "pictureBoxPay";
-            this.pictureBoxPay.Size = new System.Drawing.Size(170, 61);
+            this.pictureBoxPay.Size = new System.Drawing.Size(179, 80);
             this.pictureBoxPay.TabIndex = 43;
             this.pictureBoxPay.TabStop = false;
             this.pictureBoxPay.Click += new System.EventHandler(this.pictureBoxPay_Click);

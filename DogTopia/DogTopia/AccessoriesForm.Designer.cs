@@ -61,8 +61,8 @@
             // pictureBoxGoBack
             // 
             this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
-            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxGoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGoBack.BackgroundImage")));
+            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxGoBack.Location = new System.Drawing.Point(-1, 540);
             this.pictureBoxGoBack.Name = "pictureBoxGoBack";
             this.pictureBoxGoBack.Size = new System.Drawing.Size(233, 61);

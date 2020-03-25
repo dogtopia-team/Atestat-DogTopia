@@ -174,11 +174,11 @@
             // pictureBoxGoBack
             // 
             this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnBack;
-            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxGoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGoBack.BackgroundImage")));
+            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxGoBack.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxGoBack.Name = "pictureBoxGoBack";
-            this.pictureBoxGoBack.Size = new System.Drawing.Size(73, 73);
+            this.pictureBoxGoBack.Size = new System.Drawing.Size(94, 108);
             this.pictureBoxGoBack.TabIndex = 38;
             this.pictureBoxGoBack.TabStop = false;
             this.pictureBoxGoBack.Click += new System.EventHandler(this.pictureBoxGoBack_Click);
@@ -210,8 +210,8 @@
             // pictureBoxPlaceOrder
             // 
             this.pictureBoxPlaceOrder.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxPlaceOrder.BackgroundImage = global::DogTopia.Properties.Resources.btn_comanda;
-            this.pictureBoxPlaceOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxPlaceOrder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlaceOrder.BackgroundImage")));
+            this.pictureBoxPlaceOrder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxPlaceOrder.Location = new System.Drawing.Point(203, 495);
             this.pictureBoxPlaceOrder.Name = "pictureBoxPlaceOrder";
             this.pictureBoxPlaceOrder.Size = new System.Drawing.Size(250, 93);

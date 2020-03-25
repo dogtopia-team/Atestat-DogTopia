@@ -72,9 +72,9 @@
             // pictureBoxAddPicture
             // 
             this.pictureBoxAddPicture.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAddPicture.BackgroundImage = global::DogTopia.Properties.Resources.btnAdauga1;
+            this.pictureBoxAddPicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddPicture.BackgroundImage")));
             this.pictureBoxAddPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxAddPicture.Location = new System.Drawing.Point(630, 101);
+            this.pictureBoxAddPicture.Location = new System.Drawing.Point(653, 101);
             this.pictureBoxAddPicture.Name = "pictureBoxAddPicture";
             this.pictureBoxAddPicture.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxAddPicture.TabIndex = 9;
@@ -84,7 +84,7 @@
             // pictureBoxClassify
             // 
             this.pictureBoxClassify.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxClassify.BackgroundImage = global::DogTopia.Properties.Resources.btnClasifica;
+            this.pictureBoxClassify.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxClassify.BackgroundImage")));
             this.pictureBoxClassify.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxClassify.Location = new System.Drawing.Point(826, 101);
             this.pictureBoxClassify.Name = "pictureBoxClassify";
@@ -96,7 +96,7 @@
             // pictureBoxLogin
             // 
             this.pictureBoxLogin.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLogin.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
+            this.pictureBoxLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogin.BackgroundImage")));
             this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxLogin.Location = new System.Drawing.Point(630, 473);
             this.pictureBoxLogin.Name = "pictureBoxLogin";
@@ -124,7 +124,7 @@
             this.labelText1.BackColor = System.Drawing.Color.Transparent;
             this.labelText1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelText1.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.labelText1.Location = new System.Drawing.Point(639, 43);
+            this.labelText1.Location = new System.Drawing.Point(648, 9);
             this.labelText1.Name = "labelText1";
             this.labelText1.Size = new System.Drawing.Size(340, 25);
             this.labelText1.TabIndex = 12;
@@ -133,7 +133,7 @@
             // pictureBoxDetails
             // 
             this.pictureBoxDetails.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxDetails.BackgroundImage = global::DogTopia.Properties.Resources.btnAfla__2_;
+            this.pictureBoxDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxDetails.BackgroundImage")));
             this.pictureBoxDetails.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxDetails.Location = new System.Drawing.Point(826, 473);
             this.pictureBoxDetails.Name = "pictureBoxDetails";
@@ -146,11 +146,11 @@
             // pictureBoxGoBack
             // 
             this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnBack;
+            this.pictureBoxGoBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxGoBack.BackgroundImage")));
             this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxGoBack.Location = new System.Drawing.Point(563, -2);
+            this.pictureBoxGoBack.Location = new System.Drawing.Point(575, 0);
             this.pictureBoxGoBack.Name = "pictureBoxGoBack";
-            this.pictureBoxGoBack.Size = new System.Drawing.Size(70, 70);
+            this.pictureBoxGoBack.Size = new System.Drawing.Size(80, 95);
             this.pictureBoxGoBack.TabIndex = 15;
             this.pictureBoxGoBack.TabStop = false;
             this.pictureBoxGoBack.Click += new System.EventHandler(this.pictureBoxGoBack_Click);
