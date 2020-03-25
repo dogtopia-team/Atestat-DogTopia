@@ -258,6 +258,20 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Conturi.mdf</DependentUpon>
     </Content>
+    <Content Include="Resources\button_Accessories %283%29.png" />
+    <Content Include="Resources\button_Add %281%29.png" />
+    <Content Include="Resources\button_AddToCart.png" />
+    <Content Include="Resources\button_Classify.png" />
+    <Content Include="Resources\button_Contact.png" />
+    <Content Include="Resources\button_Details.png" />
+    <Content Include="Resources\button_GoBack %282%29.png" />
+    <Content Include="Resources\button_GoBack4 %281%29.png" />
+    <Content Include="Resources\button_Login %281%29.png" />
+    <Content Include="Resources\button_Logout.png" />
+    <Content Include="Resources\button_Pay %281%29.png" />
+    <Content Include="Resources\button_PlaceOrder %281%29.png" />
+    <Content Include="Resources\button_Send.png" />
+    <Content Include="Resources\button_Start %281%29.png" />
     <None Include="Resources\button_Accessories.png" />
     <None Include="Resources\button_Add.png" />
     <None Include="Resources\btn_comanda.png" />
