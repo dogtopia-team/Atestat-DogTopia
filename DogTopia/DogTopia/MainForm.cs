@@ -45,7 +45,7 @@ namespace DogTopia
                 dimension.Height = 600;
                 dimension.Width = 569;
                 pictureBoxLogo.BackgroundImage = AccountForm.ResizeImage(imageDog, dimension);
-                labelBreed.Text = "Press on Clasifica and wait for processing!";
+                labelBreed.Text = "Press on Classify and wait for processing!";
             }
         }
 

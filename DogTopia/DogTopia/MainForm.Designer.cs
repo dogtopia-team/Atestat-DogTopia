@@ -55,7 +55,7 @@
             this.labelBreed.Name = "labelBreed";
             this.labelBreed.Size = new System.Drawing.Size(264, 83);
             this.labelBreed.TabIndex = 5;
-            this.labelBreed.Text = "Press on Adauga";
+            this.labelBreed.Text = "Press on Add to find out";
             // 
             // pictureBoxLogo
             // 
