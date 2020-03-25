@@ -28,191 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.labelCaine1 = new System.Windows.Forms.Label();
-            this.labelCaine2 = new System.Windows.Forms.Label();
-            this.labelCaine3 = new System.Windows.Forms.Label();
-            this.labelC1 = new System.Windows.Forms.Label();
-            this.labelC2 = new System.Windows.Forms.Label();
-            this.labelC3 = new System.Windows.Forms.Label();
-            this.labelM1 = new System.Windows.Forms.Label();
-            this.labelA1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShoppingCartForm));
+            this.labelYourDogs = new System.Windows.Forms.Label();
+            this.labelPrice = new System.Windows.Forms.Label();
+            this.labelAddAnotherDog1 = new System.Windows.Forms.Label();
+            this.labelAddAnotherDog2 = new System.Windows.Forms.Label();
+            this.labelAddAnotherDog3 = new System.Windows.Forms.Label();
+            this.labelStDog = new System.Windows.Forms.Label();
+            this.labelNdDog = new System.Windows.Forms.Label();
+            this.labelRdDog = new System.Windows.Forms.Label();
+            this.labelPriceFoodStDog = new System.Windows.Forms.Label();
+            this.labelPriceAccessoriesStDog = new System.Windows.Forms.Label();
+            this.labelFoodStDog = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.labelM3 = new System.Windows.Forms.Label();
-            this.labelA3 = new System.Windows.Forms.Label();
+            this.labelAccessoriesNdDog = new System.Windows.Forms.Label();
+            this.labelFoodNdDog = new System.Windows.Forms.Label();
+            this.labelAccessoriesRdDog = new System.Windows.Forms.Label();
+            this.labelFoodRdDog = new System.Windows.Forms.Label();
+            this.labelPriceFoodRdDog = new System.Windows.Forms.Label();
+            this.labelPriceAccessoriesRdDog = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.labelM2 = new System.Windows.Forms.Label();
-            this.labelA2 = new System.Windows.Forms.Label();
-            this.labelAltCaine1 = new System.Windows.Forms.Label();
-            this.labelAltCaine2 = new System.Windows.Forms.Label();
-            this.checkBoxM1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxM2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxM3 = new System.Windows.Forms.CheckBox();
-            this.labelAltCaine3 = new System.Windows.Forms.Label();
-            this.checkBoxA1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxA2 = new System.Windows.Forms.CheckBox();
-            this.checkBoxA3 = new System.Windows.Forms.CheckBox();
-            this.pictureBoxCaine1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCaine2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCaine3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.labelTotalPrice = new System.Windows.Forms.Label();
+            this.labelPriceFoodNdDog = new System.Windows.Forms.Label();
+            this.labelPriceAccessoriesNdDog = new System.Windows.Forms.Label();
+            this.labelAnotherDog1 = new System.Windows.Forms.Label();
+            this.labelAnotherDog2 = new System.Windows.Forms.Label();
+            this.checkBoxFood1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxFood2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxFood3 = new System.Windows.Forms.CheckBox();
+            this.labelAnotherDog3 = new System.Windows.Forms.Label();
+            this.checkBoxAccessories1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAccessories2 = new System.Windows.Forms.CheckBox();
+            this.checkBoxAccessories3 = new System.Windows.Forms.CheckBox();
+            this.pictureBoxStDog = new System.Windows.Forms.PictureBox();
+            this.pictureBoxNdDog = new System.Windows.Forms.PictureBox();
+            this.pictureBoxRdDog = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGoBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPay = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStDog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNdDog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRdDog)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPay)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // labelYourDogs
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(32, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Câinii tăi";
+            this.labelYourDogs.AutoSize = true;
+            this.labelYourDogs.BackColor = System.Drawing.Color.Transparent;
+            this.labelYourDogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelYourDogs.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelYourDogs.Location = new System.Drawing.Point(32, 22);
+            this.labelYourDogs.Name = "labelYourDogs";
+            this.labelYourDogs.Size = new System.Drawing.Size(267, 55);
+            this.labelYourDogs.TabIndex = 0;
+            this.labelYourDogs.Text = "Your dogs:";
             // 
-            // label2
+            // labelPrice
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(640, 22);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 55);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Preț";
+            this.labelPrice.AutoSize = true;
+            this.labelPrice.BackColor = System.Drawing.Color.Transparent;
+            this.labelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrice.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelPrice.Location = new System.Drawing.Point(640, 22);
+            this.labelPrice.Name = "labelPrice";
+            this.labelPrice.Size = new System.Drawing.Size(138, 55);
+            this.labelPrice.TabIndex = 1;
+            this.labelPrice.Text = "Price";
             // 
-            // label3
+            // labelAddAnotherDog1
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(928, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 31);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "X";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.labelAddAnotherDog1.AutoSize = true;
+            this.labelAddAnotherDog1.BackColor = System.Drawing.Color.Transparent;
+            this.labelAddAnotherDog1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddAnotherDog1.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelAddAnotherDog1.Location = new System.Drawing.Point(39, 93);
+            this.labelAddAnotherDog1.Name = "labelAddAnotherDog1";
+            this.labelAddAnotherDog1.Size = new System.Drawing.Size(121, 24);
+            this.labelAddAnotherDog1.TabIndex = 3;
+            this.labelAddAnotherDog1.Text = "Add one dog";
+            this.labelAddAnotherDog1.Click += new System.EventHandler(this.labelAddAnotherDog1_Click);
             // 
-            // labelCaine1
+            // labelAddAnotherDog2
             // 
-            this.labelCaine1.AutoSize = true;
-            this.labelCaine1.BackColor = System.Drawing.Color.Transparent;
-            this.labelCaine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCaine1.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelCaine1.Location = new System.Drawing.Point(39, 93);
-            this.labelCaine1.Name = "labelCaine1";
-            this.labelCaine1.Size = new System.Drawing.Size(154, 24);
-            this.labelCaine1.TabIndex = 3;
-            this.labelCaine1.Text = "Adaugă un câine";
-            this.labelCaine1.Click += new System.EventHandler(this.labelCaine1_Click);
+            this.labelAddAnotherDog2.AutoSize = true;
+            this.labelAddAnotherDog2.BackColor = System.Drawing.Color.Transparent;
+            this.labelAddAnotherDog2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddAnotherDog2.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelAddAnotherDog2.Location = new System.Drawing.Point(39, 257);
+            this.labelAddAnotherDog2.Name = "labelAddAnotherDog2";
+            this.labelAddAnotherDog2.Size = new System.Drawing.Size(170, 24);
+            this.labelAddAnotherDog2.TabIndex = 4;
+            this.labelAddAnotherDog2.Text = "Add one more dog";
+            this.labelAddAnotherDog2.Click += new System.EventHandler(this.labelAddAnotherDog2_Click);
             // 
-            // labelCaine2
+            // labelAddAnotherDog3
             // 
-            this.labelCaine2.AutoSize = true;
-            this.labelCaine2.BackColor = System.Drawing.Color.Transparent;
-            this.labelCaine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCaine2.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelCaine2.Location = new System.Drawing.Point(39, 257);
-            this.labelCaine2.Name = "labelCaine2";
-            this.labelCaine2.Size = new System.Drawing.Size(186, 24);
-            this.labelCaine2.TabIndex = 4;
-            this.labelCaine2.Text = "Mai adaugă un câine";
-            this.labelCaine2.Click += new System.EventHandler(this.labelCaine2_Click);
+            this.labelAddAnotherDog3.AutoSize = true;
+            this.labelAddAnotherDog3.BackColor = System.Drawing.Color.Transparent;
+            this.labelAddAnotherDog3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddAnotherDog3.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelAddAnotherDog3.Location = new System.Drawing.Point(38, 398);
+            this.labelAddAnotherDog3.Name = "labelAddAnotherDog3";
+            this.labelAddAnotherDog3.Size = new System.Drawing.Size(170, 24);
+            this.labelAddAnotherDog3.TabIndex = 5;
+            this.labelAddAnotherDog3.Text = "Add one more dog";
+            this.labelAddAnotherDog3.Click += new System.EventHandler(this.labelAddAnotherDog3_Click);
             // 
-            // labelCaine3
+            // labelStDog
             // 
-            this.labelCaine3.AutoSize = true;
-            this.labelCaine3.BackColor = System.Drawing.Color.Transparent;
-            this.labelCaine3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCaine3.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelCaine3.Location = new System.Drawing.Point(38, 398);
-            this.labelCaine3.Name = "labelCaine3";
-            this.labelCaine3.Size = new System.Drawing.Size(186, 24);
-            this.labelCaine3.TabIndex = 5;
-            this.labelCaine3.Text = "Mai adaugă un câine";
-            this.labelCaine3.Click += new System.EventHandler(this.labelCaine3_Click);
+            this.labelStDog.AutoSize = true;
+            this.labelStDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelStDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStDog.Location = new System.Drawing.Point(646, 93);
+            this.labelStDog.Name = "labelStDog";
+            this.labelStDog.Size = new System.Drawing.Size(45, 24);
+            this.labelStDog.TabIndex = 7;
+            this.labelStDog.Text = "0,00";
             // 
-            // labelC1
+            // labelNdDog
             // 
-            this.labelC1.AutoSize = true;
-            this.labelC1.BackColor = System.Drawing.Color.Transparent;
-            this.labelC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelC1.Location = new System.Drawing.Point(646, 93);
-            this.labelC1.Name = "labelC1";
-            this.labelC1.Size = new System.Drawing.Size(45, 24);
-            this.labelC1.TabIndex = 7;
-            this.labelC1.Text = "0,00";
+            this.labelNdDog.AutoSize = true;
+            this.labelNdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelNdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNdDog.Location = new System.Drawing.Point(647, 257);
+            this.labelNdDog.Name = "labelNdDog";
+            this.labelNdDog.Size = new System.Drawing.Size(45, 24);
+            this.labelNdDog.TabIndex = 8;
+            this.labelNdDog.Text = "0,00";
             // 
-            // labelC2
+            // labelRdDog
             // 
-            this.labelC2.AutoSize = true;
-            this.labelC2.BackColor = System.Drawing.Color.Transparent;
-            this.labelC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelC2.Location = new System.Drawing.Point(647, 257);
-            this.labelC2.Name = "labelC2";
-            this.labelC2.Size = new System.Drawing.Size(45, 24);
-            this.labelC2.TabIndex = 8;
-            this.labelC2.Text = "0,00";
+            this.labelRdDog.AutoSize = true;
+            this.labelRdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelRdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRdDog.Location = new System.Drawing.Point(646, 398);
+            this.labelRdDog.Name = "labelRdDog";
+            this.labelRdDog.Size = new System.Drawing.Size(45, 24);
+            this.labelRdDog.TabIndex = 9;
+            this.labelRdDog.Text = "0,00";
             // 
-            // labelC3
+            // labelPriceFoodStDog
             // 
-            this.labelC3.AutoSize = true;
-            this.labelC3.BackColor = System.Drawing.Color.Transparent;
-            this.labelC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelC3.Location = new System.Drawing.Point(646, 398);
-            this.labelC3.Name = "labelC3";
-            this.labelC3.Size = new System.Drawing.Size(45, 24);
-            this.labelC3.TabIndex = 9;
-            this.labelC3.Text = "0,00";
+            this.labelPriceFoodStDog.AutoSize = true;
+            this.labelPriceFoodStDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceFoodStDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPriceFoodStDog.Location = new System.Drawing.Point(646, 125);
+            this.labelPriceFoodStDog.Name = "labelPriceFoodStDog";
+            this.labelPriceFoodStDog.Size = new System.Drawing.Size(45, 24);
+            this.labelPriceFoodStDog.TabIndex = 10;
+            this.labelPriceFoodStDog.Text = "0,00";
             // 
-            // labelM1
+            // labelPriceAccessoriesStDog
             // 
-            this.labelM1.AutoSize = true;
-            this.labelM1.BackColor = System.Drawing.Color.Transparent;
-            this.labelM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelM1.Location = new System.Drawing.Point(646, 125);
-            this.labelM1.Name = "labelM1";
-            this.labelM1.Size = new System.Drawing.Size(45, 24);
-            this.labelM1.TabIndex = 10;
-            this.labelM1.Text = "0,00";
+            this.labelPriceAccessoriesStDog.AutoSize = true;
+            this.labelPriceAccessoriesStDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceAccessoriesStDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPriceAccessoriesStDog.Location = new System.Drawing.Point(646, 158);
+            this.labelPriceAccessoriesStDog.Name = "labelPriceAccessoriesStDog";
+            this.labelPriceAccessoriesStDog.Size = new System.Drawing.Size(45, 24);
+            this.labelPriceAccessoriesStDog.TabIndex = 11;
+            this.labelPriceAccessoriesStDog.Text = "0,00";
             // 
-            // labelA1
+            // labelFoodStDog
             // 
-            this.labelA1.AutoSize = true;
-            this.labelA1.BackColor = System.Drawing.Color.Transparent;
-            this.labelA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelA1.Location = new System.Drawing.Point(646, 158);
-            this.labelA1.Name = "labelA1";
-            this.labelA1.Size = new System.Drawing.Size(45, 24);
-            this.labelA1.TabIndex = 11;
-            this.labelA1.Text = "0,00";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(39, 125);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 24);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Mâncare";
+            this.labelFoodStDog.AutoSize = true;
+            this.labelFoodStDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelFoodStDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFoodStDog.Location = new System.Drawing.Point(39, 125);
+            this.labelFoodStDog.Name = "labelFoodStDog";
+            this.labelFoodStDog.Size = new System.Drawing.Size(55, 24);
+            this.labelFoodStDog.TabIndex = 12;
+            this.labelFoodStDog.Text = "Food";
             // 
             // label13
             // 
@@ -221,75 +208,75 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(39, 158);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 24);
+            this.label13.Size = new System.Drawing.Size(113, 24);
             this.label13.TabIndex = 13;
-            this.label13.Text = "Accesorii";
+            this.label13.Text = "Accessories";
             // 
-            // label14
+            // labelAccessoriesNdDog
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(39, 323);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 24);
-            this.label14.TabIndex = 15;
-            this.label14.Text = "Accesorii";
+            this.labelAccessoriesNdDog.AutoSize = true;
+            this.labelAccessoriesNdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelAccessoriesNdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccessoriesNdDog.Location = new System.Drawing.Point(39, 323);
+            this.labelAccessoriesNdDog.Name = "labelAccessoriesNdDog";
+            this.labelAccessoriesNdDog.Size = new System.Drawing.Size(113, 24);
+            this.labelAccessoriesNdDog.TabIndex = 15;
+            this.labelAccessoriesNdDog.Text = "Accessories";
             // 
-            // label15
+            // labelFoodNdDog
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(39, 290);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(84, 24);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "Mâncare";
+            this.labelFoodNdDog.AutoSize = true;
+            this.labelFoodNdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelFoodNdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFoodNdDog.Location = new System.Drawing.Point(39, 290);
+            this.labelFoodNdDog.Name = "labelFoodNdDog";
+            this.labelFoodNdDog.Size = new System.Drawing.Size(55, 24);
+            this.labelFoodNdDog.TabIndex = 14;
+            this.labelFoodNdDog.Text = "Food";
             // 
-            // label16
+            // labelAccessoriesRdDog
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(38, 469);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 24);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "Accesorii";
+            this.labelAccessoriesRdDog.AutoSize = true;
+            this.labelAccessoriesRdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelAccessoriesRdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccessoriesRdDog.Location = new System.Drawing.Point(38, 469);
+            this.labelAccessoriesRdDog.Name = "labelAccessoriesRdDog";
+            this.labelAccessoriesRdDog.Size = new System.Drawing.Size(113, 24);
+            this.labelAccessoriesRdDog.TabIndex = 17;
+            this.labelAccessoriesRdDog.Text = "Accessories";
             // 
-            // label17
+            // labelFoodRdDog
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(38, 436);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(84, 24);
-            this.label17.TabIndex = 16;
-            this.label17.Text = "Mâncare";
+            this.labelFoodRdDog.AutoSize = true;
+            this.labelFoodRdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelFoodRdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFoodRdDog.Location = new System.Drawing.Point(38, 436);
+            this.labelFoodRdDog.Name = "labelFoodRdDog";
+            this.labelFoodRdDog.Size = new System.Drawing.Size(55, 24);
+            this.labelFoodRdDog.TabIndex = 16;
+            this.labelFoodRdDog.Text = "Food";
             // 
-            // labelM3
+            // labelPriceFoodRdDog
             // 
-            this.labelM3.AutoSize = true;
-            this.labelM3.BackColor = System.Drawing.Color.Transparent;
-            this.labelM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.labelM3.Location = new System.Drawing.Point(646, 436);
-            this.labelM3.Name = "labelM3";
-            this.labelM3.Size = new System.Drawing.Size(45, 24);
-            this.labelM3.TabIndex = 18;
-            this.labelM3.Text = "0,00";
+            this.labelPriceFoodRdDog.AutoSize = true;
+            this.labelPriceFoodRdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceFoodRdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.labelPriceFoodRdDog.Location = new System.Drawing.Point(646, 436);
+            this.labelPriceFoodRdDog.Name = "labelPriceFoodRdDog";
+            this.labelPriceFoodRdDog.Size = new System.Drawing.Size(45, 24);
+            this.labelPriceFoodRdDog.TabIndex = 18;
+            this.labelPriceFoodRdDog.Text = "0,00";
             // 
-            // labelA3
+            // labelPriceAccessoriesRdDog
             // 
-            this.labelA3.AutoSize = true;
-            this.labelA3.BackColor = System.Drawing.Color.Transparent;
-            this.labelA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.labelA3.Location = new System.Drawing.Point(646, 469);
-            this.labelA3.Name = "labelA3";
-            this.labelA3.Size = new System.Drawing.Size(45, 24);
-            this.labelA3.TabIndex = 19;
-            this.labelA3.Text = "0,00";
+            this.labelPriceAccessoriesRdDog.AutoSize = true;
+            this.labelPriceAccessoriesRdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceAccessoriesRdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.labelPriceAccessoriesRdDog.Location = new System.Drawing.Point(646, 469);
+            this.labelPriceAccessoriesRdDog.Name = "labelPriceAccessoriesRdDog";
+            this.labelPriceAccessoriesRdDog.Size = new System.Drawing.Size(45, 24);
+            this.labelPriceAccessoriesRdDog.TabIndex = 19;
+            this.labelPriceAccessoriesRdDog.Text = "0,00";
             // 
             // labelTotal
             // 
@@ -303,219 +290,219 @@
             this.labelTotal.TabIndex = 21;
             this.labelTotal.Text = "0,00";
             // 
-            // label21
+            // labelTotalPrice
             // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label21.ForeColor = System.Drawing.Color.DarkRed;
-            this.label21.Location = new System.Drawing.Point(566, 514);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(56, 24);
-            this.label21.TabIndex = 20;
-            this.label21.Text = "Total:";
+            this.labelTotalPrice.AutoSize = true;
+            this.labelTotalPrice.BackColor = System.Drawing.Color.Transparent;
+            this.labelTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.labelTotalPrice.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelTotalPrice.Location = new System.Drawing.Point(566, 514);
+            this.labelTotalPrice.Name = "labelTotalPrice";
+            this.labelTotalPrice.Size = new System.Drawing.Size(56, 24);
+            this.labelTotalPrice.TabIndex = 20;
+            this.labelTotalPrice.Text = "Total:";
             // 
-            // labelM2
+            // labelPriceFoodNdDog
             // 
-            this.labelM2.AutoSize = true;
-            this.labelM2.BackColor = System.Drawing.Color.Transparent;
-            this.labelM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelM2.Location = new System.Drawing.Point(647, 290);
-            this.labelM2.Name = "labelM2";
-            this.labelM2.Size = new System.Drawing.Size(45, 24);
-            this.labelM2.TabIndex = 22;
-            this.labelM2.Text = "0,00";
+            this.labelPriceFoodNdDog.AutoSize = true;
+            this.labelPriceFoodNdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceFoodNdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPriceFoodNdDog.Location = new System.Drawing.Point(647, 290);
+            this.labelPriceFoodNdDog.Name = "labelPriceFoodNdDog";
+            this.labelPriceFoodNdDog.Size = new System.Drawing.Size(45, 24);
+            this.labelPriceFoodNdDog.TabIndex = 22;
+            this.labelPriceFoodNdDog.Text = "0,00";
             // 
-            // labelA2
+            // labelPriceAccessoriesNdDog
             // 
-            this.labelA2.AutoSize = true;
-            this.labelA2.BackColor = System.Drawing.Color.Transparent;
-            this.labelA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelA2.Location = new System.Drawing.Point(647, 323);
-            this.labelA2.Name = "labelA2";
-            this.labelA2.Size = new System.Drawing.Size(45, 24);
-            this.labelA2.TabIndex = 23;
-            this.labelA2.Text = "0,00";
+            this.labelPriceAccessoriesNdDog.AutoSize = true;
+            this.labelPriceAccessoriesNdDog.BackColor = System.Drawing.Color.Transparent;
+            this.labelPriceAccessoriesNdDog.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPriceAccessoriesNdDog.Location = new System.Drawing.Point(647, 323);
+            this.labelPriceAccessoriesNdDog.Name = "labelPriceAccessoriesNdDog";
+            this.labelPriceAccessoriesNdDog.Size = new System.Drawing.Size(45, 24);
+            this.labelPriceAccessoriesNdDog.TabIndex = 23;
+            this.labelPriceAccessoriesNdDog.Text = "0,00";
             // 
-            // labelAltCaine1
+            // labelAnotherDog1
             // 
-            this.labelAltCaine1.AutoSize = true;
-            this.labelAltCaine1.BackColor = System.Drawing.Color.Transparent;
-            this.labelAltCaine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAltCaine1.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelAltCaine1.Location = new System.Drawing.Point(806, 93);
-            this.labelAltCaine1.Name = "labelAltCaine1";
-            this.labelAltCaine1.Size = new System.Drawing.Size(134, 24);
-            this.labelAltCaine1.TabIndex = 24;
-            this.labelAltCaine1.Text = "Alege alt câine";
-            this.labelAltCaine1.Visible = false;
-            this.labelAltCaine1.Click += new System.EventHandler(this.labelAltCaine1_Click);
+            this.labelAnotherDog1.AutoSize = true;
+            this.labelAnotherDog1.BackColor = System.Drawing.Color.Transparent;
+            this.labelAnotherDog1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnotherDog1.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelAnotherDog1.Location = new System.Drawing.Point(806, 93);
+            this.labelAnotherDog1.Name = "labelAnotherDog1";
+            this.labelAnotherDog1.Size = new System.Drawing.Size(183, 24);
+            this.labelAnotherDog1.TabIndex = 24;
+            this.labelAnotherDog1.Text = "Choose another dog";
+            this.labelAnotherDog1.Visible = false;
+            this.labelAnotherDog1.Click += new System.EventHandler(this.labelAnotherDog1_Click);
             // 
-            // labelAltCaine2
+            // labelAnotherDog2
             // 
-            this.labelAltCaine2.AutoSize = true;
-            this.labelAltCaine2.BackColor = System.Drawing.Color.Transparent;
-            this.labelAltCaine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAltCaine2.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelAltCaine2.Location = new System.Drawing.Point(807, 249);
-            this.labelAltCaine2.Name = "labelAltCaine2";
-            this.labelAltCaine2.Size = new System.Drawing.Size(134, 24);
-            this.labelAltCaine2.TabIndex = 27;
-            this.labelAltCaine2.Text = "Alege alt câine";
-            this.labelAltCaine2.Visible = false;
-            this.labelAltCaine2.Click += new System.EventHandler(this.labelAltCaine2_Click);
+            this.labelAnotherDog2.AutoSize = true;
+            this.labelAnotherDog2.BackColor = System.Drawing.Color.Transparent;
+            this.labelAnotherDog2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnotherDog2.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelAnotherDog2.Location = new System.Drawing.Point(807, 249);
+            this.labelAnotherDog2.Name = "labelAnotherDog2";
+            this.labelAnotherDog2.Size = new System.Drawing.Size(183, 24);
+            this.labelAnotherDog2.TabIndex = 27;
+            this.labelAnotherDog2.Text = "Choose another dog";
+            this.labelAnotherDog2.Visible = false;
+            this.labelAnotherDog2.Click += new System.EventHandler(this.labelAnotherDog2_Click);
             // 
-            // checkBoxM1
+            // checkBoxFood1
             // 
-            this.checkBoxM1.AutoSize = true;
-            this.checkBoxM1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxM1.Enabled = false;
-            this.checkBoxM1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxM1.Location = new System.Drawing.Point(810, 121);
-            this.checkBoxM1.Name = "checkBoxM1";
-            this.checkBoxM1.Size = new System.Drawing.Size(103, 28);
-            this.checkBoxM1.TabIndex = 33;
-            this.checkBoxM1.Text = "Mâncare";
-            this.checkBoxM1.UseVisualStyleBackColor = false;
-            this.checkBoxM1.CheckedChanged += new System.EventHandler(this.checkBoxM1_CheckedChanged);
+            this.checkBoxFood1.AutoSize = true;
+            this.checkBoxFood1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxFood1.Enabled = false;
+            this.checkBoxFood1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxFood1.Location = new System.Drawing.Point(810, 121);
+            this.checkBoxFood1.Name = "checkBoxFood1";
+            this.checkBoxFood1.Size = new System.Drawing.Size(74, 28);
+            this.checkBoxFood1.TabIndex = 33;
+            this.checkBoxFood1.Text = "Food";
+            this.checkBoxFood1.UseVisualStyleBackColor = false;
+            this.checkBoxFood1.CheckedChanged += new System.EventHandler(this.checkBoxFood1_CheckedChanged);
             // 
-            // checkBoxM2
+            // checkBoxFood2
             // 
-            this.checkBoxM2.AutoSize = true;
-            this.checkBoxM2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxM2.Enabled = false;
-            this.checkBoxM2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxM2.Location = new System.Drawing.Point(810, 286);
-            this.checkBoxM2.Name = "checkBoxM2";
-            this.checkBoxM2.Size = new System.Drawing.Size(103, 28);
-            this.checkBoxM2.TabIndex = 34;
-            this.checkBoxM2.Text = "Mâncare";
-            this.checkBoxM2.UseVisualStyleBackColor = false;
-            this.checkBoxM2.CheckedChanged += new System.EventHandler(this.checkBoxM2_CheckedChanged);
+            this.checkBoxFood2.AutoSize = true;
+            this.checkBoxFood2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxFood2.Enabled = false;
+            this.checkBoxFood2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxFood2.Location = new System.Drawing.Point(810, 286);
+            this.checkBoxFood2.Name = "checkBoxFood2";
+            this.checkBoxFood2.Size = new System.Drawing.Size(74, 28);
+            this.checkBoxFood2.TabIndex = 34;
+            this.checkBoxFood2.Text = "Food";
+            this.checkBoxFood2.UseVisualStyleBackColor = false;
+            this.checkBoxFood2.CheckedChanged += new System.EventHandler(this.checkBoxFood2_CheckedChanged);
             // 
-            // checkBoxM3
+            // checkBoxFood3
             // 
-            this.checkBoxM3.AutoSize = true;
-            this.checkBoxM3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxM3.Enabled = false;
-            this.checkBoxM3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxM3.Location = new System.Drawing.Point(810, 432);
-            this.checkBoxM3.Name = "checkBoxM3";
-            this.checkBoxM3.Size = new System.Drawing.Size(103, 28);
-            this.checkBoxM3.TabIndex = 35;
-            this.checkBoxM3.Text = "Mâncare";
-            this.checkBoxM3.UseVisualStyleBackColor = false;
-            this.checkBoxM3.CheckedChanged += new System.EventHandler(this.checkBoxM3_CheckedChanged);
+            this.checkBoxFood3.AutoSize = true;
+            this.checkBoxFood3.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxFood3.Enabled = false;
+            this.checkBoxFood3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxFood3.Location = new System.Drawing.Point(810, 432);
+            this.checkBoxFood3.Name = "checkBoxFood3";
+            this.checkBoxFood3.Size = new System.Drawing.Size(74, 28);
+            this.checkBoxFood3.TabIndex = 35;
+            this.checkBoxFood3.Text = "Food";
+            this.checkBoxFood3.UseVisualStyleBackColor = false;
+            this.checkBoxFood3.CheckedChanged += new System.EventHandler(this.checkBoxFood3_CheckedChanged);
             // 
-            // labelAltCaine3
+            // labelAnotherDog3
             // 
-            this.labelAltCaine3.AutoSize = true;
-            this.labelAltCaine3.BackColor = System.Drawing.Color.Transparent;
-            this.labelAltCaine3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAltCaine3.ForeColor = System.Drawing.Color.DarkRed;
-            this.labelAltCaine3.Location = new System.Drawing.Point(807, 390);
-            this.labelAltCaine3.Name = "labelAltCaine3";
-            this.labelAltCaine3.Size = new System.Drawing.Size(134, 24);
-            this.labelAltCaine3.TabIndex = 30;
-            this.labelAltCaine3.Text = "Alege alt câine";
-            this.labelAltCaine3.Visible = false;
-            this.labelAltCaine3.Click += new System.EventHandler(this.labelAltCaine3_Click);
+            this.labelAnotherDog3.AutoSize = true;
+            this.labelAnotherDog3.BackColor = System.Drawing.Color.Transparent;
+            this.labelAnotherDog3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnotherDog3.ForeColor = System.Drawing.Color.DarkRed;
+            this.labelAnotherDog3.Location = new System.Drawing.Point(807, 390);
+            this.labelAnotherDog3.Name = "labelAnotherDog3";
+            this.labelAnotherDog3.Size = new System.Drawing.Size(183, 24);
+            this.labelAnotherDog3.TabIndex = 30;
+            this.labelAnotherDog3.Text = "Choose another dog";
+            this.labelAnotherDog3.Visible = false;
+            this.labelAnotherDog3.Click += new System.EventHandler(this.labelAnotherDog3_Click);
             // 
-            // checkBoxA1
+            // checkBoxAccessories1
             // 
-            this.checkBoxA1.AutoSize = true;
-            this.checkBoxA1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxA1.Enabled = false;
-            this.checkBoxA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxA1.Location = new System.Drawing.Point(810, 154);
-            this.checkBoxA1.Name = "checkBoxA1";
-            this.checkBoxA1.Size = new System.Drawing.Size(107, 28);
-            this.checkBoxA1.TabIndex = 36;
-            this.checkBoxA1.Text = "Accesorii";
-            this.checkBoxA1.UseVisualStyleBackColor = false;
-            this.checkBoxA1.CheckedChanged += new System.EventHandler(this.checkBoxA1_CheckedChanged);
+            this.checkBoxAccessories1.AutoSize = true;
+            this.checkBoxAccessories1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxAccessories1.Enabled = false;
+            this.checkBoxAccessories1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAccessories1.Location = new System.Drawing.Point(810, 154);
+            this.checkBoxAccessories1.Name = "checkBoxAccessories1";
+            this.checkBoxAccessories1.Size = new System.Drawing.Size(132, 28);
+            this.checkBoxAccessories1.TabIndex = 36;
+            this.checkBoxAccessories1.Text = "Accessories";
+            this.checkBoxAccessories1.UseVisualStyleBackColor = false;
+            this.checkBoxAccessories1.CheckedChanged += new System.EventHandler(this.checkBoxAccessories1_CheckedChanged);
             // 
-            // checkBoxA2
+            // checkBoxAccessories2
             // 
-            this.checkBoxA2.AutoSize = true;
-            this.checkBoxA2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxA2.Enabled = false;
-            this.checkBoxA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxA2.Location = new System.Drawing.Point(810, 323);
-            this.checkBoxA2.Name = "checkBoxA2";
-            this.checkBoxA2.Size = new System.Drawing.Size(107, 28);
-            this.checkBoxA2.TabIndex = 37;
-            this.checkBoxA2.Text = "Accesorii";
-            this.checkBoxA2.UseVisualStyleBackColor = false;
-            this.checkBoxA2.CheckedChanged += new System.EventHandler(this.checkBoxA2_CheckedChanged);
+            this.checkBoxAccessories2.AutoSize = true;
+            this.checkBoxAccessories2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxAccessories2.Enabled = false;
+            this.checkBoxAccessories2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAccessories2.Location = new System.Drawing.Point(810, 323);
+            this.checkBoxAccessories2.Name = "checkBoxAccessories2";
+            this.checkBoxAccessories2.Size = new System.Drawing.Size(132, 28);
+            this.checkBoxAccessories2.TabIndex = 37;
+            this.checkBoxAccessories2.Text = "Accessories";
+            this.checkBoxAccessories2.UseVisualStyleBackColor = false;
+            this.checkBoxAccessories2.CheckedChanged += new System.EventHandler(this.checkBoxAccessories2_CheckedChanged);
             // 
-            // checkBoxA3
+            // checkBoxAccessories3
             // 
-            this.checkBoxA3.AutoSize = true;
-            this.checkBoxA3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxA3.Enabled = false;
-            this.checkBoxA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxA3.Location = new System.Drawing.Point(811, 465);
-            this.checkBoxA3.Name = "checkBoxA3";
-            this.checkBoxA3.Size = new System.Drawing.Size(107, 28);
-            this.checkBoxA3.TabIndex = 38;
-            this.checkBoxA3.Text = "Accesorii";
-            this.checkBoxA3.UseVisualStyleBackColor = false;
-            this.checkBoxA3.CheckedChanged += new System.EventHandler(this.checkBoxA3_CheckedChanged);
+            this.checkBoxAccessories3.AutoSize = true;
+            this.checkBoxAccessories3.BackColor = System.Drawing.Color.Transparent;
+            this.checkBoxAccessories3.Enabled = false;
+            this.checkBoxAccessories3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAccessories3.Location = new System.Drawing.Point(811, 465);
+            this.checkBoxAccessories3.Name = "checkBoxAccessories3";
+            this.checkBoxAccessories3.Size = new System.Drawing.Size(132, 28);
+            this.checkBoxAccessories3.TabIndex = 38;
+            this.checkBoxAccessories3.Text = "Accessories";
+            this.checkBoxAccessories3.UseVisualStyleBackColor = false;
+            this.checkBoxAccessories3.CheckedChanged += new System.EventHandler(this.checkBoxAccessories3_CheckedChanged);
             // 
-            // pictureBoxCaine1
+            // pictureBoxStDog
             // 
-            this.pictureBoxCaine1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCaine1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxCaine1.Location = new System.Drawing.Point(411, 93);
-            this.pictureBoxCaine1.Name = "pictureBoxCaine1";
-            this.pictureBoxCaine1.Size = new System.Drawing.Size(155, 90);
-            this.pictureBoxCaine1.TabIndex = 39;
-            this.pictureBoxCaine1.TabStop = false;
+            this.pictureBoxStDog.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxStDog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxStDog.Location = new System.Drawing.Point(411, 93);
+            this.pictureBoxStDog.Name = "pictureBoxStDog";
+            this.pictureBoxStDog.Size = new System.Drawing.Size(155, 90);
+            this.pictureBoxStDog.TabIndex = 39;
+            this.pictureBoxStDog.TabStop = false;
             // 
-            // pictureBoxCaine2
+            // pictureBoxNdDog
             // 
-            this.pictureBoxCaine2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCaine2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxCaine2.Location = new System.Drawing.Point(411, 257);
-            this.pictureBoxCaine2.Name = "pictureBoxCaine2";
-            this.pictureBoxCaine2.Size = new System.Drawing.Size(155, 90);
-            this.pictureBoxCaine2.TabIndex = 40;
-            this.pictureBoxCaine2.TabStop = false;
+            this.pictureBoxNdDog.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxNdDog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxNdDog.Location = new System.Drawing.Point(411, 257);
+            this.pictureBoxNdDog.Name = "pictureBoxNdDog";
+            this.pictureBoxNdDog.Size = new System.Drawing.Size(155, 90);
+            this.pictureBoxNdDog.TabIndex = 40;
+            this.pictureBoxNdDog.TabStop = false;
             // 
-            // pictureBoxCaine3
+            // pictureBoxRdDog
             // 
-            this.pictureBoxCaine3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCaine3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxCaine3.Location = new System.Drawing.Point(411, 403);
-            this.pictureBoxCaine3.Name = "pictureBoxCaine3";
-            this.pictureBoxCaine3.Size = new System.Drawing.Size(155, 90);
-            this.pictureBoxCaine3.TabIndex = 41;
-            this.pictureBoxCaine3.TabStop = false;
+            this.pictureBoxRdDog.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxRdDog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxRdDog.Location = new System.Drawing.Point(411, 403);
+            this.pictureBoxRdDog.Name = "pictureBoxRdDog";
+            this.pictureBoxRdDog.Size = new System.Drawing.Size(155, 90);
+            this.pictureBoxRdDog.TabIndex = 41;
+            this.pictureBoxRdDog.TabStop = false;
             // 
-            // pictureBox1
+            // pictureBoxGoBack
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 499);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(162, 61);
-            this.pictureBox1.TabIndex = 42;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
+            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxGoBack.Location = new System.Drawing.Point(12, 499);
+            this.pictureBoxGoBack.Name = "pictureBoxGoBack";
+            this.pictureBoxGoBack.Size = new System.Drawing.Size(162, 61);
+            this.pictureBoxGoBack.TabIndex = 42;
+            this.pictureBoxGoBack.TabStop = false;
+            this.pictureBoxGoBack.Click += new System.EventHandler(this.pictureBoxGoBack_Click);
             // 
-            // pictureBox2
+            // pictureBoxPay
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::DogTopia.Properties.Resources.btn_plateste;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(811, 499);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 61);
-            this.pictureBox2.TabIndex = 43;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBoxPay.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxPay.BackgroundImage = global::DogTopia.Properties.Resources.btn_plateste;
+            this.pictureBoxPay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxPay.Location = new System.Drawing.Point(811, 499);
+            this.pictureBoxPay.Name = "pictureBoxPay";
+            this.pictureBoxPay.Size = new System.Drawing.Size(170, 61);
+            this.pictureBoxPay.TabIndex = 43;
+            this.pictureBoxPay.TabStop = false;
+            this.pictureBoxPay.Click += new System.EventHandler(this.pictureBoxPay_Click);
             // 
             // ShoppingCartForm
             // 
@@ -523,52 +510,53 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBoxCaine3);
-            this.Controls.Add(this.pictureBoxCaine2);
-            this.Controls.Add(this.pictureBoxCaine1);
-            this.Controls.Add(this.checkBoxA3);
-            this.Controls.Add(this.checkBoxA2);
-            this.Controls.Add(this.checkBoxA1);
-            this.Controls.Add(this.checkBoxM3);
-            this.Controls.Add(this.checkBoxM2);
-            this.Controls.Add(this.checkBoxM1);
-            this.Controls.Add(this.labelAltCaine3);
-            this.Controls.Add(this.labelAltCaine2);
-            this.Controls.Add(this.labelAltCaine1);
-            this.Controls.Add(this.labelA2);
-            this.Controls.Add(this.labelM2);
+            this.Controls.Add(this.pictureBoxPay);
+            this.Controls.Add(this.pictureBoxGoBack);
+            this.Controls.Add(this.pictureBoxRdDog);
+            this.Controls.Add(this.pictureBoxNdDog);
+            this.Controls.Add(this.pictureBoxStDog);
+            this.Controls.Add(this.checkBoxAccessories3);
+            this.Controls.Add(this.checkBoxAccessories2);
+            this.Controls.Add(this.checkBoxAccessories1);
+            this.Controls.Add(this.checkBoxFood3);
+            this.Controls.Add(this.checkBoxFood2);
+            this.Controls.Add(this.checkBoxFood1);
+            this.Controls.Add(this.labelAnotherDog3);
+            this.Controls.Add(this.labelAnotherDog2);
+            this.Controls.Add(this.labelAnotherDog1);
+            this.Controls.Add(this.labelPriceAccessoriesNdDog);
+            this.Controls.Add(this.labelPriceFoodNdDog);
             this.Controls.Add(this.labelTotal);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.labelA3);
-            this.Controls.Add(this.labelM3);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
+            this.Controls.Add(this.labelTotalPrice);
+            this.Controls.Add(this.labelPriceAccessoriesRdDog);
+            this.Controls.Add(this.labelPriceFoodRdDog);
+            this.Controls.Add(this.labelAccessoriesRdDog);
+            this.Controls.Add(this.labelFoodRdDog);
+            this.Controls.Add(this.labelAccessoriesNdDog);
+            this.Controls.Add(this.labelFoodNdDog);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.labelA1);
-            this.Controls.Add(this.labelM1);
-            this.Controls.Add(this.labelC3);
-            this.Controls.Add(this.labelC2);
-            this.Controls.Add(this.labelC1);
-            this.Controls.Add(this.labelCaine3);
-            this.Controls.Add(this.labelCaine2);
-            this.Controls.Add(this.labelCaine1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.labelFoodStDog);
+            this.Controls.Add(this.labelPriceAccessoriesStDog);
+            this.Controls.Add(this.labelPriceFoodStDog);
+            this.Controls.Add(this.labelRdDog);
+            this.Controls.Add(this.labelNdDog);
+            this.Controls.Add(this.labelStDog);
+            this.Controls.Add(this.labelAddAnotherDog3);
+            this.Controls.Add(this.labelAddAnotherDog2);
+            this.Controls.Add(this.labelAddAnotherDog1);
+            this.Controls.Add(this.labelPrice);
+            this.Controls.Add(this.labelYourDogs);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ShoppingCartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "                                  ";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCaine3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Text = "DogTopia                       ";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStDog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNdDog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRdDog)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -576,42 +564,41 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelCaine1;
-        private System.Windows.Forms.Label labelCaine2;
-        private System.Windows.Forms.Label labelCaine3;
-        private System.Windows.Forms.Label labelC1;
-        private System.Windows.Forms.Label labelC2;
-        private System.Windows.Forms.Label labelC3;
-        private System.Windows.Forms.Label labelM1;
-        private System.Windows.Forms.Label labelA1;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label labelYourDogs;
+        private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.Label labelAddAnotherDog1;
+        private System.Windows.Forms.Label labelAddAnotherDog2;
+        private System.Windows.Forms.Label labelAddAnotherDog3;
+        private System.Windows.Forms.Label labelStDog;
+        private System.Windows.Forms.Label labelNdDog;
+        private System.Windows.Forms.Label labelRdDog;
+        private System.Windows.Forms.Label labelPriceFoodStDog;
+        private System.Windows.Forms.Label labelPriceAccessoriesStDog;
+        private System.Windows.Forms.Label labelFoodStDog;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label labelM3;
-        private System.Windows.Forms.Label labelA3;
+        private System.Windows.Forms.Label labelAccessoriesNdDog;
+        private System.Windows.Forms.Label labelFoodNdDog;
+        private System.Windows.Forms.Label labelAccessoriesRdDog;
+        private System.Windows.Forms.Label labelFoodRdDog;
+        private System.Windows.Forms.Label labelPriceFoodRdDog;
+        private System.Windows.Forms.Label labelPriceAccessoriesRdDog;
         private System.Windows.Forms.Label labelTotal;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label labelM2;
-        private System.Windows.Forms.Label labelA2;
-        private System.Windows.Forms.Label labelAltCaine1;
-        private System.Windows.Forms.Label labelAltCaine2;
-        private System.Windows.Forms.CheckBox checkBoxM1;
-        private System.Windows.Forms.CheckBox checkBoxM2;
-        private System.Windows.Forms.CheckBox checkBoxM3;
-        private System.Windows.Forms.Label labelAltCaine3;
-        private System.Windows.Forms.CheckBox checkBoxA1;
-        private System.Windows.Forms.CheckBox checkBoxA2;
-        private System.Windows.Forms.CheckBox checkBoxA3;
-        private System.Windows.Forms.PictureBox pictureBoxCaine1;
-        private System.Windows.Forms.PictureBox pictureBoxCaine2;
-        private System.Windows.Forms.PictureBox pictureBoxCaine3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label labelTotalPrice;
+        private System.Windows.Forms.Label labelPriceFoodNdDog;
+        private System.Windows.Forms.Label labelPriceAccessoriesNdDog;
+        private System.Windows.Forms.Label labelAnotherDog1;
+        private System.Windows.Forms.Label labelAnotherDog2;
+        private System.Windows.Forms.CheckBox checkBoxFood1;
+        private System.Windows.Forms.CheckBox checkBoxFood2;
+        private System.Windows.Forms.CheckBox checkBoxFood3;
+        private System.Windows.Forms.Label labelAnotherDog3;
+        private System.Windows.Forms.CheckBox checkBoxAccessories1;
+        private System.Windows.Forms.CheckBox checkBoxAccessories2;
+        private System.Windows.Forms.CheckBox checkBoxAccessories3;
+        private System.Windows.Forms.PictureBox pictureBoxStDog;
+        private System.Windows.Forms.PictureBox pictureBoxNdDog;
+        private System.Windows.Forms.PictureBox pictureBoxRdDog;
+        private System.Windows.Forms.PictureBox pictureBoxGoBack;
+        private System.Windows.Forms.PictureBox pictureBoxPay;
     }
 }

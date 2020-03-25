@@ -13,126 +13,112 @@ namespace DogTopia
 {
     public partial class SignUpForm : Form
     {
-        public static bool areCaractereSpeciale(TextBox x)
+        public static bool hasSpecialCharacters(TextBox textToBeVerified)
         {
-            string sir = x.Text.Trim();
-
-            for (int i = 0; i < sir.Length; i++)
-                if (sir[i] != ' ' && sir[i] != '-' && !Char.IsLetterOrDigit(sir[i])) return true;
+            string stringToBeVerified = textToBeVerified.Text.Trim();
+            for (int i = 0; i < stringToBeVerified.Length; i++)
+                if (stringToBeVerified[i] != ' ' && stringToBeVerified[i] != '-' && !Char.IsLetterOrDigit(stringToBeVerified[i])) return true;
             return false;
         }
 
-        public static bool contineSpatiiSauCratime(TextBox x)
+        public static bool hasSpacesOrDashes(TextBox textToBeVerified)
         {
-            string sir = x.Text;
-
-            for (int i = 0; i < sir.Length; i++)
-                if (sir[i] == ' ' ||sir[i] == '-') return true;
+            string stringToBeVerified = textToBeVerified.Text;
+            for (int i = 0; i < stringToBeVerified.Length; i++)
+                if (stringToBeVerified[i] == ' ' ||  stringToBeVerified[i] == '-') return true;
             return false;
         }
 
         public SignUpForm()
         {
             InitializeComponent();
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox5.Clear();
-            textBox6.Clear();
-
-            checkBox1.Checked = false;
-            checkBox2.Checked = false;
+            textBoxUserSurname.Clear();
+            textBoxUserFirstname.Clear();
+            textBoxUserUsername.Clear();
+            textBoxUserEmail.Clear();
+            textBoxUserPassword.Clear();
+            textBoxConfirmUsername.Clear();
+            checkBoxAgreeConditions.Checked = false;
+            checkBoxAgreePersonalData.Checked = false;
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void pictureBoxLogin_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            if (areCaractereSpeciale(textBox1) == true)
+            if (hasSpecialCharacters(textBoxUserSurname) == true)
             {
-                textBox1.Clear();
-                MessageBox.Show("Te rugăm să introduci un nume care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxUserSurname.Clear();
+                MessageBox.Show("Please introduce a surname that has no special characters!", "Special characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (hasSpecialCharacters(textBoxUserFirstname) == true)
+            {
+                textBoxUserFirstname.Clear();
+                MessageBox.Show("Please introduce a first name that has no special characters!", "Special characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (hasSpecialCharacters(textBoxUserUsername) == true)
+            {
+                textBoxUserUsername.Clear();
+                MessageBox.Show("Please introduce an username that has no special characters!", "Special characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (hasSpecialCharacters(textBoxUserPassword) == true || hasSpacesOrDashes(textBoxUserPassword) == true)
+            {
+                textBoxUserPassword.Clear();
+                MessageBox.Show("Please introduce a password that has no special characters!", "Special characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (String.IsNullOrEmpty(textBoxUserSurname.Text.Trim()) || String.IsNullOrEmpty(textBoxUserFirstname.Text.Trim()) || String.IsNullOrEmpty(textBoxUserUsername.Text.Trim()) || String.IsNullOrEmpty(textBoxUserEmail.Text.Trim())
+                || String.IsNullOrEmpty(textBoxUserPassword.Text.Trim()) || String.IsNullOrEmpty(textBoxConfirmUsername.Text.Trim()))
+            {
+                MessageBox.Show("Please complete all of the mandatory fields!", "Incomplete fields.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (checkBoxAgreeConditions.Checked == false || checkBoxAgreePersonalData.Checked == false)
+            {
+                MessageBox.Show("To continue you have to consent to DogTopia's policy and personal data processing!", "DogTopia's policy/Data processing.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (textBoxUserPassword.Text != textBoxConfirmUsername.Text)
+            {
+                MessageBox.Show("Please introduce again the passwords!", "The passwords don't match.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxUserPassword.Clear();
+                textBoxConfirmUsername.Clear();
                 return;
             }
 
-            if (areCaractereSpeciale(textBox2) == true)
+            if (!textBoxUserEmail.Text.Contains("@") || !textBoxUserEmail.Text.Contains(".com"))
             {
-                textBox2.Clear();
-                MessageBox.Show("Te rugăm să introduci un prenume care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please introduce a valid email adress!", "Invalid email adress.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxUserEmail.Clear();
                 return;
             }
-
-            if (areCaractereSpeciale(textBox3) == true)
-            {
-                textBox3.Clear();
-                MessageBox.Show("Te rugăm să introduci un username care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (areCaractereSpeciale(textBox5) == true || contineSpatiiSauCratime(textBox5) == true)
-            {
-                textBox5.Clear();
-                MessageBox.Show("Te rugăm să introduci o parolă care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (String.IsNullOrEmpty(textBox1.Text.Trim()) || String.IsNullOrEmpty(textBox2.Text.Trim()) || String.IsNullOrEmpty(textBox3.Text.Trim()) || String.IsNullOrEmpty(textBox4.Text.Trim())
-                || String.IsNullOrEmpty(textBox5.Text.Trim()) || String.IsNullOrEmpty(textBox6.Text.Trim()))
-            {
-                MessageBox.Show("Te rugăm să completezi toate câmpurile!", "Câmpuri necompletate", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (checkBox1.Checked == false || checkBox2.Checked == false)
-            {
-                MessageBox.Show("Pentru a continua trebuie sa fii de acord cu politica DogTopia si cu prelucrarea datelor!", "Politica DogTopia/Prelucrare date", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (textBox5.Text != textBox6.Text)
-            {
-                MessageBox.Show("Te rugăm să reintroduci parolele", "Parolelele nu corespund", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox5.Clear();
-                textBox6.Clear();
-                return;
-            }
-
-            if (!textBox4.Text.Contains("@") || !textBox4.Text.Contains(".com"))
-            {
-                MessageBox.Show("Te rugăm să introduci un email valid", "Adresă de email invalidă", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox4.Clear();
-                return;
-            }
-            // Daca nu este nicio problema, adaugam datele intr-un database.
-            string nume = textBox1.Text.Trim();
-            string prenume = textBox2.Text.Trim();
-            string email = textBox4.Text.Trim();
-            string username = textBox3.Text.Trim();
-            string parola = textBox5.Text.Trim();
+            // If there's no problem, add the data to the database.
+            string surname = textBoxUserSurname.Text.Trim();
+            string firstname = textBoxUserFirstname.Text.Trim();
+            string emailAdress = textBoxUserEmail.Text.Trim();
+            string username = textBoxUserUsername.Text.Trim();
+            string password = textBoxUserPassword.Text.Trim();
             
-            using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Atestat-DogTopia\DogTopia\DogTopia\Conturi.mdf;Integrated Security=True"))
+            using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Atestat-DogTopia\DogTopia\DogTopia\Conturi.mdf;Integrated Security=True"))
             {
-                conn.Open();
+                connection.Open();
                 String command = String.Format(@"insert into Conturi(Nume, Prenume, Email, Username, Parola) 
-                    values('{0}', '{1}', '{2}', '{3}', '{4}')", nume, prenume, email, username, parola);
-                SqlCommand cmd = new SqlCommand(command, conn);
+                    values('{0}', '{1}', '{2}', '{3}', '{4}')", surname, firstname, emailAdress, username, password);
+                SqlCommand cmd = new SqlCommand(command, connection);
                 cmd.ExecuteNonQuery();
             }
 
-            // Daca nu este nicio problema, se va intra in LoginForm
+            // If there's no problem, go to LoginForm
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Hide(); 
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBoxGoBack_Click(object sender, EventArgs e)
         {
-            IntroForm intr = new IntroForm();
-            intr.Show();
+            IntroForm introForm = new IntroForm();
+            introForm.Show();
             this.Hide();
         }
     }

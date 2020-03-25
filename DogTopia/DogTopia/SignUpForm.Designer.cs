@@ -28,236 +28,223 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
+            this.pictureBoxLogin = new System.Windows.Forms.PictureBox();
+            this.textBoxUserFirstname = new System.Windows.Forms.TextBox();
+            this.textBoxUserSurname = new System.Windows.Forms.TextBox();
+            this.labelUserFirstname = new System.Windows.Forms.Label();
+            this.labelUserSurname = new System.Windows.Forms.Label();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.labelRegistration = new System.Windows.Forms.Label();
+            this.textBoxUserUsername = new System.Windows.Forms.TextBox();
+            this.labelUserPassword = new System.Windows.Forms.Label();
+            this.labelUserUsername = new System.Windows.Forms.Label();
+            this.labelUserCredentials = new System.Windows.Forms.Label();
+            this.labelAccountData = new System.Windows.Forms.Label();
+            this.textBoxUserEmail = new System.Windows.Forms.TextBox();
+            this.labelUserEmail = new System.Windows.Forms.Label();
+            this.textBoxUserPassword = new System.Windows.Forms.TextBox();
+            this.checkBoxAgreeConditions = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.checkBoxAgreePersonalData = new System.Windows.Forms.CheckBox();
+            this.textBoxConfirmUsername = new System.Windows.Forms.TextBox();
+            this.labelConfirmPassword = new System.Windows.Forms.Label();
+            this.labelAsterisk1 = new System.Windows.Forms.Label();
+            this.labelAsterisk2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.labelAsterisk3 = new System.Windows.Forms.Label();
+            this.labelAsterisk4 = new System.Windows.Forms.Label();
+            this.labelAsterisk5 = new System.Windows.Forms.Label();
+            this.labelAsterisk6 = new System.Windows.Forms.Label();
+            this.labelMandatoryFields = new System.Windows.Forms.Label();
+            this.pictureBoxGoBack = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).BeginInit();
             this.SuspendLayout();
             // 
-            // label4
+            // pictureBoxLogin
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(755, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 31);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.pictureBoxLogin.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogin.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
+            this.pictureBoxLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogin.Location = new System.Drawing.Point(688, 513);
+            this.pictureBoxLogin.Name = "pictureBoxLogin";
+            this.pictureBoxLogin.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxLogin.TabIndex = 13;
+            this.pictureBoxLogin.TabStop = false;
+            this.pictureBoxLogin.Click += new System.EventHandler(this.pictureBoxLogin_Click);
             // 
-            // pictureBox2
+            // textBoxUserFirstname
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::DogTopia.Properties.Resources.btn_login;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(688, 672);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.textBoxUserFirstname.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxUserFirstname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUserFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserFirstname.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxUserFirstname.Location = new System.Drawing.Point(361, 139);
+            this.textBoxUserFirstname.Name = "textBoxUserFirstname";
+            this.textBoxUserFirstname.Size = new System.Drawing.Size(250, 31);
+            this.textBoxUserFirstname.TabIndex = 12;
             // 
-            // textBox2
+            // textBoxUserSurname
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox2.Location = new System.Drawing.Point(367, 194);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 31);
-            this.textBox2.TabIndex = 12;
+            this.textBoxUserSurname.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxUserSurname.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUserSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserSurname.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxUserSurname.Location = new System.Drawing.Point(361, 71);
+            this.textBoxUserSurname.Name = "textBoxUserSurname";
+            this.textBoxUserSurname.Size = new System.Drawing.Size(250, 31);
+            this.textBoxUserSurname.TabIndex = 11;
             // 
-            // textBox1
+            // labelUserFirstname
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox1.Location = new System.Drawing.Point(367, 126);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 31);
-            this.textBox1.TabIndex = 11;
+            this.labelUserFirstname.AutoSize = true;
+            this.labelUserFirstname.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserFirstname.Location = new System.Drawing.Point(355, 105);
+            this.labelUserFirstname.Name = "labelUserFirstname";
+            this.labelUserFirstname.Size = new System.Drawing.Size(150, 31);
+            this.labelUserFirstname.TabIndex = 10;
+            this.labelUserFirstname.Text = "First name:";
             // 
-            // label2
+            // labelUserSurname
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(361, 160);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 31);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Prenume:";
+            this.labelUserSurname.AutoSize = true;
+            this.labelUserSurname.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserSurname.Location = new System.Drawing.Point(355, 37);
+            this.labelUserSurname.Name = "labelUserSurname";
+            this.labelUserSurname.Size = new System.Drawing.Size(131, 31);
+            this.labelUserSurname.TabIndex = 9;
+            this.labelUserSurname.Text = "Surname:";
             // 
-            // label1
+            // pictureBoxLogo
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(361, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 31);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Nume:";
+            this.pictureBoxLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLogo.BackgroundImage = global::DogTopia.Properties.Resources.Logo;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(355, 621);
+            this.pictureBoxLogo.TabIndex = 8;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // pictureBox1
+            // labelRegistration
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::DogTopia.Properties.Resources.Logo;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(355, 772);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.labelRegistration.AutoSize = true;
+            this.labelRegistration.BackColor = System.Drawing.Color.Transparent;
+            this.labelRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRegistration.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.labelRegistration.Location = new System.Drawing.Point(603, 0);
+            this.labelRegistration.Name = "labelRegistration";
+            this.labelRegistration.Size = new System.Drawing.Size(160, 31);
+            this.labelRegistration.TabIndex = 15;
+            this.labelRegistration.Text = "Registration";
             // 
-            // label3
+            // textBoxUserUsername
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label3.Location = new System.Drawing.Point(500, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 31);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Înregistrare";
+            this.textBoxUserUsername.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxUserUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUserUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserUsername.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxUserUsername.Location = new System.Drawing.Point(361, 319);
+            this.textBoxUserUsername.Name = "textBoxUserUsername";
+            this.textBoxUserUsername.Size = new System.Drawing.Size(250, 31);
+            this.textBoxUserUsername.TabIndex = 22;
             // 
-            // textBox3
+            // labelUserPassword
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox3.Location = new System.Drawing.Point(367, 389);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(250, 31);
-            this.textBox3.TabIndex = 22;
+            this.labelUserPassword.AutoSize = true;
+            this.labelUserPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserPassword.Location = new System.Drawing.Point(355, 357);
+            this.labelUserPassword.Name = "labelUserPassword";
+            this.labelUserPassword.Size = new System.Drawing.Size(142, 31);
+            this.labelUserPassword.TabIndex = 17;
+            this.labelUserPassword.Text = "Password:";
             // 
-            // label5
+            // labelUserUsername
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(361, 423);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 31);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Password:";
+            this.labelUserUsername.AutoSize = true;
+            this.labelUserUsername.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserUsername.Location = new System.Drawing.Point(355, 285);
+            this.labelUserUsername.Name = "labelUserUsername";
+            this.labelUserUsername.Size = new System.Drawing.Size(147, 31);
+            this.labelUserUsername.TabIndex = 16;
+            this.labelUserUsername.Text = "Username:";
             // 
-            // label6
+            // labelUserCredentials
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(361, 355);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 31);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Username:";
+            this.labelUserCredentials.AutoSize = true;
+            this.labelUserCredentials.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserCredentials.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserCredentials.ForeColor = System.Drawing.Color.Maroon;
+            this.labelUserCredentials.Location = new System.Drawing.Point(355, 9);
+            this.labelUserCredentials.Name = "labelUserCredentials";
+            this.labelUserCredentials.Size = new System.Drawing.Size(132, 31);
+            this.labelUserCredentials.TabIndex = 19;
+            this.labelUserCredentials.Text = "User data";
             // 
-            // label7
+            // labelAccountData
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(361, 51);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(181, 31);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Date utilizator";
+            this.labelAccountData.AutoSize = true;
+            this.labelAccountData.BackColor = System.Drawing.Color.Transparent;
+            this.labelAccountData.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccountData.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAccountData.Location = new System.Drawing.Point(355, 254);
+            this.labelAccountData.Name = "labelAccountData";
+            this.labelAccountData.Size = new System.Drawing.Size(173, 31);
+            this.labelAccountData.TabIndex = 20;
+            this.labelAccountData.Text = "Account data";
             // 
-            // label8
+            // textBoxUserEmail
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Maroon;
-            this.label8.Location = new System.Drawing.Point(361, 309);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 31);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Date cont";
+            this.textBoxUserEmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxUserEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserEmail.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxUserEmail.Location = new System.Drawing.Point(361, 207);
+            this.textBoxUserEmail.Name = "textBoxUserEmail";
+            this.textBoxUserEmail.Size = new System.Drawing.Size(250, 31);
+            this.textBoxUserEmail.TabIndex = 18;
             // 
-            // textBox4
+            // labelUserEmail
             // 
-            this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox4.Location = new System.Drawing.Point(367, 262);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(250, 31);
-            this.textBox4.TabIndex = 18;
+            this.labelUserEmail.AutoSize = true;
+            this.labelUserEmail.BackColor = System.Drawing.Color.Transparent;
+            this.labelUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserEmail.Location = new System.Drawing.Point(355, 173);
+            this.labelUserEmail.Name = "labelUserEmail";
+            this.labelUserEmail.Size = new System.Drawing.Size(89, 31);
+            this.labelUserEmail.TabIndex = 21;
+            this.labelUserEmail.Text = "Email:";
             // 
-            // label9
+            // textBoxUserPassword
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(361, 228);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(89, 31);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Email:";
+            this.textBoxUserPassword.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxUserPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxUserPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUserPassword.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxUserPassword.Location = new System.Drawing.Point(361, 391);
+            this.textBoxUserPassword.Name = "textBoxUserPassword";
+            this.textBoxUserPassword.PasswordChar = '*';
+            this.textBoxUserPassword.Size = new System.Drawing.Size(250, 31);
+            this.textBoxUserPassword.TabIndex = 23;
             // 
-            // textBox5
+            // checkBoxAgreeConditions
             // 
-            this.textBox5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox5.Location = new System.Drawing.Point(367, 457);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '*';
-            this.textBox5.Size = new System.Drawing.Size(250, 31);
-            this.textBox5.TabIndex = 23;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(361, 577);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(336, 55);
-            this.checkBox1.TabIndex = 25;
-            this.checkBox1.Text = "Sunt de acord cu \r\nTermenii şi Condiţiile DogTopia";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxAgreeConditions.AutoSize = true;
+            this.checkBoxAgreeConditions.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBoxAgreeConditions.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAgreeConditions.Location = new System.Drawing.Point(361, 486);
+            this.checkBoxAgreeConditions.Name = "checkBoxAgreeConditions";
+            this.checkBoxAgreeConditions.Size = new System.Drawing.Size(327, 55);
+            this.checkBoxAgreeConditions.TabIndex = 25;
+            this.checkBoxAgreeConditions.Text = "I agree to the terms of service.\r\n";
+            this.checkBoxAgreeConditions.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -269,64 +256,64 @@
             this.label10.Size = new System.Drawing.Size(0, 31);
             this.label10.TabIndex = 26;
             // 
-            // checkBox2
+            // checkBoxAgreePersonalData
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(361, 638);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(319, 55);
-            this.checkBox2.TabIndex = 26;
-            this.checkBox2.Text = "Sunt de acord cu \r\nprelucrarea datelor personale";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxAgreePersonalData.AutoSize = true;
+            this.checkBoxAgreePersonalData.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.checkBoxAgreePersonalData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAgreePersonalData.Location = new System.Drawing.Point(361, 531);
+            this.checkBoxAgreePersonalData.Name = "checkBoxAgreePersonalData";
+            this.checkBoxAgreePersonalData.Size = new System.Drawing.Size(336, 55);
+            this.checkBoxAgreePersonalData.TabIndex = 26;
+            this.checkBoxAgreePersonalData.Text = "I agree to the processing of \r\nmy personal data by DogTopia.";
+            this.checkBoxAgreePersonalData.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // textBoxConfirmUsername
             // 
-            this.textBox6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox6.Location = new System.Drawing.Point(367, 522);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PasswordChar = '*';
-            this.textBox6.Size = new System.Drawing.Size(250, 31);
-            this.textBox6.TabIndex = 24;
+            this.textBoxConfirmUsername.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxConfirmUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxConfirmUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirmUsername.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxConfirmUsername.Location = new System.Drawing.Point(361, 459);
+            this.textBoxConfirmUsername.Name = "textBoxConfirmUsername";
+            this.textBoxConfirmUsername.PasswordChar = '*';
+            this.textBoxConfirmUsername.Size = new System.Drawing.Size(250, 31);
+            this.textBoxConfirmUsername.TabIndex = 24;
             // 
-            // label11
+            // labelConfirmPassword
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(361, 488);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(244, 31);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Confirm Password:";
+            this.labelConfirmPassword.AutoSize = true;
+            this.labelConfirmPassword.BackColor = System.Drawing.Color.Transparent;
+            this.labelConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelConfirmPassword.Location = new System.Drawing.Point(355, 425);
+            this.labelConfirmPassword.Name = "labelConfirmPassword";
+            this.labelConfirmPassword.Size = new System.Drawing.Size(244, 31);
+            this.labelConfirmPassword.TabIndex = 27;
+            this.labelConfirmPassword.Text = "Confirm Password:";
             // 
-            // label12
+            // labelAsterisk1
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Maroon;
-            this.label12.Location = new System.Drawing.Point(449, 92);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(16, 20);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "*";
+            this.labelAsterisk1.AutoSize = true;
+            this.labelAsterisk1.BackColor = System.Drawing.Color.Transparent;
+            this.labelAsterisk1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterisk1.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAsterisk1.Location = new System.Drawing.Point(481, 37);
+            this.labelAsterisk1.Name = "labelAsterisk1";
+            this.labelAsterisk1.Size = new System.Drawing.Size(16, 20);
+            this.labelAsterisk1.TabIndex = 29;
+            this.labelAsterisk1.Text = "*";
             // 
-            // label13
+            // labelAsterisk2
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(487, 160);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(16, 20);
-            this.label13.TabIndex = 30;
-            this.label13.Text = "*";
+            this.labelAsterisk2.AutoSize = true;
+            this.labelAsterisk2.BackColor = System.Drawing.Color.Transparent;
+            this.labelAsterisk2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterisk2.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAsterisk2.Location = new System.Drawing.Point(496, 105);
+            this.labelAsterisk2.Name = "labelAsterisk2";
+            this.labelAsterisk2.Size = new System.Drawing.Size(16, 20);
+            this.labelAsterisk2.TabIndex = 30;
+            this.labelAsterisk2.Text = "*";
             // 
             // label14
             // 
@@ -334,83 +321,83 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Maroon;
-            this.label14.Location = new System.Drawing.Point(439, 228);
+            this.label14.Location = new System.Drawing.Point(433, 173);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(16, 20);
             this.label14.TabIndex = 31;
             this.label14.Text = "*";
             // 
-            // label15
+            // labelAsterisk3
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Maroon;
-            this.label15.Location = new System.Drawing.Point(502, 355);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(16, 20);
-            this.label15.TabIndex = 32;
-            this.label15.Text = "*";
+            this.labelAsterisk3.AutoSize = true;
+            this.labelAsterisk3.BackColor = System.Drawing.Color.Transparent;
+            this.labelAsterisk3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterisk3.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAsterisk3.Location = new System.Drawing.Point(496, 285);
+            this.labelAsterisk3.Name = "labelAsterisk3";
+            this.labelAsterisk3.Size = new System.Drawing.Size(16, 20);
+            this.labelAsterisk3.TabIndex = 32;
+            this.labelAsterisk3.Text = "*";
             // 
-            // label16
+            // labelAsterisk4
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Maroon;
-            this.label16.Location = new System.Drawing.Point(492, 423);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(16, 20);
-            this.label16.TabIndex = 33;
-            this.label16.Text = "*";
+            this.labelAsterisk4.AutoSize = true;
+            this.labelAsterisk4.BackColor = System.Drawing.Color.Transparent;
+            this.labelAsterisk4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterisk4.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAsterisk4.Location = new System.Drawing.Point(489, 357);
+            this.labelAsterisk4.Name = "labelAsterisk4";
+            this.labelAsterisk4.Size = new System.Drawing.Size(16, 20);
+            this.labelAsterisk4.TabIndex = 33;
+            this.labelAsterisk4.Text = "*";
             // 
-            // label17
+            // labelAsterisk5
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Maroon;
-            this.label17.Location = new System.Drawing.Point(601, 488);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(16, 20);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "*";
+            this.labelAsterisk5.AutoSize = true;
+            this.labelAsterisk5.BackColor = System.Drawing.Color.Transparent;
+            this.labelAsterisk5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterisk5.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAsterisk5.Location = new System.Drawing.Point(595, 425);
+            this.labelAsterisk5.Name = "labelAsterisk5";
+            this.labelAsterisk5.Size = new System.Drawing.Size(16, 20);
+            this.labelAsterisk5.TabIndex = 34;
+            this.labelAsterisk5.Text = "*";
             // 
-            // label18
+            // labelAsterisk6
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Maroon;
-            this.label18.Location = new System.Drawing.Point(363, 696);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(16, 20);
-            this.label18.TabIndex = 35;
-            this.label18.Text = "*";
+            this.labelAsterisk6.AutoSize = true;
+            this.labelAsterisk6.BackColor = System.Drawing.Color.Transparent;
+            this.labelAsterisk6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAsterisk6.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAsterisk6.Location = new System.Drawing.Point(360, 587);
+            this.labelAsterisk6.Name = "labelAsterisk6";
+            this.labelAsterisk6.Size = new System.Drawing.Size(16, 20);
+            this.labelAsterisk6.TabIndex = 35;
+            this.labelAsterisk6.Text = "*";
             // 
-            // label19
+            // labelMandatoryFields
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.Maroon;
-            this.label19.Location = new System.Drawing.Point(385, 696);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(191, 25);
-            this.label19.TabIndex = 36;
-            this.label19.Text = "Câmpuri obligatorii";
+            this.labelMandatoryFields.AutoSize = true;
+            this.labelMandatoryFields.BackColor = System.Drawing.Color.Transparent;
+            this.labelMandatoryFields.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMandatoryFields.ForeColor = System.Drawing.Color.Maroon;
+            this.labelMandatoryFields.Location = new System.Drawing.Point(376, 587);
+            this.labelMandatoryFields.Name = "labelMandatoryFields";
+            this.labelMandatoryFields.Size = new System.Drawing.Size(171, 25);
+            this.labelMandatoryFields.TabIndex = 36;
+            this.labelMandatoryFields.Text = "Mandatory fields";
             // 
-            // pictureBox3
+            // pictureBoxGoBack
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = global::DogTopia.Properties.Resources.btnBack;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(688, 566);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.TabIndex = 37;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnBack;
+            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxGoBack.Location = new System.Drawing.Point(688, 407);
+            this.pictureBoxGoBack.Name = "pictureBoxGoBack";
+            this.pictureBoxGoBack.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxGoBack.TabIndex = 37;
+            this.pictureBoxGoBack.TabStop = false;
+            this.pictureBoxGoBack.Click += new System.EventHandler(this.pictureBoxGoBack_Click);
             // 
             // SignUpForm
             // 
@@ -418,80 +405,79 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 772);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
+            this.ClientSize = new System.Drawing.Size(800, 621);
+            this.Controls.Add(this.pictureBoxGoBack);
+            this.Controls.Add(this.pictureBoxLogin);
+            this.Controls.Add(this.labelMandatoryFields);
+            this.Controls.Add(this.labelAsterisk6);
+            this.Controls.Add(this.labelAsterisk5);
+            this.Controls.Add(this.labelAsterisk4);
+            this.Controls.Add(this.labelAsterisk3);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.labelAsterisk2);
+            this.Controls.Add(this.labelAsterisk1);
+            this.Controls.Add(this.textBoxConfirmUsername);
+            this.Controls.Add(this.labelConfirmPassword);
+            this.Controls.Add(this.checkBoxAgreePersonalData);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.checkBoxAgreeConditions);
+            this.Controls.Add(this.textBoxUserPassword);
+            this.Controls.Add(this.textBoxUserEmail);
+            this.Controls.Add(this.labelUserEmail);
+            this.Controls.Add(this.labelAccountData);
+            this.Controls.Add(this.labelUserCredentials);
+            this.Controls.Add(this.textBoxUserUsername);
+            this.Controls.Add(this.labelUserPassword);
+            this.Controls.Add(this.labelUserUsername);
+            this.Controls.Add(this.labelRegistration);
+            this.Controls.Add(this.textBoxUserFirstname);
+            this.Controls.Add(this.textBoxUserSurname);
+            this.Controls.Add(this.labelUserFirstname);
+            this.Controls.Add(this.labelUserSurname);
+            this.Controls.Add(this.pictureBoxLogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "SignUpForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SignUpForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Text = "DogTopia";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.PictureBox pictureBoxLogin;
+        private System.Windows.Forms.TextBox textBoxUserFirstname;
+        private System.Windows.Forms.TextBox textBoxUserSurname;
+        private System.Windows.Forms.Label labelUserFirstname;
+        private System.Windows.Forms.Label labelUserSurname;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Label labelRegistration;
+        private System.Windows.Forms.TextBox textBoxUserUsername;
+        private System.Windows.Forms.Label labelUserPassword;
+        private System.Windows.Forms.Label labelUserUsername;
+        private System.Windows.Forms.Label labelUserCredentials;
+        private System.Windows.Forms.Label labelAccountData;
+        private System.Windows.Forms.TextBox textBoxUserEmail;
+        private System.Windows.Forms.Label labelUserEmail;
+        private System.Windows.Forms.TextBox textBoxUserPassword;
+        private System.Windows.Forms.CheckBox checkBoxAgreeConditions;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.CheckBox checkBoxAgreePersonalData;
+        private System.Windows.Forms.TextBox textBoxConfirmUsername;
+        private System.Windows.Forms.Label labelConfirmPassword;
+        private System.Windows.Forms.Label labelAsterisk1;
+        private System.Windows.Forms.Label labelAsterisk2;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label labelAsterisk3;
+        private System.Windows.Forms.Label labelAsterisk4;
+        private System.Windows.Forms.Label labelAsterisk5;
+        private System.Windows.Forms.Label labelAsterisk6;
+        private System.Windows.Forms.Label labelMandatoryFields;
+        private System.Windows.Forms.PictureBox pictureBoxGoBack;
     }
 }

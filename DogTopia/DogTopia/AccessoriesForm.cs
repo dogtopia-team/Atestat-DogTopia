@@ -12,65 +12,60 @@ namespace DogTopia
 {
     public partial class AccessoriesForm : Form
     {
-        public static bool cumparaAc1 = false;
-        public static bool cumparaAc2 = false;
-        public static bool cumparaAc3 = false;
-        public static bool cumparaAc4 = false;
-        public static bool cumparaAc5 = false;
-        public static bool cumparaAc6 = false;
+        public static bool buyAccessory1 = false;
+        public static bool buyAccessory2 = false;
+        public static bool buyAccessory3 = false;
+        public static bool buyAccessory4 = false;
+        public static bool buyAccessory5 = false;
+        public static bool buyAccessory6 = false;
         public AccessoriesForm()
         {
            InitializeComponent();
-           if (cumparaAc1 == true) checkBoxAc1.Checked = true;
+           if (buyAccessory1 == true) checkBoxAc1.Checked = true;
             else checkBoxAc1.Checked = false;
-           if (cumparaAc2 == true) checkBoxAc2.Checked = true;
+           if (buyAccessory2 == true) checkBoxAc2.Checked = true;
             else checkBoxAc2.Checked = false;
-           if (cumparaAc3 == true) checkBoxAc3.Checked = true;
+           if (buyAccessory3 == true) checkBoxAc3.Checked = true;
             else checkBoxAc3.Checked = false;
-           if (cumparaAc4 == true) checkBoxAc4.Checked = true;
+           if (buyAccessory4 == true) checkBoxAc4.Checked = true;
             else checkBoxAc4.Checked = false;
-           if (cumparaAc5 == true) checkBoxAc5.Checked = true;
+           if (buyAccessory5 == true) checkBoxAc5.Checked = true;
             else checkBoxAc5.Checked = false;
-           if (cumparaAc6 == true) checkBoxAc6.Checked = true;
+           if (buyAccessory6 == true) checkBoxAc6.Checked = true;
             else checkBoxAc6.Checked = false;
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void pictureBoxGoBack_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            if (MainForm.pathPozaCaine1 == MainForm.pathPoza)
+            if (MainForm.pathPictureStDog == MainForm.pathPicture)
             {
-                AccountForm.pretAccesorii1 = 0;
-                if (cumparaAc1) AccountForm.pretAccesorii1 += 5;
-                if (cumparaAc2) AccountForm.pretAccesorii1 += 7;
-                if (cumparaAc3) AccountForm.pretAccesorii1 += 10;
-                if (cumparaAc4) AccountForm.pretAccesorii1 += 7;
-                if (cumparaAc5) AccountForm.pretAccesorii1 += 15;
-                if (cumparaAc6) AccountForm.pretAccesorii1 += 50;
+                AccountForm.priceAccessoriesStDog = 0;
+                if (buyAccessory1) AccountForm.priceAccessoriesStDog += 5;
+                if (buyAccessory2) AccountForm.priceAccessoriesStDog += 7;
+                if (buyAccessory3) AccountForm.priceAccessoriesStDog += 10;
+                if (buyAccessory4) AccountForm.priceAccessoriesStDog += 7;
+                if (buyAccessory5) AccountForm.priceAccessoriesStDog += 15;
+                if (buyAccessory6) AccountForm.priceAccessoriesStDog += 50;
             }
-            else if (MainForm.pathPozaCaine2 == MainForm.pathPoza)
+            else if (MainForm.pathPictureNdDog == MainForm.pathPicture)
             {
-                AccountForm.pretAccesorii2 = 0;
-                if (cumparaAc1) AccountForm.pretAccesorii2 += 5;
-                if (cumparaAc2) AccountForm.pretAccesorii2 += 7;
-                if (cumparaAc3) AccountForm.pretAccesorii2 += 10;
-                if (cumparaAc4) AccountForm.pretAccesorii2 += 7;
-                if (cumparaAc5) AccountForm.pretAccesorii2 += 15;
-                if (cumparaAc6) AccountForm.pretAccesorii2 += 50;
+                AccountForm.priceAccessoriesNdDog = 0;
+                if (buyAccessory1) AccountForm.priceAccessoriesNdDog += 5;
+                if (buyAccessory2) AccountForm.priceAccessoriesNdDog += 7;
+                if (buyAccessory3) AccountForm.priceAccessoriesNdDog += 10;
+                if (buyAccessory4) AccountForm.priceAccessoriesNdDog += 7;
+                if (buyAccessory5) AccountForm.priceAccessoriesNdDog += 15;
+                if (buyAccessory6) AccountForm.priceAccessoriesNdDog += 50;
             }
-            else if (MainForm.pathPozaCaine3 == MainForm.pathPoza)
+            else if (MainForm.pathPictureRdDog == MainForm.pathPicture)
             {
-                AccountForm.pretAccesorii3 = 0;
-                if (cumparaAc1) AccountForm.pretAccesorii3 += 5;
-                if (cumparaAc2) AccountForm.pretAccesorii3 += 7;
-                if (cumparaAc3) AccountForm.pretAccesorii3 += 10;
-                if (cumparaAc4) AccountForm.pretAccesorii3 += 7;
-                if (cumparaAc5) AccountForm.pretAccesorii3 += 15;
-                if (cumparaAc6) AccountForm.pretAccesorii3 += 50;
+                AccountForm.priceAccessoriesRdDog = 0;
+                if (buyAccessory1) AccountForm.priceAccessoriesRdDog += 5;
+                if (buyAccessory2) AccountForm.priceAccessoriesRdDog += 7;
+                if (buyAccessory3) AccountForm.priceAccessoriesRdDog += 10;
+                if (buyAccessory4) AccountForm.priceAccessoriesRdDog += 7;
+                if (buyAccessory5) AccountForm.priceAccessoriesRdDog += 15;
+                if (buyAccessory6) AccountForm.priceAccessoriesRdDog += 50;
             }
 
             AccountForm accountForm = new AccountForm();
@@ -80,38 +75,38 @@ namespace DogTopia
 
         private void checkBoxAc1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxAc1.Checked == true) cumparaAc1 = true;
-             else cumparaAc1 = false;
+            if (checkBoxAc1.Checked == true) buyAccessory1 = true;
+             else buyAccessory1 = false;
         }
 
         private void checkBoxAc2_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxAc2.Checked == true) cumparaAc2 = true;
-            else cumparaAc2 = false;
+            if (checkBoxAc2.Checked == true) buyAccessory2 = true;
+            else buyAccessory2 = false;
         }
 
         private void checkBoxAc3_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxAc3.Checked == true) cumparaAc3 = true;
-            else cumparaAc3 = false;
+            if (checkBoxAc3.Checked == true) buyAccessory3 = true;
+            else buyAccessory3 = false;
         }
 
         private void checkBoxAc4_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxAc4.Checked == true) cumparaAc4 = true;
-            else cumparaAc4 = false;
+            if (checkBoxAc4.Checked == true) buyAccessory4 = true;
+            else buyAccessory4 = false;
         }
 
         private void checkBoxAc5_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxAc5.Checked == true) cumparaAc5 = true;
-            else cumparaAc5 = false;
+            if (checkBoxAc5.Checked == true) buyAccessory5 = true;
+            else buyAccessory5 = false;
         }
 
         private void checkBoxAc6_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxAc6.Checked == true) cumparaAc6 = true;
-            else cumparaAc6 = false;
+            if (checkBoxAc6.Checked == true) buyAccessory6 = true;
+            else buyAccessory6 = false;
         }
     }
 }

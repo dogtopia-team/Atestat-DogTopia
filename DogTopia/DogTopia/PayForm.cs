@@ -15,117 +15,104 @@ namespace DogTopia
         public PayForm()
         {
             InitializeComponent();
-            labelTotal1.Text = ShoppingCartForm.total.ToString() + ",00";
+            labelTotal.Text = ShoppingCartForm.total.ToString() + ",00";
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void textBoxName_TextChanged(object sender, EventArgs e)
         {
-            Application.Exit();
+            textBoxName.CharacterCasing = CharacterCasing.Upper;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void pictureBoxGoBack_Click(object sender, EventArgs e)
         {
-            textBox1.CharacterCasing = CharacterCasing.Upper;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            ShoppingCartForm shop = new ShoppingCartForm();
-            shop.Show();
+            ShoppingCartForm shoppingCartForm = new ShoppingCartForm();
+            shoppingCartForm.Show();
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBoxPlaceOrder_Click(object sender, EventArgs e)
         {
-            //verificare Nume si prenume(obligatoriu minim 2 cuvinte)
-            int nr_cuv = textBox1.Text.Split(' ').Length;
-
-            if (nr_cuv < 2)
+            // Verify the First Name and the Surname (minimum 2 characters)
+            int numberWords = textBoxName.Text.Split(' ').Length;
+            if (numberWords < 2)
             {
-                MessageBox.Show("Introduceti NUME si PRENUME", "Camp incomplet", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox1.Clear();
+                MessageBox.Show("Introduce the First Name and the Surname", "Incomplete field.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxName.Clear();
                 return;
             }
 
-            //verificare PIN(16 cifre, fara alte caractere)
-            int lng = textBox2.Text.Length;
-            if (lng != 16)
+            // Verify Card Number (PIN) - 16 digits, other charcters are not allowed
+            int lengthCardNumber = textBoxCardNumber.Text.Length;
+            if (lengthCardNumber != 16)
             {
-                MessageBox.Show("Codul PIN trebuie sa aiba 16 cifre!", "Cod PIN invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox2.Clear();
+                MessageBox.Show("The Card Number needs to be 16 digits long!", "Invalid Card Number.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxCardNumber.Clear();
                 return;
             }
-
-            string PIN = textBox2.Text.Trim();
-
-            for (int i = 0; i < PIN.Length; i++)
+            string cardNumber = textBoxCardNumber.Text.Trim();
+            for (int index = 0; index < cardNumber.Length; index++)
             {
-                if (!char.IsNumber(PIN[i]))
+                if (!char.IsNumber(cardNumber[index]))
                 {
-                    MessageBox.Show("Codul PIN trebuie sa aiba DOAR cifre!", "Cod PIN invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBox2.Clear();
+                    MessageBox.Show("The Card Number can only have digits!", "Invalid Card Number.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxCardNumber.Clear();
                     return;
                 }
             }
 
-            //verificare daca data expirarii cardului este mai mare sau egala decat data curenta
-            DateTime dataCard;
-            DateTime dataCurenta = DateTime.Now;
-
-            int luna;
-            if (!int.TryParse(textBox3.Text, out luna))
+            // Verify if the expiration date is greater or equal than the current date
+            DateTime cardDate;
+            DateTime currentDate = DateTime.Now;
+            int month = 0;
+            if (!int.TryParse(textBoxMonth.Text, out month))
             {
-                MessageBox.Show("Introduceti doar cifrele corespunzatoare lunii", "Luna - caractere invalide", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox3.Clear();
+                MessageBox.Show("Introduce only digits corresponding to the month.", "Month - invalid characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxMonth.Clear();
                 return;
             }
 
-            int an;
-            if (!int.TryParse(textBox4.Text, out an))
+            int year = 0;
+            if (!int.TryParse(textBoxYear.Text, out year))
             {
-                MessageBox.Show("Introduceti doar cifrele corespunzatoare anului", "An - caractere invalide", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox4.Clear();
+                MessageBox.Show("Introduce only digits corresponding to the year.", "Year - invalid characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxYear.Clear();
                 return;
             }
 
-            dataCard = new DateTime(2000 + an, luna, 1, 0, 0, 0);
-
-            int result = DateTime.Compare(dataCurenta, dataCard);
-
-            if (result > 0)
+            cardDate = new DateTime(2000 + year, month, 1, 0, 0, 0);
+            int resultCompare = DateTime.Compare(currentDate, cardDate);
+            if (resultCompare > 0)
             {
-                MessageBox.Show("Introduceti datele unui card valabil", "Card expirat", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Introduce the date of a valid card!", "Expired card.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-
-            //verificare cod CVV/CVC (3 cifre, fara alte caractere)
-            int lngC = textBox5.Text.Length;
-            if (lngC != 3)
+            // Verify the CVV/CVC code - 3 digits, other characters are not allowed
+            int lengthCode = textBoxCVVCode.Text.Length;
+            if (lengthCode != 3)
             {
-                MessageBox.Show("Codul CVV/CVC trebuie sa aiba 3 cifre!", "Cod PIN invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                textBox5.Clear();
+                MessageBox.Show("The CVV/CVC code can only have 3 digits!", "Invalid CVV/CVC code.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxCVVCode.Clear();
                 return;
             }
 
-            string CVC = textBox5.Text.Trim();
-
+            string CVC = textBoxCVVCode.Text.Trim();
             for (int i = 0; i < CVC.Length; i++)
             {
                 if (!char.IsNumber(CVC[i]))
                 {
-                    MessageBox.Show("Codul CVV/CVC trebuie sa aiba DOAR cifre!", "Cod PIN invalid", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBox5.Clear();
+                    MessageBox.Show("The CVV/CVC code can only have digits", "Invalid CVV/CVC code.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxCVVCode.Clear();
                     return;
                 }
             }
 
-            //se afiseaza un MessageBox, pentru confirmarea comenzii
-            MessageBox.Show("Comanda a fost plasata! Va multumim!", "Confirmare comanda", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // A message box is shown for order confirmation
+            MessageBox.Show("The order has been placed! Thank you!", "Confirmed order.", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            //se face legatura cu AccountForm, daca totul este in regula
-            AccountForm acc = new AccountForm();
-            acc.Show();
+            // If everything works, go back to AccountForm
+            AccountForm accountForm = new AccountForm();
+            accountForm.Show();
             this.Hide();
         }
     }

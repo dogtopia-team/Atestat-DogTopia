@@ -19,66 +19,60 @@ namespace DogTopia
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void labelSignup_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            SignUpForm signform = new SignUpForm();
-            signform.Show();
+            SignUpForm signUpForm = new SignUpForm();
+            signUpForm.Show();
             this.Hide();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBoxLogin_Click(object sender, EventArgs e)
         {
-            if (SignUpForm.areCaractereSpeciale(textBox1) == true)
+            if (SignUpForm.hasSpecialCharacters(textBoxUsername) == true)
             {
-                textBox1.Clear();
-                MessageBox.Show("Te rugăm să introduci un username care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxUsername.Clear();
+                MessageBox.Show("Please introduce an username that has no special characters!", "Special characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (SignUpForm.areCaractereSpeciale(textBox2) == true || SignUpForm.contineSpatiiSauCratime(textBox2) == true)
+            if (SignUpForm.hasSpecialCharacters(textBoxPassword) == true || SignUpForm.hasSpacesOrDashes(textBoxPassword) == true)
             {
-                textBox2.Clear();
-                MessageBox.Show("Te rugăm să introduci o parolă care să nu conțină caractere speciale!", "Caractere speciale", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                textBoxPassword.Clear();
+                MessageBox.Show("Please introduce a password that has no special characters!", "Special characters.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (String.IsNullOrEmpty(textBox1.Text.Trim()) || String.IsNullOrEmpty(textBox2.Text.Trim()))
+            if (String.IsNullOrEmpty(textBoxUsername.Text.Trim()) || String.IsNullOrEmpty(textBoxPassword.Text.Trim()))
             {
-                MessageBox.Show("Te rugăm să completezi toate câmpurile!", "Câmpuri necompletate", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please complete all the fields!", "Incomplete fields.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            string usernameUser = textBox1.Text.Trim();
-            string parolaUser = textBox2.Text.Trim();
-
-            using (SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Atestat-DogTopia\DogTopia\DogTopia\Conturi.mdf;Integrated Security=True"))
+            string usernameUser = textBoxUsername.Text.Trim();
+            string passwordUser = textBoxPassword.Text.Trim();
+            using (SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Atestat-DogTopia\DogTopia\DogTopia\Conturi.mdf;Integrated Security=True"))
             {
-                conn.Open();
-                String command = String.Format(@"select * from Conturi where Username = '{0}' and Parola = '{1}'", usernameUser, parolaUser);
-                SqlCommand cmd = new SqlCommand(command, conn);
+                connection.Open();
+                String command = String.Format(@"select * from Conturi where Username = '{0}' and Parola = '{1}'", usernameUser, passwordUser);
+                SqlCommand cmd = new SqlCommand(command, connection);
                 SqlDataReader dataReader = cmd.ExecuteReader();
 
                 if (dataReader.HasRows)
                 {
                     isLoggedIn = true;
-                    AccountForm acc = new AccountForm();
-                    acc.Show();
+                    AccountForm accountForm = new AccountForm();
+                    accountForm.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Datele introduse sunt incorecte!", "Date incorecte", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    textBox1.Clear(); textBox2.Clear();
+                    MessageBox.Show("The introduced credentials are incorrect!", "Incorrect credentials.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textBoxUsername.Clear(); textBoxPassword.Clear();
                 }
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBoxGoBack_Click(object sender, EventArgs e)
         {
-            IntroForm intr = new IntroForm();
-            intr.Show();
+            IntroForm introForm = new IntroForm();
+            introForm.Show();
             this.Hide();
         }
     }

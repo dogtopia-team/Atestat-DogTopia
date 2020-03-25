@@ -14,125 +14,121 @@ namespace DogTopia
 {
     public partial class MainForm : Form
     {
-        public static string rasaCaine1 = "";
-        public static string rasaCaine2 = "";
-        public static string rasaCaine3 = "";
-        public static string rasaCaineCurent = ""; // Rasa celui mai curent caine clasificat
-        public static string pathPoza = "";
-        public static string pathPozaCaine1 = "";
-        public static string pathPozaCaine2 = "";
-        public static string pathPozaCaine3 = "";
+        public static string stBreedDog = "";
+        public static string ndBreedDog = "";
+        public static string rdBreedDog = "";
+        public static string breedCurrentDog = ""; // The breed of the current classified dog
+        public static string pathPicture = "";
+        public static string pathPictureStDog = "";
+        public static string pathPictureNdDog = "";
+        public static string pathPictureRdDog = "";
 
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBoxAddPicture_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "JPG|*.jpg";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                pathPoza = ofd.FileName;
-                if (pathPoza == pathPozaCaine1 || pathPoza == pathPozaCaine2 || pathPoza == pathPozaCaine3)
+                pathPicture = ofd.FileName;
+                if (pathPicture == pathPictureStDog || pathPicture == pathPictureNdDog || pathPicture == pathPictureRdDog)
                 {
-                    MessageBox.Show("Ați introdus deja acest câine! Alegeți alt câine!", "Duplicare conținut", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("You have already introduced this dog! Choose another dog!", "Duplicate content", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                Image imagineCaine = Image.FromFile(pathPoza);
-                Size dimensiune = new Size();
-                dimensiune.Height = 600;
-                dimensiune.Width = 569;
-                pictureBoxPoza.BackgroundImage = AccountForm.ResizeImage(imagineCaine, dimensiune);
-                labelRasa.Text = "Apăsați pe Clasifică și așteptați să se proceseze!";
+                Image imageDog = Image.FromFile(pathPicture);
+                Size dimension = new Size();
+                dimension.Height = 600;
+                dimension.Width = 569;
+                pictureBoxLogo.BackgroundImage = AccountForm.ResizeImage(imageDog, dimension);
+                labelBreed.Text = "Press on Clasifica and wait for processing!";
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBoxClassify_Click(object sender, EventArgs e)
         {
 
-            // Daca utilizatorul nu a introdus nicio poza, nu se va putea clasifica.
-            if (pathPoza == "") return;
+            // If the user introduces no picture, the classifier will not start
+            if (pathPicture == "") return;
 
-            // full path of python interpreter 
+            // Full path of python interpreter 
             string python = @"C:\Users\Cosmin\Anaconda3\python.exe";
-            string myPythonApp = @"C:\Users\Cosmin\PycharmProjects\pls\main.py";
+            string myPythonApp = IntroForm.pathWorkingDirectory + @"classifier\main.py";
+           // string myPythonApp = @"C:\Users\Cosmin\PycharmProjects\classifier\main.py";
 
-            // Creeaza un nou proces care realizeaza comunicarea 
-            // intre algoritmul de recunoastere a rasei si aplicatia C#
-            ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(python);
+            // Create a new process to communicate with the Python Script
+            ProcessStartInfo proccesStartInfo = new ProcessStartInfo(python);
 
-            // Ne asiguram ca putem citi outputul din stdout
-            myProcessStartInfo.UseShellExecute = false;
-            myProcessStartInfo.RedirectStandardOutput = true;
-            myProcessStartInfo.WorkingDirectory = @"C:\Users\Cosmin\Anaconda3\";
-            myProcessStartInfo.CreateNoWindow = true;
+            // Make sure the output will be read from the stdout channel
+            proccesStartInfo.UseShellExecute = false;
+            proccesStartInfo.RedirectStandardOutput = true;
+            proccesStartInfo.WorkingDirectory = @"C:\Users\Cosmin\Anaconda3\";
+            proccesStartInfo.CreateNoWindow = true;
 
-            // Incepe aplicatia Python cu 2 parametri:
-            // Primul este un pointer catre ea insasi, al doilea este calea fotografiei.
-            myProcessStartInfo.Arguments = myPythonApp + " " + pathPoza;
+            // Run the Python Script with 2 arguments
+            // The first argument will be a pointer to itself, the second argument will be a path to the picture.
+            proccesStartInfo.Arguments = myPythonApp + " " + pathPicture;
 
-            Process myProcess = new Process();
-            // Seteaza informatia de start a procesului
-            myProcess.StartInfo = myProcessStartInfo;
+            Process pythonProcess = new Process();
+            // Set the Start information
+            pythonProcess.StartInfo = proccesStartInfo;
 
-            // Se da startul procesului
-            myProcess.Start();
+            // Start the process
+            pythonProcess.Start();
 
-            // Citeste output-ul standard al aplicatiei pe care am apelat-o
-            StreamReader myStreamReader = myProcess.StandardOutput;
-            string myString = myStreamReader.ReadLine();
+            // Read the standard output of the called script
+            StreamReader streamReader = pythonProcess.StandardOutput;
+            string breedClassifiedDog = streamReader.ReadLine();
 
-            // Asteptam pentru a primi semnalul de inchidere al aplicatiei pe care am apelat-o
-            myProcess.WaitForExit();
+            // Wait for the exit signal of the process
+            pythonProcess.WaitForExit();
 
-            // Inchide procesul
-            myProcess.Close();
+            // Close the process
+            pythonProcess.Close();
 
+            // Random generation of the dog's price
             Random r = new Random();
-            int pret = (r.Next(100, 1500) / 10) * 10;
+            int price = (r.Next(100, 1500) / 10) * 10;
 
-            if (ShoppingCartForm.altCaine1 == 1) ShoppingCartForm.altCaine1 = 2;
-            if (ShoppingCartForm.altCaine2 == 1) ShoppingCartForm.altCaine2 = 2;
-            if (ShoppingCartForm.altCaine3 == 1) ShoppingCartForm.altCaine3 = 2;
+            if (ShoppingCartForm.anotherDogSt == 1) ShoppingCartForm.anotherDogSt = 2;
+            if (ShoppingCartForm.anotherDogNd == 1) ShoppingCartForm.anotherDogNd = 2;
+            if (ShoppingCartForm.anotherDogRd == 1) ShoppingCartForm.anotherDogRd = 2;
 
-            if (rasaCaine1.Trim() == "" || ShoppingCartForm.altCaine1 == 2 || (ShoppingCartForm.maiAdaugaCaine2 == false && ShoppingCartForm.maiAdaugaCaine3 == false))
+            if (stBreedDog.Trim() == "" || ShoppingCartForm.anotherDogSt == 2 || (ShoppingCartForm.addSecondDog == false && ShoppingCartForm.addThirdDog == false))
             {
-                rasaCaine1 = myString;
-                rasaCaineCurent = rasaCaine1;
-                pathPozaCaine1 = pathPoza;
-                AccountForm.pretCaine1 = pret;
-                AccountForm.pretMancare1 = AccountForm.pretAccesorii1 = ShoppingCartForm.altCaine1 = 0;
+                stBreedDog = breedClassifiedDog;
+                breedCurrentDog = stBreedDog;
+                pathPictureStDog = pathPicture;
+                AccountForm.priceStDog = price;
+                AccountForm.priceFoodStDog = AccountForm.priceAccessoriesStDog = ShoppingCartForm.anotherDogSt = 0;
             }
-            else if ((rasaCaine2.Trim() == "" && ShoppingCartForm.maiAdaugaCaine2 == true) || ShoppingCartForm.altCaine2 == 2 || ShoppingCartForm.maiAdaugaCaine3 == false)
+            else if ((ndBreedDog.Trim() == "" && ShoppingCartForm.addSecondDog == true) || ShoppingCartForm.anotherDogNd == 2 || ShoppingCartForm.addThirdDog == false)
             {
-                rasaCaine2 = myString;
-                rasaCaineCurent = rasaCaine2;
-                pathPozaCaine2 = pathPoza;
-                AccountForm.pretCaine2 = pret;
-                AccountForm.pretMancare2 = AccountForm.pretAccesorii2 = ShoppingCartForm.altCaine2 = 0;
+                ndBreedDog = breedClassifiedDog;
+                breedCurrentDog = ndBreedDog;
+                pathPictureNdDog = pathPicture;
+                AccountForm.priceNdDog = price;
+                AccountForm.priceFoodNdDog = AccountForm.priceAccessoriesNdDog = ShoppingCartForm.anotherDogNd = 0;
             }
-            else if ((rasaCaine3.Trim() == "" && ShoppingCartForm.maiAdaugaCaine3 == true) || ShoppingCartForm.altCaine3 == 2  || 
-                (rasaCaine1.Trim() != "" && rasaCaine2.Trim() != ""))
+            else if ((rdBreedDog.Trim() == "" && ShoppingCartForm.addThirdDog == true) || ShoppingCartForm.anotherDogRd == 2  || 
+                (stBreedDog.Trim() != "" && ndBreedDog.Trim() != ""))
             {
-                rasaCaine3 = myString;
-                rasaCaineCurent = rasaCaine3;
-                pathPozaCaine3 = pathPoza;
-                AccountForm.pretCaine3 = pret;
-                AccountForm.pretMancare3 = AccountForm.pretAccesorii3 = ShoppingCartForm.altCaine3 = 0;
+                rdBreedDog = breedClassifiedDog;
+                breedCurrentDog = rdBreedDog;
+                pathPictureRdDog = pathPicture;
+                AccountForm.priceRdDog = price;
+                AccountForm.priceFoodRdDog = AccountForm.priceAccessoriesRdDog = ShoppingCartForm.anotherDogRd = 0;
             }
-            labelRasa.Text = rasaCaineCurent.Replace('_', ' ');
-            pictureBox3.Show();
-            pictureBox4.Visible = true;
+            labelBreed.Text = breedCurrentDog.Replace('_', ' ');
+            pictureBoxLogin.Show();
+            pictureBoxDetails.Visible = true;
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBoxLogin_Click(object sender, EventArgs e)
         {
             if (LoginForm.isLoggedIn == true)
             {
@@ -147,36 +143,36 @@ namespace DogTopia
                 this.Hide();
             }
 
-            // Reintializam alegerile din "Accessorii"
-            AccessoriesForm.cumparaAc1 = AccessoriesForm.cumparaAc2 = AccessoriesForm.cumparaAc3 = AccessoriesForm.cumparaAc4 =
-                AccessoriesForm.cumparaAc5 = AccessoriesForm.cumparaAc6 = false;
-            // Reintializam alegerile din "Food"
-            FoodForm.cumparaFood1 = FoodForm.cumparaFood2 = FoodForm.cumparaFood3 = FoodForm.cumparaFood4 =
-                FoodForm.cumparaFood5 = FoodForm.cumparaFood6 = false;
+            // Reinitialization of the choices in the "Accessories" Tab
+            AccessoriesForm.buyAccessory1 = AccessoriesForm.buyAccessory2 = AccessoriesForm.buyAccessory3 = AccessoriesForm.buyAccessory4 =
+                AccessoriesForm.buyAccessory5 = AccessoriesForm.buyAccessory6 = false;
+            // Reinitialization of the choices in the "Food" Tab
+            FoodForm.buyFood1 = FoodForm.buyFood2 = FoodForm.buyFood3 = FoodForm.buyFood4 =
+                FoodForm.buyFood5 = FoodForm.buyFood6 = false;
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBoxDetails_Click(object sender, EventArgs e)
         {
-            if (rasaCaineCurent == "") // Cazul in care nu s-a clasificat inca poza
+            if (breedCurrentDog == "") // Case where the dog was not successfully classified.
             {
-                MessageBox.Show("Mai întâi aflați rasa câinelui!", "Lipsă rasă de câine", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The breed of the dog is missing", "Incorrect breed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            string pathWikipediaRasa = @"https://google.com/search?q=";
-            pathWikipediaRasa += rasaCaineCurent.Replace('_', '+');
-            Process.Start("chrome.exe", pathWikipediaRasa);
+            string pathWikipediaBreed = @"https://google.com/search?q=";
+            pathWikipediaBreed += breedCurrentDog.Replace('_', '+');
+            Process.Start("chrome.exe", pathWikipediaBreed);
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void pictureBoxGoBack_Click(object sender, EventArgs e)
         {
-            if (pathPoza != pathPozaCaine1 && pathPoza != pathPozaCaine2 && pathPoza != pathPozaCaine3)
+            if (pathPicture != pathPictureStDog && pathPicture != pathPictureNdDog && pathPicture != pathPictureRdDog)
             {
-                if (pathPozaCaine3.Trim() != "") pathPoza = pathPozaCaine3;
-                 else if (pathPozaCaine2.Trim() != "") pathPoza = pathPozaCaine2;
-                  else pathPoza = pathPozaCaine1;
+                if (pathPictureRdDog.Trim() != "") pathPicture = pathPictureRdDog;
+                 else if (pathPictureNdDog.Trim() != "") pathPicture = pathPictureNdDog;
+                  else pathPicture = pathPictureStDog;
             }
-            IntroForm intr = new IntroForm();
-            intr.Show();
+            IntroForm introForm = new IntroForm();
+            introForm.Show();
             this.Hide();
         }
 

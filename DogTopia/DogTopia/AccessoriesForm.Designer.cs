@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccessoriesForm));
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAc1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAc2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAc3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAc6 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAc5 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAc4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGoBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccessory1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccessory2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccessory3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccessory6 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccessory5 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccessory4 = new System.Windows.Forms.PictureBox();
             this.labelAc1 = new System.Windows.Forms.Label();
             this.checkBoxAc1 = new System.Windows.Forms.CheckBox();
             this.checkBoxAc2 = new System.Windows.Forms.CheckBox();
@@ -49,106 +48,93 @@
             this.labelAc5 = new System.Windows.Forms.Label();
             this.checkBoxAc6 = new System.Windows.Forms.CheckBox();
             this.labelAc6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc4)).BeginInit();
+            this.labelAccessories = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory4)).BeginInit();
             this.SuspendLayout();
             // 
-            // label4
+            // pictureBoxGoBack
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(612, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 31);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.pictureBoxGoBack.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
+            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxGoBack.Location = new System.Drawing.Point(-1, 540);
+            this.pictureBoxGoBack.Name = "pictureBoxGoBack";
+            this.pictureBoxGoBack.Size = new System.Drawing.Size(233, 61);
+            this.pictureBoxGoBack.TabIndex = 10;
+            this.pictureBoxGoBack.TabStop = false;
+            this.pictureBoxGoBack.Click += new System.EventHandler(this.pictureBoxGoBack_Click);
             // 
-            // pictureBox6
+            // pictureBoxAccessory1
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(-1, 540);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(233, 61);
-            this.pictureBox6.TabIndex = 10;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pictureBoxAccessory1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAccessory1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAccessory1.BackgroundImage")));
+            this.pictureBoxAccessory1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAccessory1.Location = new System.Drawing.Point(59, 81);
+            this.pictureBoxAccessory1.Name = "pictureBoxAccessory1";
+            this.pictureBoxAccessory1.Size = new System.Drawing.Size(154, 113);
+            this.pictureBoxAccessory1.TabIndex = 11;
+            this.pictureBoxAccessory1.TabStop = false;
             // 
-            // pictureBoxAc1
+            // pictureBoxAccessory2
             // 
-            this.pictureBoxAc1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAc1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAc1.BackgroundImage")));
-            this.pictureBoxAc1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxAc1.Location = new System.Drawing.Point(59, 81);
-            this.pictureBoxAc1.Name = "pictureBoxAc1";
-            this.pictureBoxAc1.Size = new System.Drawing.Size(154, 113);
-            this.pictureBoxAc1.TabIndex = 11;
-            this.pictureBoxAc1.TabStop = false;
+            this.pictureBoxAccessory2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAccessory2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAccessory2.BackgroundImage")));
+            this.pictureBoxAccessory2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAccessory2.Location = new System.Drawing.Point(255, 81);
+            this.pictureBoxAccessory2.Name = "pictureBoxAccessory2";
+            this.pictureBoxAccessory2.Size = new System.Drawing.Size(161, 113);
+            this.pictureBoxAccessory2.TabIndex = 12;
+            this.pictureBoxAccessory2.TabStop = false;
             // 
-            // pictureBoxAc2
+            // pictureBoxAccessory3
             // 
-            this.pictureBoxAc2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAc2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAc2.BackgroundImage")));
-            this.pictureBoxAc2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxAc2.Location = new System.Drawing.Point(255, 81);
-            this.pictureBoxAc2.Name = "pictureBoxAc2";
-            this.pictureBoxAc2.Size = new System.Drawing.Size(154, 113);
-            this.pictureBoxAc2.TabIndex = 12;
-            this.pictureBoxAc2.TabStop = false;
+            this.pictureBoxAccessory3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAccessory3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAccessory3.BackgroundImage")));
+            this.pictureBoxAccessory3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAccessory3.Location = new System.Drawing.Point(451, 81);
+            this.pictureBoxAccessory3.Name = "pictureBoxAccessory3";
+            this.pictureBoxAccessory3.Size = new System.Drawing.Size(154, 113);
+            this.pictureBoxAccessory3.TabIndex = 13;
+            this.pictureBoxAccessory3.TabStop = false;
             // 
-            // pictureBoxAc3
+            // pictureBoxAccessory6
             // 
-            this.pictureBoxAc3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAc3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAc3.BackgroundImage")));
-            this.pictureBoxAc3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxAc3.Location = new System.Drawing.Point(451, 81);
-            this.pictureBoxAc3.Name = "pictureBoxAc3";
-            this.pictureBoxAc3.Size = new System.Drawing.Size(154, 113);
-            this.pictureBoxAc3.TabIndex = 13;
-            this.pictureBoxAc3.TabStop = false;
+            this.pictureBoxAccessory6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAccessory6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAccessory6.BackgroundImage")));
+            this.pictureBoxAccessory6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxAccessory6.Location = new System.Drawing.Point(451, 326);
+            this.pictureBoxAccessory6.Name = "pictureBoxAccessory6";
+            this.pictureBoxAccessory6.Size = new System.Drawing.Size(158, 113);
+            this.pictureBoxAccessory6.TabIndex = 16;
+            this.pictureBoxAccessory6.TabStop = false;
             // 
-            // pictureBoxAc6
+            // pictureBoxAccessory5
             // 
-            this.pictureBoxAc6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAc6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAc6.BackgroundImage")));
-            this.pictureBoxAc6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxAc6.Location = new System.Drawing.Point(451, 326);
-            this.pictureBoxAc6.Name = "pictureBoxAc6";
-            this.pictureBoxAc6.Size = new System.Drawing.Size(154, 113);
-            this.pictureBoxAc6.TabIndex = 16;
-            this.pictureBoxAc6.TabStop = false;
+            this.pictureBoxAccessory5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAccessory5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAccessory5.BackgroundImage")));
+            this.pictureBoxAccessory5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAccessory5.Location = new System.Drawing.Point(255, 326);
+            this.pictureBoxAccessory5.Name = "pictureBoxAccessory5";
+            this.pictureBoxAccessory5.Size = new System.Drawing.Size(161, 113);
+            this.pictureBoxAccessory5.TabIndex = 15;
+            this.pictureBoxAccessory5.TabStop = false;
             // 
-            // pictureBoxAc5
+            // pictureBoxAccessory4
             // 
-            this.pictureBoxAc5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAc5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAc5.BackgroundImage")));
-            this.pictureBoxAc5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxAc5.Location = new System.Drawing.Point(255, 326);
-            this.pictureBoxAc5.Name = "pictureBoxAc5";
-            this.pictureBoxAc5.Size = new System.Drawing.Size(154, 113);
-            this.pictureBoxAc5.TabIndex = 15;
-            this.pictureBoxAc5.TabStop = false;
-            // 
-            // pictureBoxAc4
-            // 
-            this.pictureBoxAc4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAc4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAc4.BackgroundImage")));
-            this.pictureBoxAc4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxAc4.Location = new System.Drawing.Point(59, 326);
-            this.pictureBoxAc4.Name = "pictureBoxAc4";
-            this.pictureBoxAc4.Size = new System.Drawing.Size(154, 113);
-            this.pictureBoxAc4.TabIndex = 14;
-            this.pictureBoxAc4.TabStop = false;
+            this.pictureBoxAccessory4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAccessory4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxAccessory4.BackgroundImage")));
+            this.pictureBoxAccessory4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxAccessory4.Location = new System.Drawing.Point(59, 326);
+            this.pictureBoxAccessory4.Name = "pictureBoxAccessory4";
+            this.pictureBoxAccessory4.Size = new System.Drawing.Size(154, 113);
+            this.pictureBoxAccessory4.TabIndex = 14;
+            this.pictureBoxAccessory4.TabStop = false;
             // 
             // labelAc1
             // 
@@ -158,9 +144,9 @@
             this.labelAc1.ForeColor = System.Drawing.Color.Maroon;
             this.labelAc1.Location = new System.Drawing.Point(86, 204);
             this.labelAc1.Name = "labelAc1";
-            this.labelAc1.Size = new System.Drawing.Size(100, 33);
+            this.labelAc1.Size = new System.Drawing.Size(114, 33);
             this.labelAc1.TabIndex = 17;
-            this.labelAc1.Text = "Preț: 5";
+            this.labelAc1.Text = "Price: 5";
             // 
             // checkBoxAc1
             // 
@@ -192,9 +178,9 @@
             this.labelAc2.ForeColor = System.Drawing.Color.Maroon;
             this.labelAc2.Location = new System.Drawing.Point(286, 204);
             this.labelAc2.Name = "labelAc2";
-            this.labelAc2.Size = new System.Drawing.Size(100, 33);
+            this.labelAc2.Size = new System.Drawing.Size(114, 33);
             this.labelAc2.TabIndex = 19;
-            this.labelAc2.Text = "Preț: 7";
+            this.labelAc2.Text = "Price: 7";
             // 
             // checkBoxAc3
             // 
@@ -215,9 +201,9 @@
             this.labelAc3.ForeColor = System.Drawing.Color.Maroon;
             this.labelAc3.Location = new System.Drawing.Point(479, 204);
             this.labelAc3.Name = "labelAc3";
-            this.labelAc3.Size = new System.Drawing.Size(116, 33);
+            this.labelAc3.Size = new System.Drawing.Size(138, 33);
             this.labelAc3.TabIndex = 21;
-            this.labelAc3.Text = "Preț: 10";
+            this.labelAc3.Text = "Price:  10";
             // 
             // checkBoxAc4
             // 
@@ -238,9 +224,9 @@
             this.labelAc4.ForeColor = System.Drawing.Color.Maroon;
             this.labelAc4.Location = new System.Drawing.Point(86, 452);
             this.labelAc4.Name = "labelAc4";
-            this.labelAc4.Size = new System.Drawing.Size(100, 33);
+            this.labelAc4.Size = new System.Drawing.Size(114, 33);
             this.labelAc4.TabIndex = 23;
-            this.labelAc4.Text = "Preț: 7";
+            this.labelAc4.Text = "Price: 7";
             // 
             // checkBoxAc5
             // 
@@ -261,9 +247,9 @@
             this.labelAc5.ForeColor = System.Drawing.Color.Maroon;
             this.labelAc5.Location = new System.Drawing.Point(286, 452);
             this.labelAc5.Name = "labelAc5";
-            this.labelAc5.Size = new System.Drawing.Size(116, 33);
+            this.labelAc5.Size = new System.Drawing.Size(130, 33);
             this.labelAc5.TabIndex = 25;
-            this.labelAc5.Text = "Preț: 15";
+            this.labelAc5.Text = "Price: 15";
             // 
             // checkBoxAc6
             // 
@@ -284,21 +270,21 @@
             this.labelAc6.ForeColor = System.Drawing.Color.Maroon;
             this.labelAc6.Location = new System.Drawing.Point(479, 452);
             this.labelAc6.Name = "labelAc6";
-            this.labelAc6.Size = new System.Drawing.Size(116, 33);
+            this.labelAc6.Size = new System.Drawing.Size(130, 33);
             this.labelAc6.TabIndex = 27;
-            this.labelAc6.Text = "Preț: 50";
+            this.labelAc6.Text = "Price: 50";
             // 
-            // label1
+            // labelAccessories
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(258, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 42);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Accesorii";
+            this.labelAccessories.AutoSize = true;
+            this.labelAccessories.BackColor = System.Drawing.Color.Transparent;
+            this.labelAccessories.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAccessories.ForeColor = System.Drawing.Color.Maroon;
+            this.labelAccessories.Location = new System.Drawing.Point(258, 9);
+            this.labelAccessories.Name = "labelAccessories";
+            this.labelAccessories.Size = new System.Drawing.Size(221, 42);
+            this.labelAccessories.TabIndex = 29;
+            this.labelAccessories.Text = "Accessories";
             // 
             // AccessoriesForm
             // 
@@ -306,7 +292,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.ClientSize = new System.Drawing.Size(648, 600);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelAccessories);
             this.Controls.Add(this.checkBoxAc6);
             this.Controls.Add(this.labelAc6);
             this.Controls.Add(this.checkBoxAc5);
@@ -319,40 +305,39 @@
             this.Controls.Add(this.labelAc2);
             this.Controls.Add(this.checkBoxAc1);
             this.Controls.Add(this.labelAc1);
-            this.Controls.Add(this.pictureBoxAc6);
-            this.Controls.Add(this.pictureBoxAc5);
-            this.Controls.Add(this.pictureBoxAc4);
-            this.Controls.Add(this.pictureBoxAc3);
-            this.Controls.Add(this.pictureBoxAc2);
-            this.Controls.Add(this.pictureBoxAc1);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.label4);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.pictureBoxAccessory6);
+            this.Controls.Add(this.pictureBoxAccessory5);
+            this.Controls.Add(this.pictureBoxAccessory4);
+            this.Controls.Add(this.pictureBoxAccessory3);
+            this.Controls.Add(this.pictureBoxAccessory2);
+            this.Controls.Add(this.pictureBoxAccessory1);
+            this.Controls.Add(this.pictureBoxGoBack);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "AccessoriesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AccessoriesForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAc4)).EndInit();
+            this.Text = "DogTopia";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessory4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBoxAc1;
-        private System.Windows.Forms.PictureBox pictureBoxAc2;
-        private System.Windows.Forms.PictureBox pictureBoxAc3;
-        private System.Windows.Forms.PictureBox pictureBoxAc6;
-        private System.Windows.Forms.PictureBox pictureBoxAc5;
-        private System.Windows.Forms.PictureBox pictureBoxAc4;
+        private System.Windows.Forms.PictureBox pictureBoxGoBack;
+        private System.Windows.Forms.PictureBox pictureBoxAccessory1;
+        private System.Windows.Forms.PictureBox pictureBoxAccessory2;
+        private System.Windows.Forms.PictureBox pictureBoxAccessory3;
+        private System.Windows.Forms.PictureBox pictureBoxAccessory6;
+        private System.Windows.Forms.PictureBox pictureBoxAccessory5;
+        private System.Windows.Forms.PictureBox pictureBoxAccessory4;
         private System.Windows.Forms.Label labelAc1;
         private System.Windows.Forms.CheckBox checkBoxAc1;
         private System.Windows.Forms.CheckBox checkBoxAc2;
@@ -365,6 +350,6 @@
         private System.Windows.Forms.Label labelAc5;
         private System.Windows.Forms.CheckBox checkBoxAc6;
         private System.Windows.Forms.Label labelAc6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelAccessories;
     }
 }

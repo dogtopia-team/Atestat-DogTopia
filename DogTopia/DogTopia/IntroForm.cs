@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,13 @@ namespace DogTopia
 {
     public partial class IntroForm : Form
     {
+        public static string pathWorkingDirectory = Directory.GetCurrentDirectory().Remove(Directory.GetCurrentDirectory().Length - 9);
         public IntroForm()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pictureBoxLogin_Click(object sender, EventArgs e)
         {
             if (LoginForm.isLoggedIn == true)
             {
@@ -33,15 +35,10 @@ namespace DogTopia
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void pictureBoxStart_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            MainForm form2 = new MainForm();
-            form2.Show();
+            MainForm mainForm = new MainForm();
+            mainForm.Show();
             this.Hide();
         }
     }

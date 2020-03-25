@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,17 +14,17 @@ namespace DogTopia
 {
     public partial class AccountForm : Form
     {
-        public static int pretMancare1 = 0;
-        public static int pretMancare2 = 0;
-        public static int pretMancare3 = 0;
+        public static int priceFoodStDog = 0;
+        public static int priceFoodNdDog = 0;
+        public static int priceFoodRdDog = 0;
 
-        public static int pretAccesorii1 = 0;
-        public static int pretAccesorii2 = 0;
-        public static int pretAccesorii3 = 0;
+        public static int priceAccessoriesStDog = 0;
+        public static int priceAccessoriesNdDog = 0;
+        public static int priceAccessoriesRdDog = 0;
 
-        public static int pretCaine1 = 0;
-        public static int pretCaine2 = 0;
-        public static int pretCaine3 = 0;
+        public static int priceStDog = 0;
+        public static int priceNdDog = 0;
+        public static int priceRdDog = 0;
 
         public static Image ResizeImage(Image image, Size newSize)
         {
@@ -38,31 +39,28 @@ namespace DogTopia
         public AccountForm()
         {
             InitializeComponent();
-            if (MainForm.rasaCaine1 != "") // Afisam fotografia doar daca utilizatorul si-a clasificat cainele
+            if (MainForm.stBreedDog != "") // Show the image only if the dog was classified
             {
-                Image imagineCaine = Image.FromFile(MainForm.pathPoza);
-                Size dimensiune = new Size();
-                dimensiune.Height = 449;
-                dimensiune.Width = 619;
-                pictureBox8.Image = ResizeImage(imagineCaine, dimensiune);
+                Image imageDog = Image.FromFile(MainForm.pathPicture);
+                Size dimension = new Size();
+                dimension.Height = 449;
+                dimension.Width = 619;
+                pictureBoxPictureDog.Image = ResizeImage(imageDog, dimension);
                 panelContact.Hide();
-                panel1.Show();
+                panelInitial.Show();
             }
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void pictureBoxLogout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            // Resetare detalii cont.
-            pretMancare1 = pretMancare2 = pretMancare3 = pretAccesorii1 = pretAccesorii2 = pretAccesorii3 = pretCaine1 = pretCaine2 = pretCaine3 = 0;
-            MainForm.rasaCaine1 = MainForm.rasaCaine2 = MainForm.rasaCaine3 = MainForm.rasaCaineCurent = "";
-            MainForm.pathPozaCaine1 = MainForm.pathPozaCaine2 = MainForm.pathPozaCaine3 = MainForm.pathPoza = "";
-            ShoppingCartForm.altCaine1 = ShoppingCartForm.altCaine2 = ShoppingCartForm.altCaine3 = 0;
-            ShoppingCartForm.maiAdaugaCaine2 = ShoppingCartForm.maiAdaugaCaine3 = false;
+            // Reset account details
+            priceFoodStDog = priceFoodNdDog = priceFoodRdDog = 0;
+            priceAccessoriesStDog = priceAccessoriesNdDog = priceAccessoriesRdDog = 0;
+            priceStDog = priceNdDog = priceRdDog = 0;
+            MainForm.stBreedDog = MainForm.ndBreedDog = MainForm.rdBreedDog = MainForm.breedCurrentDog = "";
+            MainForm.pathPictureStDog = MainForm.pathPictureNdDog = MainForm.pathPictureRdDog = MainForm.pathPicture = "";
+            ShoppingCartForm.anotherDogSt = ShoppingCartForm.anotherDogNd = ShoppingCartForm.anotherDogRd = 0;
+            ShoppingCartForm.addSecondDog = ShoppingCartForm.addThirdDog = false;
             ShoppingCartForm.total = 0;
             LoginForm.isLoggedIn = false;
             LoginForm login = new LoginForm();
@@ -70,9 +68,9 @@ namespace DogTopia
             this.Hide();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void pictureBoxGoBack_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible == true)
+            if (panelInitial.Visible == true)
             {
                 MainForm main = new MainForm();
                 main.Show();
@@ -80,27 +78,22 @@ namespace DogTopia
             }
             else
             {
-                panel1.Show();
+                panelInitial.Show();
                 panelContact.Hide();
             }
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
+        private void pictureBoxContact_Click(object sender, EventArgs e)
         {
-            panel1.Hide();
+            panelInitial.Hide();
             panelContact.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void pictureBoxFood_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            if (MainForm.rasaCaine1.Trim() == "")
+            if (MainForm.stBreedDog.Trim() == "")
             {
-                MessageBox.Show("Introduceți mai întâi un câine!", "Lipsă câine.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You have to introduce a dog!", "Missing dog.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             FoodForm foodForm = new FoodForm();
@@ -108,11 +101,11 @@ namespace DogTopia
             this.Hide();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void pictureBoxAccessories_Click(object sender, EventArgs e)
         {
-            if (MainForm.rasaCaine1.Trim() == "")
+            if (MainForm.stBreedDog.Trim() == "")
             {
-                MessageBox.Show("Introduceți mai întâi un câine!", "Lipsă câine.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("You have to introduce a dog!", "Missing dog.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             AccessoriesForm accessoriesForm = new AccessoriesForm();
@@ -120,25 +113,24 @@ namespace DogTopia
             this.Hide();
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
+        private void pictureBoxSendMail_Click(object sender, EventArgs e)
         {
-            richTextBox1.Clear();
-            textBox1.Clear();
-            panel1.Show();
+            richTextBoxMesage.Clear();
+            textBoxSubject.Clear();
+            panelInitial.Show();
             panelContact.Hide();
         }
 
-        private void pictureBox9_Click(object sender, EventArgs e)
+        private void pictureBoxAddToCart_Click(object sender, EventArgs e)
         {
-            ShoppingCartForm shopping = new ShoppingCartForm();
-            shopping.Show();
+            ShoppingCartForm shoppingCartForm = new ShoppingCartForm();
+            shoppingCartForm.Show();
             this.Hide();
         }
 
         private void label8_Click(object sender, EventArgs e)
         {
-            string pathWebSite = @"C:/Users/Admin/source/repos/dogtopia-team/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
-            //string pathWebSite = @"C:/Users/Admin/source/repos/Atestat-DogTopia/IntroForm/IntroForm/Resources/DogTopia-Website/index.html";
+            string pathWebSite = IntroForm.pathWorkingDirectory + @"Resources\DogTopia-Website\index.html";
             Process.Start("chrome.exe", pathWebSite);
         }
     }

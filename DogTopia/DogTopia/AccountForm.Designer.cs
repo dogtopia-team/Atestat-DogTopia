@@ -28,299 +28,270 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountForm));
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxGoBack = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFood = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAccessories = new System.Windows.Forms.PictureBox();
+            this.pictureBoxContact = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogout = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.panelInitial = new System.Windows.Forms.Panel();
+            this.pictureBoxAddToCart = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPictureDog = new System.Windows.Forms.PictureBox();
+            this.labelWelcome = new System.Windows.Forms.Label();
             this.panelContact = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelGoToSite = new System.Windows.Forms.Label();
+            this.labelText = new System.Windows.Forms.Label();
+            this.pictureBoxSendMail = new System.Windows.Forms.PictureBox();
+            this.richTextBoxMesage = new System.Windows.Forms.RichTextBox();
+            this.labelContactForm = new System.Windows.Forms.Label();
+            this.textBoxSubject = new System.Windows.Forms.TextBox();
+            this.labelMesage = new System.Windows.Forms.Label();
+            this.labelSubject = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFood)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessories)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContact)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.panelInitial.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddToCart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPictureDog)).BeginInit();
             this.panelContact.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSendMail)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.Transparent;
-            this.panelMenu.Controls.Add(this.pictureBox6);
-            this.panelMenu.Controls.Add(this.pictureBox5);
-            this.panelMenu.Controls.Add(this.pictureBox4);
-            this.panelMenu.Controls.Add(this.pictureBox3);
-            this.panelMenu.Controls.Add(this.pictureBox2);
-            this.panelMenu.Controls.Add(this.pictureBox1);
+            this.panelMenu.Controls.Add(this.pictureBoxGoBack);
+            this.panelMenu.Controls.Add(this.pictureBoxFood);
+            this.panelMenu.Controls.Add(this.pictureBoxAccessories);
+            this.panelMenu.Controls.Add(this.pictureBoxContact);
+            this.panelMenu.Controls.Add(this.pictureBoxLogout);
+            this.panelMenu.Controls.Add(this.pictureBoxLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(346, 600);
             this.panelMenu.TabIndex = 0;
             // 
-            // pictureBox6
+            // pictureBoxGoBack
             // 
-            this.pictureBox6.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 121);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(328, 99);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pictureBoxGoBack.BackgroundImage = global::DogTopia.Properties.Resources.btnRevino1;
+            this.pictureBoxGoBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxGoBack.Location = new System.Drawing.Point(0, 121);
+            this.pictureBoxGoBack.Name = "pictureBoxGoBack";
+            this.pictureBoxGoBack.Size = new System.Drawing.Size(328, 99);
+            this.pictureBoxGoBack.TabIndex = 5;
+            this.pictureBoxGoBack.TabStop = false;
+            this.pictureBoxGoBack.Click += new System.EventHandler(this.pictureBoxGoBack_Click);
             // 
-            // pictureBox5
+            // pictureBoxFood
             // 
-            this.pictureBox5.BackgroundImage = global::DogTopia.Properties.Resources.btnmancare1;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 219);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(328, 99);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pictureBoxFood.BackgroundImage = global::DogTopia.Properties.Resources.btnmancare1;
+            this.pictureBoxFood.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxFood.Location = new System.Drawing.Point(0, 219);
+            this.pictureBoxFood.Name = "pictureBoxFood";
+            this.pictureBoxFood.Size = new System.Drawing.Size(328, 99);
+            this.pictureBoxFood.TabIndex = 4;
+            this.pictureBoxFood.TabStop = false;
+            this.pictureBoxFood.Click += new System.EventHandler(this.pictureBoxFood_Click);
             // 
-            // pictureBox4
+            // pictureBoxAccessories
             // 
-            this.pictureBox4.BackgroundImage = global::DogTopia.Properties.Resources.btnaccesorii2;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 310);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(328, 99);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pictureBoxAccessories.BackgroundImage = global::DogTopia.Properties.Resources.btnaccesorii1;
+            this.pictureBoxAccessories.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxAccessories.Location = new System.Drawing.Point(0, 310);
+            this.pictureBoxAccessories.Name = "pictureBoxAccessories";
+            this.pictureBoxAccessories.Size = new System.Drawing.Size(328, 99);
+            this.pictureBoxAccessories.TabIndex = 3;
+            this.pictureBoxAccessories.TabStop = false;
+            this.pictureBoxAccessories.Click += new System.EventHandler(this.pictureBoxAccessories_Click);
             // 
-            // pictureBox3
+            // pictureBoxContact
             // 
-            this.pictureBox3.BackgroundImage = global::DogTopia.Properties.Resources.btncontact1;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(0, 405);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(328, 99);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBoxContact.BackgroundImage = global::DogTopia.Properties.Resources.btncontact1;
+            this.pictureBoxContact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxContact.Location = new System.Drawing.Point(0, 405);
+            this.pictureBoxContact.Name = "pictureBoxContact";
+            this.pictureBoxContact.Size = new System.Drawing.Size(328, 99);
+            this.pictureBoxContact.TabIndex = 2;
+            this.pictureBoxContact.TabStop = false;
+            this.pictureBoxContact.Click += new System.EventHandler(this.pictureBoxContact_Click);
             // 
-            // pictureBox2
+            // pictureBoxLogout
             // 
-            this.pictureBox2.BackgroundImage = global::DogTopia.Properties.Resources.btnexit1;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 501);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(328, 99);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBoxLogout.BackgroundImage = global::DogTopia.Properties.Resources.btnexit1;
+            this.pictureBoxLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogout.Location = new System.Drawing.Point(0, 501);
+            this.pictureBoxLogout.Name = "pictureBoxLogout";
+            this.pictureBoxLogout.Size = new System.Drawing.Size(328, 99);
+            this.pictureBoxLogout.TabIndex = 1;
+            this.pictureBoxLogout.TabStop = false;
+            this.pictureBoxLogout.Click += new System.EventHandler(this.pictureBoxLogout_Click);
             // 
-            // pictureBox1
+            // pictureBoxLogo
             // 
-            this.pictureBox1.BackgroundImage = global::DogTopia.Properties.Resources.Logo1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(346, 125);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxLogo.BackgroundImage = global::DogTopia.Properties.Resources.Logo1;
+            this.pictureBoxLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(346, 125);
+            this.pictureBoxLogo.TabIndex = 0;
+            this.pictureBoxLogo.TabStop = false;
             // 
-            // panel1
+            // panelInitial
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(352, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(648, 600);
-            this.panel1.TabIndex = 1;
+            this.panelInitial.BackColor = System.Drawing.Color.Transparent;
+            this.panelInitial.Controls.Add(this.pictureBoxAddToCart);
+            this.panelInitial.Controls.Add(this.pictureBoxPictureDog);
+            this.panelInitial.Controls.Add(this.labelWelcome);
+            this.panelInitial.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelInitial.Location = new System.Drawing.Point(352, 0);
+            this.panelInitial.Name = "panelInitial";
+            this.panelInitial.Size = new System.Drawing.Size(648, 600);
+            this.panelInitial.TabIndex = 1;
             // 
-            // pictureBox9
+            // pictureBoxAddToCart
             // 
-            this.pictureBox9.BackgroundImage = global::DogTopia.Properties.Resources.btn_adauga;
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox9.Location = new System.Drawing.Point(506, 536);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(139, 61);
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            this.pictureBoxAddToCart.BackgroundImage = global::DogTopia.Properties.Resources.btn_adauga;
+            this.pictureBoxAddToCart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxAddToCart.Location = new System.Drawing.Point(468, 529);
+            this.pictureBoxAddToCart.Name = "pictureBoxAddToCart";
+            this.pictureBoxAddToCart.Size = new System.Drawing.Size(168, 61);
+            this.pictureBoxAddToCart.TabIndex = 6;
+            this.pictureBoxAddToCart.TabStop = false;
+            this.pictureBoxAddToCart.Click += new System.EventHandler(this.pictureBoxAddToCart_Click);
             // 
-            // label1
+            // pictureBoxPictureDog
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(21, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 42);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Bun venit!";
+            this.pictureBoxPictureDog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxPictureDog.Location = new System.Drawing.Point(17, 74);
+            this.pictureBoxPictureDog.Name = "pictureBoxPictureDog";
+            this.pictureBoxPictureDog.Size = new System.Drawing.Size(619, 449);
+            this.pictureBoxPictureDog.TabIndex = 11;
+            this.pictureBoxPictureDog.TabStop = false;
             // 
-            // label4
+            // labelWelcome
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(612, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 31);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Location = new System.Drawing.Point(17, 84);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(619, 449);
-            this.pictureBox8.TabIndex = 11;
-            this.pictureBox8.TabStop = false;
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWelcome.ForeColor = System.Drawing.Color.Maroon;
+            this.labelWelcome.Location = new System.Drawing.Point(21, 29);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(179, 42);
+            this.labelWelcome.TabIndex = 9;
+            this.labelWelcome.Text = "Welcome!";
             // 
             // panelContact
             // 
             this.panelContact.BackColor = System.Drawing.Color.Transparent;
-            this.panelContact.Controls.Add(this.label8);
-            this.panelContact.Controls.Add(this.label6);
-            this.panelContact.Controls.Add(this.pictureBox7);
-            this.panelContact.Controls.Add(this.richTextBox1);
-            this.panelContact.Controls.Add(this.label7);
-            this.panelContact.Controls.Add(this.textBox1);
-            this.panelContact.Controls.Add(this.label3);
-            this.panelContact.Controls.Add(this.label5);
-            this.panelContact.Controls.Add(this.label2);
+            this.panelContact.Controls.Add(this.labelGoToSite);
+            this.panelContact.Controls.Add(this.labelText);
+            this.panelContact.Controls.Add(this.pictureBoxSendMail);
+            this.panelContact.Controls.Add(this.richTextBoxMesage);
+            this.panelContact.Controls.Add(this.labelContactForm);
+            this.panelContact.Controls.Add(this.textBoxSubject);
+            this.panelContact.Controls.Add(this.labelMesage);
+            this.panelContact.Controls.Add(this.labelSubject);
             this.panelContact.Location = new System.Drawing.Point(346, 0);
             this.panelContact.Name = "panelContact";
             this.panelContact.Size = new System.Drawing.Size(654, 600);
             this.panelContact.TabIndex = 10;
             // 
-            // label6
+            // labelGoToSite
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.PaleGoldenrod;
-            this.label6.Location = new System.Drawing.Point(328, 233);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(324, 145);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Dacă doreşti să ne adresezi\r\nvreo întrebare, te rugăm să\r\nne scrii în formularul " +
-    "alăturat, \r\niar noi îţi vom răspunde în \r\ncel mai scurt timp.";
+            this.labelGoToSite.AutoSize = true;
+            this.labelGoToSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGoToSite.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.labelGoToSite.Location = new System.Drawing.Point(329, 342);
+            this.labelGoToSite.Name = "labelGoToSite";
+            this.labelGoToSite.Size = new System.Drawing.Size(236, 29);
+            this.labelGoToSite.TabIndex = 23;
+            this.labelGoToSite.Text = "www.dogtopia.com";
+            this.labelGoToSite.Click += new System.EventHandler(this.label8_Click);
             // 
-            // pictureBox7
+            // labelText
             // 
-            this.pictureBox7.BackgroundImage = global::DogTopia.Properties.Resources.btnTrimite;
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox7.Location = new System.Drawing.Point(73, 405);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(249, 150);
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            this.labelText.AutoSize = true;
+            this.labelText.BackColor = System.Drawing.Color.Transparent;
+            this.labelText.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelText.ForeColor = System.Drawing.Color.PaleGoldenrod;
+            this.labelText.Location = new System.Drawing.Point(328, 233);
+            this.labelText.Name = "labelText";
+            this.labelText.Size = new System.Drawing.Size(298, 100);
+            this.labelText.TabIndex = 22;
+            this.labelText.Text = "If you want to adress us any \r\nquestions, please write us a \r\nmessage in this for" +
+    "m and we \r\nwill reply as soon as possible!";
             // 
-            // richTextBox1
+            // pictureBoxSendMail
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(73, 223);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(249, 175);
-            this.richTextBox1.TabIndex = 21;
-            this.richTextBox1.Text = "";
+            this.pictureBoxSendMail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxSendMail.Location = new System.Drawing.Point(73, 405);
+            this.pictureBoxSendMail.Name = "pictureBoxSendMail";
+            this.pictureBoxSendMail.Size = new System.Drawing.Size(249, 150);
+            this.pictureBoxSendMail.TabIndex = 6;
+            this.pictureBoxSendMail.TabStop = false;
+            this.pictureBoxSendMail.Click += new System.EventHandler(this.pictureBoxSendMail_Click);
             // 
-            // label7
+            // richTextBoxMesage
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(67, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(255, 31);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Formular de contact";
+            this.richTextBoxMesage.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.richTextBoxMesage.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxMesage.Location = new System.Drawing.Point(73, 223);
+            this.richTextBoxMesage.Name = "richTextBoxMesage";
+            this.richTextBoxMesage.Size = new System.Drawing.Size(249, 175);
+            this.richTextBoxMesage.TabIndex = 21;
+            this.richTextBoxMesage.Text = "";
             // 
-            // textBox1
+            // labelContactForm
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.textBox1.Location = new System.Drawing.Point(73, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 31);
-            this.textBox1.TabIndex = 15;
+            this.labelContactForm.AutoSize = true;
+            this.labelContactForm.BackColor = System.Drawing.Color.Transparent;
+            this.labelContactForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContactForm.ForeColor = System.Drawing.Color.Maroon;
+            this.labelContactForm.Location = new System.Drawing.Point(67, 50);
+            this.labelContactForm.Name = "labelContactForm";
+            this.labelContactForm.Size = new System.Drawing.Size(179, 31);
+            this.labelContactForm.TabIndex = 20;
+            this.labelContactForm.Text = "Contact Form";
             // 
-            // label3
+            // textBoxSubject
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(67, 189);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 31);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Mesaj:";
+            this.textBoxSubject.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBoxSubject.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSubject.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.textBoxSubject.Location = new System.Drawing.Point(73, 155);
+            this.textBoxSubject.Name = "textBoxSubject";
+            this.textBoxSubject.Size = new System.Drawing.Size(250, 31);
+            this.textBoxSubject.TabIndex = 15;
             // 
-            // label5
+            // labelMesage
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(67, 121);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 31);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Subiect:";
+            this.labelMesage.AutoSize = true;
+            this.labelMesage.BackColor = System.Drawing.Color.Transparent;
+            this.labelMesage.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMesage.Location = new System.Drawing.Point(67, 189);
+            this.labelMesage.Name = "labelMesage";
+            this.labelMesage.Size = new System.Drawing.Size(132, 31);
+            this.labelMesage.TabIndex = 14;
+            this.labelMesage.Text = "Message:";
             // 
-            // label2
+            // labelSubject
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(609, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 31);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "X";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label8.Location = new System.Drawing.Point(329, 389);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 20);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "www.dogtopia.com";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.labelSubject.AutoSize = true;
+            this.labelSubject.BackColor = System.Drawing.Color.Transparent;
+            this.labelSubject.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSubject.Location = new System.Drawing.Point(67, 121);
+            this.labelSubject.Name = "labelSubject";
+            this.labelSubject.Size = new System.Drawing.Size(113, 31);
+            this.labelSubject.TabIndex = 13;
+            this.labelSubject.Text = "Subject:";
             // 
             // AccountForm
             // 
@@ -329,27 +300,29 @@
             this.BackgroundImage = global::DogTopia.Properties.Resources.Gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.panelInitial);
             this.Controls.Add(this.panelMenu);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelContact);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "AccountForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AccountFormcs";
+            this.Text = "DogTopia";
             this.panelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGoBack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFood)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAccessories)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContact)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            this.panelInitial.ResumeLayout(false);
+            this.panelInitial.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddToCart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPictureDog)).EndInit();
             this.panelContact.ResumeLayout(false);
             this.panelContact.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSendMail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -357,26 +330,24 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.Panel panelInitial;
+        private System.Windows.Forms.PictureBox pictureBoxLogout;
+        private System.Windows.Forms.PictureBox pictureBoxContact;
+        private System.Windows.Forms.PictureBox pictureBoxAccessories;
+        private System.Windows.Forms.PictureBox pictureBoxFood;
+        private System.Windows.Forms.PictureBox pictureBoxGoBack;
+        private System.Windows.Forms.Label labelWelcome;
         private System.Windows.Forms.Panel panelContact;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxSubject;
+        private System.Windows.Forms.Label labelMesage;
+        private System.Windows.Forms.Label labelSubject;
+        private System.Windows.Forms.PictureBox pictureBoxSendMail;
+        private System.Windows.Forms.RichTextBox richTextBoxMesage;
+        private System.Windows.Forms.Label labelContactForm;
+        private System.Windows.Forms.Label labelText;
+        private System.Windows.Forms.PictureBox pictureBoxPictureDog;
+        private System.Windows.Forms.PictureBox pictureBoxAddToCart;
+        private System.Windows.Forms.Label labelGoToSite;
     }
 }
