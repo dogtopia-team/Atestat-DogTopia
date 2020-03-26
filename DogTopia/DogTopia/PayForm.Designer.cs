@@ -69,9 +69,9 @@
             this.labelDetailsAccount.ForeColor = System.Drawing.Color.DarkRed;
             this.labelDetailsAccount.Location = new System.Drawing.Point(12, 282);
             this.labelDetailsAccount.Name = "labelDetailsAccount";
-            this.labelDetailsAccount.Size = new System.Drawing.Size(207, 31);
+            this.labelDetailsAccount.Size = new System.Drawing.Size(212, 31);
             this.labelDetailsAccount.TabIndex = 2;
-            this.labelDetailsAccount.Text = "Account details:";
+            this.labelDetailsAccount.Text = "Payment Details";
             // 
             // textBoxName
             // 
@@ -87,11 +87,11 @@
             this.labelName.AutoSize = true;
             this.labelName.BackColor = System.Drawing.Color.Transparent;
             this.labelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.Location = new System.Drawing.Point(12, 328);
+            this.labelName.Location = new System.Drawing.Point(45, 331);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(185, 20);
+            this.labelName.Size = new System.Drawing.Size(155, 20);
             this.labelName.TabIndex = 4;
-            this.labelName.Text = "First name and surname:";
+            this.labelName.Text = "Card Holder\'s Name:";
             // 
             // labelCardNumber
             // 
@@ -117,11 +117,11 @@
             this.labelExpirationDate.AutoSize = true;
             this.labelExpirationDate.BackColor = System.Drawing.Color.Transparent;
             this.labelExpirationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExpirationDate.Location = new System.Drawing.Point(78, 388);
+            this.labelExpirationDate.Location = new System.Drawing.Point(104, 385);
             this.labelExpirationDate.Name = "labelExpirationDate";
-            this.labelExpirationDate.Size = new System.Drawing.Size(119, 20);
+            this.labelExpirationDate.Size = new System.Drawing.Size(93, 20);
             this.labelExpirationDate.TabIndex = 8;
-            this.labelExpirationDate.Text = "Expiration date:";
+            this.labelExpirationDate.Text = "Expire date:";
             // 
             // textBoxMonth
             // 
@@ -166,7 +166,7 @@
             // textBoxCVVCode
             // 
             this.textBoxCVVCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCVVCode.Location = new System.Drawing.Point(200, 414);
+            this.textBoxCVVCode.Location = new System.Drawing.Point(203, 417);
             this.textBoxCVVCode.Name = "textBoxCVVCode";
             this.textBoxCVVCode.Size = new System.Drawing.Size(158, 26);
             this.textBoxCVVCode.TabIndex = 11;
